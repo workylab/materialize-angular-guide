@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-generic-components-guide'`, () => {
+  it(`should have as title 'materialize-angular-guide'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-generic-components-guide');
+    expect(app.title).toEqual('materialize-angular-guide');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-generic-components-guide!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to materialize-angular-guide!');
   });
 });
