@@ -1,5 +1,5 @@
 import { CheckboxesComponent } from './checkboxes/checkboxes.component';
-import { ComponentsModule } from 'materialize-angular';
+import { MaterializeComponentsModule } from 'materialize-angular';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SelectionControlsComponent } from './selection-controls.component';
@@ -10,7 +10,7 @@ import { SelectionControlsComponent } from './selection-controls.component';
     SelectionControlsComponent
   ],
   imports: [
-    ComponentsModule,
+    MaterializeComponentsModule,
     RouterModule
   ]
 })
