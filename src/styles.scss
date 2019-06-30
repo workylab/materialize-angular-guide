@@ -2,5 +2,6 @@
 
 @import './styles/main';
 
-$fonts-path: '../node_modules/materialize-angular/fonts/assets';
+$materialize-fonts-path: '../node_modules/materialize-angular/fonts/assets';
+
 @import 'materialize-angular/styles/materialize-angular.scss';
