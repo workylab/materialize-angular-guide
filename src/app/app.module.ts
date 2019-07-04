@@ -1,6 +1,7 @@
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { MaterializeComponentsModule } from 'materialize-angular';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SelectionControlsModule } from './selection-controls/selection-controls.module';
@@ -15,6 +16,7 @@ import { SelectionControlsModule } from './selection-controls/selection-controls
   imports: [
     AppRoutingModule,
     BrowserModule,
+    MaterializeComponentsModule,
     RouterModule,
     SelectionControlsModule
   ],
