@@ -1,13 +1,19 @@
-
-    <h2 class="doc-h2">Checkboxes</h2>
-    <!-- <p class="doc-paragrah">
-      Checkbox form control is an enhancement of native 
-        '<input type="checkbox">'
-      due to it has its own validation engine.
+<h2>Checkboxes</h2>    
+    
+<materialize-tab-group>
+  <materialize-tab title="OVERVIEW">
+    <p>
+      &lt;materialize-checkbox&gt;
     </p>
-    <p class="doc-paragrah">
-      testing...
-    </p>
-  
-    <custom-checkbox label="Example"></custom-checkbox>
-    <custom-checkbox label="Example 2"></custom-checkbox> -->
+  </materialize-tab>
+  <materialize-tab title="API">
+    
+  </materialize-tab>
+  <materialize-tab title="EXAMPLES">
+    <materialize-checkbox>Checkbox</materialize-checkbox>
+    <materialize-checkbox [value]="true">With Value</materialize-checkbox>
+    <materialize-checkbox [disabled]="true">Disabled</materialize-checkbox>
+    <materialize-checkbox [disabled]="true" [value]="true">Disabled with value</materialize-checkbox>
+    <materialize-checkbox [required]="true" [indeterminate]="true">Indeterminate</materialize-checkbox>      
+  </materialize-tab>
+</materialize-tab-group>
