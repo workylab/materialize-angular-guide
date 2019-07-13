@@ -1,0 +1,20 @@
+::ng-deep .drawer {
+  position: relative;
+
+  .drawer-content {
+    bottom: 0;
+    border-right: 1px solid #CCCCCC;
+    overflow: scroll;
+    position: fixed !important;
+    top: 72px !important;
+  }
+
+  .drawer-container {
+    padding: 32px;
+  }
+}
+
+::ng-deep .custom-list-item .icon  {
+  display: flex !important;
+  margin-right: 8px;
+}
