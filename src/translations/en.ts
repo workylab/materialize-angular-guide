@@ -2,30 +2,58 @@ import { Translations } from 'src/app/translation.model';
 
 export const translations: Translations = {
   drawer: {
-    accordion: 'Accordion',
-    button: 'Button',
-    buttonToggle: 'Button Toggle',
-    calendar: 'Calendar',
-    checkbox: 'Checkbox',
-    checkboxList: 'Checkbox List',
-    collapsible: 'Collapsible',
-    datePicker: 'Date Picker',
-    drawer: 'Drawer',
-    dropdown: 'Dropdown',
-    icon: 'Icon',
-    input: 'Input',
-    label: 'Label',
-    list: 'List',
-    modal: 'Modal',
-    navbar: 'Navbar',
-    radio: 'Radio',
-    ripple: 'Ripple',
-    select: 'Select',
-    slider: 'Slider',
-    switch: 'Switch',
-    tab: 'Tab',
-    table: 'Table',
-    textarea: 'Text Area',
-    tooltip: 'Tooltip'
+    search: { placeholder: 'Search' },
+    home: { title: 'Home' },
+    about: { title: 'About' },
+    getStarted: { title: 'Getting Started' },
+    components: {
+      title: 'Components',
+      children: {
+        accordion: 'Accordion',
+        collapsible: 'Collapsible',
+        button: 'Button',
+        calendar: 'Calendar',
+        dropdown: 'Dropdown',
+        list: 'List',
+        modal: 'Modal',
+        table: 'Table',
+        tooltip: 'Tooltip'
+      }
+    },
+    forms: {
+      title: 'Forms',
+      children: {
+        buttonToggle: 'Button Toggle',
+        checkbox: 'Checkbox',
+        checkboxList: 'Checkbox List',
+        datePicker: 'Date Picker',
+        input: 'Input',
+        label: 'Label',
+        radio: 'Radio',
+        select: 'Select',
+        slider: 'Slider',
+        switch: 'Switch',
+        textarea: 'Textarea'
+      }
+    },
+    css: {
+      title: 'CSS',
+      children: {
+        card: 'Card',
+        divider: 'Divider',
+        icon: 'Icon',
+        ripple: 'Ripple'
+      }
+    },
+    layout: {
+      title: 'Layout',
+      children: {
+        drawer: 'Drawer',
+        navbar: 'Navbar',
+        tab: 'Tab'
+      }
+    },
+    themes: { title: 'Themes' }
   }
 };
+

@@ -2,104 +2,24 @@
 
 <materialize-drawer type="static">
   <materialize-drawer-content>
-    <materialize-list>
-      <materialize-list-item link="/home/accordion" className="custom-list-item">
-        <materialize-icon name="calendar_view_day" size="lg"></materialize-icon>
-        {{ translations.accordion }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/button" className="custom-list-item">
-        <materialize-icon name="add_box" size="lg"></materialize-icon>
-        {{ translations.button }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/button-toggle" className="custom-list-item">
-        <materialize-icon name="format_align_left" size="lg"></materialize-icon>
-        {{ translations.buttonToggle }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/calendar" className="custom-list-item">
-        <materialize-icon name="today" size="lg"></materialize-icon>
-        {{ translations.calendar }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/checkbox" className="custom-list-item">
-        <materialize-icon name="check_box" size="lg"></materialize-icon>
-        {{ translations.checkbox }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/checkbox-list" className="custom-list-item">
-        <materialize-icon name="ballot" size="lg"></materialize-icon>
-        {{ translations.checkboxList }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/collapsible" className="custom-list-item">
-        <materialize-icon name="expand_more" size="lg"></materialize-icon>
-        {{ translations.collapsible }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/drawer" className="custom-list-item">
-        <materialize-icon name="menu" size="lg"></materialize-icon>
-        {{ translations.drawer }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/dropdown" className="custom-list-item">
-        <materialize-icon name="more_vert" size="lg"></materialize-icon>
-        {{ translations.dropdown }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/icon" className="custom-list-item">
-        <materialize-icon name="favorite" size="lg"></materialize-icon>
-        {{ translations.icon }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/input" className="custom-list-item">
-        <materialize-icon name="text_format" size="lg"></materialize-icon>
-        {{ translations.input }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/label" className="custom-list-item">
-        <materialize-icon name="title" size="lg"></materialize-icon>
-        {{ translations.label }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/list" className="custom-list-item">
-        <materialize-icon name="format_list_bulleted" size="lg"></materialize-icon>
-        {{ translations.list }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/modal" className="custom-list-item">
-        <materialize-icon name="desktop_mac" size="lg"></materialize-icon>
-        {{ translations.modal }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/navbar" className="custom-list-item">
-        <materialize-icon name="keyboard_arrow_left" size="lg"></materialize-icon>
-        {{ translations.navbar }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/radio" className="custom-list-item">
-        <materialize-icon name="radio_button_checked" size="lg"></materialize-icon>
-        {{ translations.radio }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/ripple" className="custom-list-item">
-        <materialize-icon name="blur_on" size="lg"></materialize-icon>
-        {{ translations.ripple }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/select" className="custom-list-item">
-        <materialize-icon name="unfold_more" size="lg"></materialize-icon>
-        {{ translations.select }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/slider" className="custom-list-item">
-        <materialize-icon name="tune" size="lg"></materialize-icon>
-        {{ translations.slider }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/switch" className="custom-list-item">
-        <materialize-icon name="toggle_on" size="lg"></materialize-icon>
-        {{ translations.switch }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/tab" className="custom-list-item">
-        <materialize-icon name="tab" size="lg"></materialize-icon>
-        {{ translations.tab }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/table" className="custom-list-item">
-        <materialize-icon name="view_comfy" size="lg"></materialize-icon>
-        {{ translations.table }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/textarea" className="custom-list-item">
-        <materialize-icon name="notes" size="lg"></materialize-icon>
-        {{ translations.textarea }}
-      </materialize-list-item>
-      <materialize-list-item link="/home/tooltip" className="custom-list-item">
-        <materialize-icon name="info" size="lg"></materialize-icon>
-        {{ translations.tooltip }}
-      </materialize-list-item>
-    </materialize-list>
+    <ng-container *ngFor="let item of drawerItems">
+      <div *ngIf="!item.children" class="drawer-item" [routerLink]="item.link" materializeRipple>
+        {{ item.text }}
+      </div>
+
+      <materialize-collapsible *ngIf="item.children">
+        <materialize-collapsible-title>{{ item.text }}</materialize-collapsible-title>
+  
+        <materialize-collapsible-content>
+          <materialize-list>
+            <materialize-list-item [link]="item.link + child.link" *ngFor="let child of item.children">
+              {{ child.text }}
+            </materialize-list-item>
+          </materialize-list>
+        </materialize-collapsible-content>
+  
+      </materialize-collapsible>
+    </ng-container>
   </materialize-drawer-content>
 
   <materialize-drawer-container>

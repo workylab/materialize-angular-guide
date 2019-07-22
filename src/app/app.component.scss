@@ -1,20 +1,85 @@
-::ng-deep .drawer {
-  position: relative;
 
-  .drawer-content {
-    bottom: 0;
-    border-right: 1px solid #CCCCCC;
-    overflow: scroll;
-    position: fixed !important;
-    top: 72px !important;
+::ng-deep {
+  .navbar {
+    background: linear-gradient(to right, #cb0538 30%, #f90a48 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
-  .drawer-container {
-    padding: 32px;
-  }
-}
+  .drawer {
+    position: relative;
 
-::ng-deep .custom-list-item .icon  {
-  display: flex !important;
-  margin-right: 8px;
+    .drawer-content {
+      background-color: #2a2b34 !important;
+      box-shadow: 3px 0 20px rgba(0, 0, 0, 0.25);
+      height: calc(100% - 72px) !important;
+      overflow: scroll;
+      padding-top: 20px;
+      position: fixed !important;
+      top: 72px !important;
+      width: 250px !important;
+
+      .collapsible-container.open {
+        background-color: #353742;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+        .collapsible-title-container {
+          color: #ffffff !important;
+        }
+      }
+
+      .drawer-item,
+      .collapsible-title-container {
+        background-color: unset;
+        color: #dbdbdb !important;
+        cursor: pointer;
+        font-size: 14px !important;
+        font-weight: 300 !important;
+        outline: none;
+        padding: 16px 24px;
+
+        &::after {
+          right: 24px;
+        }
+      }
+
+      .collapsible-content {
+        padding: 0;
+      }
+
+      .collapsible-content-container {
+        background-color: #23242c;
+        box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .list {
+        padding: 8px 16px;
+
+        .list-item {
+          border-radius: 0;
+          color: #a8a8a8 !important;
+          font-family: 'Montserrat';
+          font-size: 13px !important;
+          font-weight: 200 !important;
+          margin-bottom: 0 !important;
+          padding: 16px 20px;
+
+          &:hover,
+          &.active {
+            background-color: #23242c;
+            color: #ffffff !important;
+          }
+
+          .ripple {
+            background: rgba(#ffffff, 0.1);
+          }
+        }
+      }
+    }
+
+    .drawer-container {
+      background-color: #f7f7f7;
+      margin-left: 250px !important;
+      padding: 32px;
+    }
+  }
 }
