@@ -1,0 +1,15 @@
+$collapsible-background: transparent;
+$collapsible-box-shadow: none;
+$collapsible-content-background: transparent;
+$collapsible-title-background: transparent;
+$collapsible-title-color: #FFFFFF;
+$collapsible-title-padding: 16px 24px;
+$collapsible-title-hover-background: rgba(#FFFFFF, 0.1);
+
+.materialize-icon.materialize-collapsible-title-icon {
+  color: #FFFFFF;
+}
+
+.materialize-collapsible-content {
+  box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.1);
+}
