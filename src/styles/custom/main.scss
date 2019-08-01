@@ -7,8 +7,10 @@ $font-weight-medium: 400;
 $font-weight-bold: 500;
 $font-weight-black: 600;
 
+@import './components/cards';
+@import './components/collapsible';
 @import './components/fonts';
-@import './components/headings';
+@import './components/navbar';
 
 body {
   font-family: $font-family-primary !important;
