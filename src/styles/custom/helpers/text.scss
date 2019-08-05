@@ -1,0 +1,29 @@
+$grey-text-color: #6a6a6a !important;
+$heading-font-weight: 200;
+$heading-line-height: 1.1;
+$paragraph-font-size: 14px;
+$paragraph-font-weight: 300;
+$paragraph-line-height: 1.6;
+
+body {
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+  }
+
+  .grey-text {
+    color: $grey-text-color;
+  }
+
+  p {
+    font-size: $paragraph-font-size;
+    font-weight: $paragraph-font-weight;
+    margin: 12px 0 12px;
+    line-height: $paragraph-line-height;
+  }
+}

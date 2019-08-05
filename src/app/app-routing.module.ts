@@ -35,6 +35,7 @@ import { CardPageComponent } from './css/card/card.component';
 import { DividerPageComponent } from './css/divider/divider.component';
 import { AboutPageComponent } from './about/about.component';
 import { GettingStartedPageComponent } from './getting-started/getting-started.component';
+import { FooterPageComponent } from './layout/footer/footer.component';
 
 const appRoutes: Routes = [{
   path: 'home',
@@ -147,6 +148,10 @@ const appRoutes: Routes = [{
     {
       component: DrawerPageComponent,
       path: 'drawer'
+    },
+    {
+      component: FooterPageComponent,
+      path: 'footer'
     },
     {
       component: NavbarPageComponent,

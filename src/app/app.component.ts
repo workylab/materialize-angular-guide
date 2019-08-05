@@ -117,6 +117,9 @@ export class AppComponent {
         text: translations.drawer.layout.children.navbar,
         link: '/navbar'
       }, {
+        text: translations.drawer.layout.children.footer,
+        link: 'footer'
+      }, {
         text: translations.drawer.layout.children.tab,
         link: '/tab'
       }]

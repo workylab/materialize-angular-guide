@@ -39,6 +39,7 @@ import { CardPageComponent } from './css/card/card.component';
 import { DividerPageComponent } from './css/divider/divider.component';
 import { AboutPageComponent } from './about/about.component';
 import { GettingStartedPageComponent } from './getting-started/getting-started.component';
+import { FooterPageComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     DividerPageComponent,
     DropdownPageComponent,
     DrawerPageComponent,
+    FooterPageComponent,
     FormsPageComponent,
     GettingStartedPageComponent,
     HomePageComponent,

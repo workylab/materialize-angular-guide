@@ -11,6 +11,10 @@ $font-weight-black: 600;
 @import './components/collapsible';
 @import './components/fonts';
 @import './components/navbar';
+@import './components/footer';
+@import './helpers/text';
+@import './helpers/images';
+@import './components/buttons';
 
 body {
   font-family: $font-family-primary !important;

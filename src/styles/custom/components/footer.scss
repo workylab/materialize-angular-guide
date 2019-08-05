@@ -1,0 +1,30 @@
+$footer-border-color: #2a2b34;
+$footer-copyright-font-size: 14px;
+$footer-copyright-font-weight: 200;
+$footer-copyright-height: 20px;
+
+materialize-footer {
+  background-color: transparent;
+  border-top: 1px solid $footer-border-color;
+  color: inherit;
+  display: block;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.footer-copyright {
+  align-items: center;
+  background-color: transparent;
+  color: inherit;
+  display: flex;
+  font-size: $footer-copyright-font-size;
+  font-weight: $footer-copyright-font-weight;
+  justify-content: space-between;
+  min-height: $footer-copyright-height;
+  overflow: hidden;
+  padding: 10px 0 0;
+
+  a {
+    text-decoration: none;
+  }
+}

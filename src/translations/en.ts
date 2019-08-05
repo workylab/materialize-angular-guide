@@ -49,6 +49,7 @@ export const translations: Translations = {
       title: 'Layout',
       children: {
         drawer: 'Drawer',
+        footer: 'Footer',
         navbar: 'Navbar',
         tab: 'Tab'
       }

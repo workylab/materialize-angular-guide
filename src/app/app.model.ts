@@ -54,6 +54,7 @@ export interface DrawerTranslation {
     title: string;
     children: {
       drawer: string;
+      footer: string;
       navbar: string;
       tab: string;
     };

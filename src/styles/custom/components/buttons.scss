@@ -1,0 +1,21 @@
+$btn-background-color: #6a6a6a;
+$btn-border-radius: 2px;
+$btn-color: #fff;
+$btn-font-size: 14px;
+$btn-height: 36px;
+
+.btn {
+  background-color: $btn-background-color;
+  border: none;
+  border-radius: $btn-border-radius;
+  color: $btn-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $btn-font-size;
+  height: $btn-height;
+  line-height: $btn-height;
+  padding: 0 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
