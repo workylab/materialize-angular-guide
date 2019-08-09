@@ -14,7 +14,18 @@ import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
 import { ListPageComponent } from './components/list/list.component';
 import { IconPageComponent } from './css/icon/icon.component';
-import { MaterializeComponentsModule } from 'materialize-angular';
+import {
+  MaterializeAccordionModule,
+  MaterializeCardModule,
+  MaterializeCheckboxModule,
+  MaterializeCollapsibleModule,
+  MaterializeDrawerModule,
+  MaterializeGlossaryModule,
+  MaterializeHTMLVisualizerModule,
+  MaterializeNavbarModule,
+  MaterializeScrollSpyModule,
+  MaterializeTabGroupModule,
+} from 'materialize-angular';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
 import { NgModule } from '@angular/core';
@@ -85,7 +96,16 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
   imports: [
     AppRoutingModule,
     BrowserModule,
-    MaterializeComponentsModule,
+    MaterializeAccordionModule,
+    MaterializeCardModule,
+    MaterializeCheckboxModule,
+    MaterializeCollapsibleModule,
+    MaterializeDrawerModule,
+    MaterializeGlossaryModule,
+    MaterializeHTMLVisualizerModule,
+    MaterializeNavbarModule,
+    MaterializeScrollSpyModule,
+    MaterializeTabGroupModule,
     RouterModule
   ],
   providers: [],
