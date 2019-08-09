@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "alias": ["materialize.workylab.com", "materialize-angular.workylab.com"],
+    "builds": [
+        { 
+            "src": "package.json",
+            "use": "@now/static-build"
+        }
+    ],
+    "routes": [
+        { 
+            "src": "/(.*)", "dest": "materialize-angular-guide/$1"
+        }
+    ]
+  }
