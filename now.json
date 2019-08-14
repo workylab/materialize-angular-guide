@@ -8,8 +8,10 @@
         }
     ],
     "routes": [
-        { 
-            "src": "/(.*)", "dest": "materialize-angular-guide/$1"
-        }
+            {"src": "^/main(.*)", "dest": "/materialize-angular-guide/main$1"},
+            {"src": "^/polyfills(.*)", "dest": "/materialize-angular-guide/polyfills$1"},
+            {"src": "^/styles(.*)", "dest": "/materialize-angular-guide/styles$1"},
+            {"src": "^/runtime(.*)", "dest": "/materialize-angular-guide/runtime$1"},
+            {"src": "^/(.*)", "dest": "/materialize-angular-guide/index.html"}
     ]
   }
