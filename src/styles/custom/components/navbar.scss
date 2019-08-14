@@ -1,1 +1,29 @@
 $navbar-background: #171B2C;
+$navbar-box-shadow: -5px 0 5px 0 rgba(32, 30, 41, 0.73);
+$navbar-height: 70px;
+
+materialize-navbar .materialize-navbar {
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.navbar-logo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  padding: 12px 0;
+  width: max-content;
+
+  img {
+    max-height: 100%;
+  }
+
+  p {
+    color: #FFFFFF;
+    padding: 0 12px;
+  }
+}

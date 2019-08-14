@@ -3,6 +3,9 @@
 @import './styles/main';
 
 $materialize-fonts-path: '~materialize-angular/fonts';
-$font-family-primary: 'Arial';
 
 @import '~materialize-angular/styles/materialize-angular';
+
+body {
+  font-family: $font-family-primary;
+}
