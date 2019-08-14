@@ -2,6 +2,10 @@
 
 @import './styles/main';
 
-$materialize-fonts-path: '../node_modules/materialize-angular/fonts/assets';
+$materialize-fonts-path: '~materialize-angular/fonts';
 
-@import 'materialize-angular/styles/materialize-angular.scss';
+@import '~materialize-angular/styles/materialize-angular';
+
+body {
+  font-family: $font-family-primary;
+}

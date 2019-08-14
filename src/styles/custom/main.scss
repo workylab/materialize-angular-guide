@@ -9,9 +9,7 @@ $font-weight-black: 600;
 
 @import './components/cards';
 @import './components/collapsible';
+@import './components/drawer';
 @import './components/fonts';
 @import './components/navbar';
 
-body {
-  font-family: $font-family-primary !important;
-}

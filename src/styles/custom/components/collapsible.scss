@@ -1,15 +1,24 @@
 $collapsible-background: transparent;
 $collapsible-box-shadow: none;
-$collapsible-content-background: transparent;
-$collapsible-title-background: transparent;
-$collapsible-title-color: #FFFFFF;
-$collapsible-title-padding: 16px 24px;
-$collapsible-title-hover-background: rgba(#FFFFFF, 0.1);
 
-.materialize-icon.materialize-collapsible-title-icon {
-  color: #FFFFFF;
+$collapsible-title-background: transparent;
+$collapsible-title-icon-color: #D3D3D3;
+$collapsible-title-icon-right: 16px;
+$collapsible-title-color: #D3D3D3;
+$collapsible-title-font-weight: $font-weight-light;
+$collapsible-title-padding: 15px 20px;
+$collapsible-title-hover-background: #171B2C;
+
+$collapsible-content-background: #171B2C;
+
+.materialize-collapsible.open .materialize-collapsible-title {
+  background: #171B2C;
 }
 
 .materialize-collapsible-content {
   box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.materialize-collapsible-title-icon {
+  color: #D3D3D3 !important;
 }
