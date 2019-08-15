@@ -15,6 +15,8 @@
             {"src": "^/vendor(.*)", "dest": "/materialize-angular-guide/vendor$1"},
             {"src": "^/es2015-(.*)", "dest": "/materialize-angular-guide/es2015-$1"},      
             {"src": "^/(.*).ttf", "dest": "/materialize-angular-guide/$1.ttf"},
+            {"src": "^/(.*).woff2", "dest": "/materialize-angular-guide/$1.woff2"},
+            {"src": "^/(.*).svg", "dest": "/materialize-angular-guide/$1.svg"},      
             {"src": "^/(.*)", "dest": "/materialize-angular-guide/index.html"}
     ]
   }
