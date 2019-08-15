@@ -12,6 +12,8 @@
             {"src": "^/polyfills(.*)", "dest": "/materialize-angular-guide/polyfills$1"},
             {"src": "^/styles(.*)", "dest": "/materialize-angular-guide/styles$1"},
             {"src": "^/runtime(.*)", "dest": "/materialize-angular-guide/runtime$1"},
+            {"src": "^/vendor(.*)", "dest": "/materialize-angular-guide/vendor$1"},
+            {"src": "^/es2015-(.*)", "dest": "/materialize-angular-guide/es2015-$1"},      
             {"src": "^/(.*).ttf", "dest": "/materialize-angular-guide/$1.ttf"},
             {"src": "^/(.*)", "dest": "/materialize-angular-guide/index.html"}
     ]
