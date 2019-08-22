@@ -1,58 +1,26 @@
-<materialize-scroll-spy className="main-container" #scrollSpy>
-  <materialize-scroll-spy-item id="title">
-    <h1>ACCORDION</h1>
-
-    <materialize-card>
-
-      The <b>materialize-accordion</b> component is useful for reducing vertical space with
-      large amounts of information. The default functionality of the component is to only
-      display one expansion-panel body at a time.
-    </materialize-card>
-  </materialize-scroll-spy-item>
-  <materialize-scroll-spy-item id="usage">
-    <h1>USAGE</h1>
-
-    <materialize-card>
-      Expansion panels in their simplest form display a list of expandable items.
-
-      <materialize-accordion>
-        <materialize-collapsible>
-          <materialize-collapsible-title>Collapsible 1</materialize-collapsible-title>
-          <materialize-collapsible-content>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint magnam impedit repellendus excepturi deleniti blanditiis optio ratione porro esse, beatae iste adipisci debitis, nisi reprehenderit in ipsam molestias placeat.
-          </materialize-collapsible-content>
-        </materialize-collapsible>
-        <materialize-collapsible>
-          <materialize-collapsible-title>Collapsible 2</materialize-collapsible-title>
-          <materialize-collapsible-content>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint magnam impedit repellendus excepturi deleniti blanditiis optio ratione porro esse, beatae iste adipisci debitis, nisi reprehenderit in ipsam molestias placeat.
-          </materialize-collapsible-content>
-        </materialize-collapsible>
-      </materialize-accordion>
-
-      <materialize-html-visualizer html="
-        <materialize-accordion>
-          <materialize-collapsible>
-            <materialize-collapsible-title>Collapsible 1</materialize-collapsible-title>
-            <materialize-collapsible-content>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint magnam impedit repellendus excepturi deleniti blanditiis optio ratione porro esse, beatae iste adipisci debitis, nisi reprehenderit in ipsam molestias placeat.
-            </materialize-collapsible-content>
-          </materialize-collapsible>
-          <materialize-collapsible>
-            <materialize-collapsible-title>Collapsible 2</materialize-collapsible-title>
-            <materialize-collapsible-content>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint magnam impedit repellendus excepturi deleniti blanditiis optio ratione porro esse, beatae iste adipisci debitis, nisi reprehenderit in ipsam molestias placeat.
-            </materialize-collapsible-content>
-          </materialize-collapsible>
-        </materialize-accordion>
-      ">
-      </materialize-html-visualizer>
-    </materialize-card>
-  </materialize-scroll-spy-item>
-  <materialize-scroll-spy-item id="api">
-    <materialize-card>
-      <h1>API</h1>
-
+<div class="row">
+  <materialize-scroll-spy class="col-10" #scrollSpy>
+    <materialize-scroll-spy-item id="title">
+      <h1>ACCORDION</h1>
+  
+      <p>
+        The <b>materialize-accordion</b> component is useful for reducing vertical space with
+        large amounts of information. The default functionality of the component is to only
+        display one expansion-panel body at a time.
+      </p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="usage">
+      <h2>USAGE</h2>
+      <p>Expansion panels in their simplest form display a list of expandable items.</p>
+  
+      <p>Example</p>
+      <p>Visualizer</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="api">    
+      <h2>API</h2>
+  
       <table>
         <tr>
           <td>Prop</td>
@@ -65,45 +33,37 @@
           <td>''</td>
         </tr>
       </table>
-    </materialize-card>
-  </materialize-scroll-spy-item>
-  <materialize-scroll-spy-item id="theming">
-    <materialize-card>
-      <h1>THEMING</h1>
-
-      CSS variables here...
-    </materialize-card>
-  </materialize-scroll-spy-item>
-  <materialize-scroll-spy-item id="playground">
-    <h1>PLAYGROUND</h1>
-
-    <materialize-card>
-      One example with all variants as checkbox or switch controls
-    </materialize-card>
-  </materialize-scroll-spy-item>
-  <materialize-scroll-spy-item id="examples">
-    <h1>EXAMPLES</h1>
-
-    <materialize-card>
-      Many examples of them with title
-    </materialize-card>
-  </materialize-scroll-spy-item>
-  <materialize-scroll-spy-item id="up_next">
-    <h1>NEXT</h1>
-
-    <materialize-card>
-      More components here...
-    </materialize-card>
-  </materialize-scroll-spy-item>
-</materialize-scroll-spy>
-
-<materialize-glossary className="right-container" [scrollSpy]="scrollSpy">
-  <h2>Contents</h2>
-  <materialize-glossary-item referenceId="title">Accordion</materialize-glossary-item>
-  <materialize-glossary-item referenceId="usage">Usage</materialize-glossary-item>
-  <materialize-glossary-item referenceId="api">API</materialize-glossary-item>
-  <materialize-glossary-item referenceId="theming">Theming</materialize-glossary-item>
-  <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
-  <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
-  <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
-</materialize-glossary>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="theming">
+      <h2>THEMING</h2>
+      <p>CSS variables here...</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="playground">
+      <h2>PLAYGROUND</h2>
+      <p>One example with all variants as checkbox or switch controls</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="examples">
+      <h2>EXAMPLES</h2>
+      <p>Many examples of them with title</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="up_next">
+      <h2>NEXT</h2>
+      <p>More components here...</p>
+    </materialize-scroll-spy-item>
+  </materialize-scroll-spy>
+  
+  <materialize-glossary class="col-2"[scrollSpy]="scrollSpy">
+    <h2>Contents</h2>
+    <materialize-glossary-item referenceId="title">Accordion</materialize-glossary-item>
+    <materialize-glossary-item referenceId="usage">Usage</materialize-glossary-item>
+    <materialize-glossary-item referenceId="api">API</materialize-glossary-item>
+    <materialize-glossary-item referenceId="theming">Theming</materialize-glossary-item>
+    <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
+    <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
+    <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
+  </materialize-glossary>      
+</div>
