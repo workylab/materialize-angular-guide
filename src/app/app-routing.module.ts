@@ -36,7 +36,13 @@ import { DividerPageComponent } from './css/divider/divider.component';
 import { AboutPageComponent } from './about/about.component';
 import { GettingStartedPageComponent } from './getting-started/getting-started.component';
 
-const appRoutes: Routes = [{
+const appRoutes: Routes = [
+{
+  path: '',
+  pathMatch: 'full',
+  redirectTo: 'home'
+},
+{
   path: 'home',
   component: HomePageComponent
 },
@@ -183,11 +189,6 @@ const appRoutes: Routes = [{
 {
   path: 'theme',
   component: ThemePageComponent
-},
-{
-  path: '',
-  pathMatch: 'full',
-  redirectTo: 'home'
 }];
 
 @NgModule({
