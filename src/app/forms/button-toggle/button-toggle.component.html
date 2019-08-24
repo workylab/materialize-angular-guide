@@ -10,10 +10,41 @@
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Button toggles...</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeButtonToggleGroupModule</span> in your module.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-button-toggle-group</span> tag in your template.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-button-toggle</span> tag into your <span class="text-accent secondary">materialize-button-toggle-group</span>
+          to show and register each button.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-button-toggle-group value="B">
+              <materialize-button-toggle value="A">Option A</materialize-button-toggle>
+              <materialize-button-toggle value="B">Option B</materialize-button-toggle>
+              <materialize-button-toggle value="C">Option C</materialize-button-toggle>
+            </materialize-button-toggle-group>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-button-toggle-group value="B">
+            <materialize-button-toggle value="A">Option A</materialize-button-toggle>
+            <materialize-button-toggle value="B">Option B</materialize-button-toggle>
+            <materialize-button-toggle value="C">Option C</materialize-button-toggle>
+          </materialize-button-toggle-group>
+        </p>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="api">    

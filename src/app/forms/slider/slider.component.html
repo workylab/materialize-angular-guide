@@ -10,10 +10,53 @@
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Sliders...</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeSliderModule</span> in your module.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-slider</span> tag in your template.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-slider-option</span> tag into your <span class="text-accent secondary">materialize-slider</span>
+          to show and register each option.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-slider-indicator</span> tag in your <span class="text-accent secondary">materialize-slider</span>
+          to display the indicator you prefer.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-slider value="B">
+              <materialize-slider-indicator>
+                <img src="https://via.placeholder.com/20x20" />
+              </materialize-slider-indicator>
+
+              <materialize-slider-option value="A">Option A</materialize-slider-option>
+              <materialize-slider-option value="B">Option B</materialize-slider-option>
+              <materialize-slider-option value="C">Option C</materialize-slider-option>
+            </materialize-slider>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-slider value="B">
+            <materialize-slider-indicator>
+              <img src="https://via.placeholder.com/20x20/5707EB/FFFFFF" />
+            </materialize-slider-indicator>
+
+            <materialize-slider-option value="A">Option A</materialize-slider-option>
+            <materialize-slider-option value="B">Option B</materialize-slider-option>
+            <materialize-slider-option value="C">Option C</materialize-slider-option>
+          </materialize-slider>
+        </p>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="api">    

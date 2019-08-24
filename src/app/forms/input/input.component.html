@@ -10,10 +10,29 @@
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Inputs...</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeInputModule</span> in your module.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-input</span> tag in your template.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-input floatLabel="This is my input field"></materialize-input>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-input floatLabel="This is my input field"></materialize-input>
+        </p>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="api">    
@@ -45,7 +64,61 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+
+      <h3>Simple input example</h3>
+      
+      <materialize-input></materialize-input>
+      Input Password
+      <materialize-input type="password"></materialize-input>
+      Input with Value
+      <materialize-input value="My value"></materialize-input>
+      Input with Counter
+      <materialize-input [hasCounter]="true"></materialize-input>
+      Input with Placeholder
+      <materialize-input label="Placeholder" placeholder="Write here"></materialize-input>
+      Input Disabled
+      <materialize-input [disabled]="true"></materialize-input>
+      Input Disabled and value
+      <materialize-input [disabled]="true" value="My value"></materialize-input>
+      Input Float Label with value
+      <materialize-input [disabled]="true" value="My value" floatLabel="Float label"></materialize-input>
+      Input Float Label
+      <materialize-input floatLabel="Float label"></materialize-input>
+      Input Float Label with Placeholder
+      <materialize-input floatLabel="Float Label and placeholder" placeholder="Write here"></materialize-input>
+      Input with Prefix
+      <materialize-input label="With prefix">
+        <span materializePrefix>+1</span>
+      </materialize-input>
+      Input with Prefix Icon
+      <materialize-input>
+        <materialize-icon materializePrefix>phone</materialize-icon>
+      </materialize-input>
+      Input with Prefix and Float Label
+      <materialize-input floatLabel="Float Label">
+        <span materializePrefix>+1</span>
+      </materialize-input>
+      Input with Prefix Icon and Float Label
+      <materialize-input floatLabel="Float Label">
+        <materialize-icon materializePrefix>phone</materialize-icon>
+      </materialize-input>
+      Input with Suffix
+      <materialize-input>
+        <span materializeSuffix>.00</span>
+      </materialize-input>
+      Input with Suffix Icon
+      <materialize-input>
+        <materialize-icon materializeSuffix>phone</materialize-icon>
+      </materialize-input>
+      Input with Suffix and Float Label
+      <materialize-input floatLabel="Float Label">
+        <span materializeSuffix>.00</span>
+      </materialize-input>
+      Input with Suffix Icon and FloatLabel
+      <materialize-input floatLabel="Float Label">
+        <materialize-icon materializeSuffix>phone</materialize-icon>
+      </materialize-input>
+
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">
