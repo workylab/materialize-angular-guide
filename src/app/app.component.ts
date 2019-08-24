@@ -63,12 +63,12 @@ export class AppComponent {
       }, {
         text: translations.drawer.forms.children.checkbox,
         link: '/checkbox'
-      }, {
-        text: translations.drawer.forms.children.checkboxList,
-        link: '/checkbox-list'
-      }, {
-        text: translations.drawer.forms.children.datePicker,
-        link: '/date-picker'
+      // }, {
+      //   text: translations.drawer.forms.children.checkboxList,
+      //   link: '/checkbox-list'
+      // }, {
+      //   text: translations.drawer.forms.children.datePicker,
+      //   link: '/date-picker'
       }, {
         text: translations.drawer.forms.children.input,
         link: '/input'

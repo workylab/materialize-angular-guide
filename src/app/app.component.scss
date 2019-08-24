@@ -1,4 +1,8 @@
 ::ng-deep {
+  body {
+    background: #F8F8F8;
+  }
+
   h1 {
     font-size: 32px;
     font-weight: 300;
@@ -11,10 +15,40 @@
     margin-bottom: 16px;
   }
 
+  h3 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
   p {
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
     margin-bottom: 32px;
+  }
+
+  .margin-bottom-sm {
+    margin-bottom: 6px;
+  }
+
+  .no-margin {
+    margin: 0;
+  }
+
+  .text-indent {
+    padding-left: 20px;
+  }
+
+  .text-accent {
+    background: #008FFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 0 6px;
+
+    &.secondary {
+      background: #5707EB;
+    }
   }
 }
