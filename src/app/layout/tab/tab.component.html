@@ -10,10 +10,39 @@
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Tabs...</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeTabModule</span> in your module.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-tab-group</span> tag in your template.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-tab-group</span> tag into your <span class="text-accent secondary">materialize-tab-group</span>
+          to display your tab title and tab content.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-tab-group>
+              <materialize-tab title="Tab A">Tab A</materialize-tab>
+              <materialize-tab title="Tab B">Tab B</materialize-tab>
+            </materialize-tab-group>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <div class="text-indent">
+          <materialize-tab-group>
+            <materialize-tab title="Tab A">Tab A</materialize-tab>
+            <materialize-tab title="Tab B">Tab B</materialize-tab>
+          </materialize-tab-group>
+        </div>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="api">    

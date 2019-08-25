@@ -16,9 +16,12 @@ import { ListPageComponent } from './components/list/list.component';
 import { IconPageComponent } from './css/icon/icon.component';
 import {
   MaterializeAccordionModule,
+  MaterializeButtonModule,
+  MaterializeButtonToggleGroupModule,
   MaterializeCardModule,
   MaterializeCheckboxModule,
   MaterializeCollapsibleModule,
+  MaterializeCommonModule,
   MaterializeDrawerModule,
   MaterializeGlossaryModule,
   MaterializeHTMLVisualizerModule,
@@ -28,12 +31,12 @@ import {
   MaterializeTabGroupModule,
   MaterializeIconModule,
   MaterializeLabelModule,
+  MaterializeModalModule,
   MaterializeRadioGroupModule,
   MaterializeSelectModule,
   MaterializeTextAreaModule,
   MaterializeSwitchModule,
-  MaterializeSliderModule,
-  MaterializeButtonToggleGroupModule
+  MaterializeSliderModule
 } from 'materialize-angular';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
@@ -106,16 +109,19 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     AppRoutingModule,
     BrowserModule,
     MaterializeAccordionModule,
+    MaterializeButtonModule,
     MaterializeButtonToggleGroupModule,
     MaterializeCardModule,
     MaterializeCheckboxModule,
     MaterializeCollapsibleModule,
+    MaterializeCommonModule,
     MaterializeDrawerModule,
     MaterializeGlossaryModule,
     MaterializeHTMLVisualizerModule,
     MaterializeIconModule,
     MaterializeInputModule,
     MaterializeLabelModule,
+    MaterializeModalModule,
     MaterializeNavbarModule,
     MaterializeRadioGroupModule,
     MaterializeScrollSpyModule,

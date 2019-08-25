@@ -12,27 +12,51 @@
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Expansion panels in their simplest form display a list of expandable items.</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
-    </materialize-scroll-spy-item>
-  
-    <materialize-scroll-spy-item id="api">    
-      <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeAccordionModule</span> in your module.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-accordion</span> tag in your template.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-accordion-collapsible</span> tag into your <span class="text-accent secondary">materialize-accordion</span>
+          to control all the collapsibles.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-accordion>
+              <materialize-collapsible>
+                <materialize-collapsible-title>Title A</materialize-collapsible-title>
+                <materialize-collapsible-content>Content A</materialize-collapsible-content>
+              </materialize-collapsible>
+              <materialize-collapsible>
+                <materialize-collapsible-title>Title B</materialize-collapsible-title>
+                <materialize-collapsible-content>Content B</materialize-collapsible-content>
+              </materialize-collapsible>
+            </materialize-accordion>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-accordion>
+            <materialize-collapsible>
+              <materialize-collapsible-title>Title A</materialize-collapsible-title>
+              <materialize-collapsible-content>Content A</materialize-collapsible-content>
+            </materialize-collapsible>
+            <materialize-collapsible>
+              <materialize-collapsible-title>Title B</materialize-collapsible-title>
+              <materialize-collapsible-content>Content B</materialize-collapsible-content>
+            </materialize-collapsible>
+          </materialize-accordion>
+        </p>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">

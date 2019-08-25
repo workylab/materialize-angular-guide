@@ -4,16 +4,43 @@
       <h1>MODAL</h1>
   
       <p>
-        The <b>materialize-modal</b> component is a dialog but it's not dismissed when touching outside dialog.
+        The <b>materialize-modal</b> component is a dialog that can be open by calling the open method
+        and it can be dismissed when touching outside dialog or by pressing the close button.
       </p>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Modals...</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeModalModule</span> in your module.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-modal</span> tag in your template.
+        </p>
+        <p class="text-indent">
+          - To open the modal just call the modal open() method.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-modal #myModal>
+              This is a modal
+            </materialize-modal>
+            <materialize-button (onClick)="myModal.open()">Open modal</materialize-button>
+          '></materialize-html-visualizer>
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-modal #modalExample>This is a modal</materialize-modal>
+          <materialize-button (onClick)="modalExample.open()">Open modal</materialize-button>
+        </p>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="api">    

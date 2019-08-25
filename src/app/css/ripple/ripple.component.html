@@ -1,5 +1,86 @@
-<h1>RIPPLE</h1>
+<div class="row">
+  <materialize-scroll-spy class="col-10" #scrollSpy>
+    <materialize-scroll-spy-item id="title">
+      <h1>RIPPLE</h1>
   
-<p>
-  The <b>materialize-ripple</b> component show how a user interact with the site. Can be applied to different componets.
-</p>
+      <p>
+        The <b>materialize-ripple</b> directive show how a user interact with the site. Can be applied to different components.
+      </p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="usage">
+      <h2>USAGE</h2>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeCommonModule</span> in your module.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materializeRipple</span> directive in your html tag.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;"></div>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <div class="text-indent">
+          <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;"></div>
+        </div>
+      </div>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="api">    
+      <h2>API</h2>
+  
+      <table>
+        <tr>
+          <td>Prop</td>
+          <td>Type</td>
+          <td>Default</td>
+        </tr>
+        <tr>
+          <td>className</td>
+          <td>string</td>
+          <td>''</td>
+        </tr>
+      </table>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="theming">
+      <h2>THEMING</h2>
+      <p>CSS variables here...</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="playground">
+      <h2>PLAYGROUND</h2>
+      <p>One example with all variants as checkbox or switch controls</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="examples">
+      <h2>EXAMPLES</h2>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="up_next">
+      <h2>NEXT</h2>
+      <p>More components here...</p>
+    </materialize-scroll-spy-item>
+  </materialize-scroll-spy>
+  
+  <materialize-glossary class="col-2"[scrollSpy]="scrollSpy">
+    <h2>Contents</h2>
+    <materialize-glossary-item referenceId="title">Card</materialize-glossary-item>
+    <materialize-glossary-item referenceId="usage">Usage</materialize-glossary-item>
+    <materialize-glossary-item referenceId="api">API</materialize-glossary-item>
+    <materialize-glossary-item referenceId="theming">Theming</materialize-glossary-item>
+    <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
+    <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
+    <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
+  </materialize-glossary>      
+</div>
+  

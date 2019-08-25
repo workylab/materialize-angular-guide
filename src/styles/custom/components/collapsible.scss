@@ -1,24 +1,31 @@
-$collapsible-background: transparent;
-$collapsible-box-shadow: none;
+.materialize-collapsible.collapsible-guide {
+  background: transparent;
+  box-shadow: none;
 
-$collapsible-title-background: transparent;
-$collapsible-title-icon-color: #D3D3D3;
-$collapsible-title-icon-right: 16px;
-$collapsible-title-color: #D3D3D3;
-$collapsible-title-font-weight: $font-weight-light;
-$collapsible-title-padding: 15px 20px;
-$collapsible-title-hover-background: #171B2C;
+  &.open .materialize-collapsible-title {
+    background: #171B2C;
+  }
 
-$collapsible-content-background: #171B2C;
+  .materialize-collapsible-title {
+    background: transparent !important;
+    color: #D3D3D3;
+    font-weight: $font-weight-light;
+    padding: 15px 20px;
 
-.materialize-collapsible.open .materialize-collapsible-title {
-  background: #171B2C;
-}
+    &:hover {
+      background: #171B2C !important;
+    }
 
-.materialize-collapsible-content {
-  box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.1);
-}
+    .materialize-collapsible-title-icon {
+      color: #D3D3D3 !important;
+      right: 16px;
+    }
+  }
 
-.materialize-collapsible-title-icon {
-  color: #D3D3D3 !important;
+  .materialize-collapsible-content {
+    background: #171B2C;
+    box-shadow: inset 0 -15px 20px rgba(0, 0, 0, 0.1);
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
 }
