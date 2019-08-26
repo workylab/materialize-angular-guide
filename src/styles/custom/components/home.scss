@@ -1,0 +1,45 @@
+.materialize-header {
+  background: linear-gradient(to bottom, #033D80, #62C9FF);
+  margin-left: -36px !important;
+  margin-right: -24px !important;
+  margin-top: -30px;
+  padding: 128px 0 40px;
+}
+
+.component-billboard {
+  h1,
+  h2 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.button-section {
+  padding-top: 60px;
+}
+
+.info-text {
+  margin-top: 24px;
+  padding: 24px 24px 0;
+
+  &.rounded {
+    border: #eee solid thin;
+    border-radius: 4px;
+  }
+}
+
+.sponsor-request {
+  border: #eee solid thin;
+  border-radius: 4px;
+  color: inherit;
+  display: block;
+  line-height: 1.5;
+  padding: 120px 20px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #eee;
+    text-decoration: underline;
+  }
+}
