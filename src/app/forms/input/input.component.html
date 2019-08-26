@@ -37,110 +37,495 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>autocomplete</td>
+              <td>string</td>
+              <td>"none"</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>floatLabel</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>hasCounter</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>string | null</td>
+              <td>null</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>maxLength</td>
+              <td>number</td>
+              <td>500</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>placeholder</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>"password" | "text"</td>
+              <td>"text"</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onFocus</td>
+              <td>onFocusEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+            <tr>
+              <td>onChange</td>
+              <td>onChangeEmitter(): EventEmitter&lt;string&gt;</td>
+              <td>"none"</td>
+            </tr>
+            <tr>
+              <td>onBlur</td>
+              <td>onBlurEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+
+      <div class="card">
+        <h4 class="terciary">.form-control-container</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$form-control-container-background</td>
+              <td>$color-gray-light</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-border-color</td>
+              <td>$color-gray-dark</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-border-radius</td>
+              <td>$radius-sm $radius-sm 0 0</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-border-style</td>
+              <td>solid</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-border-width</td>
+              <td>0 0 $border-sm 0</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-margin</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-outiline</td>
+              <td>none</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-line-bottom</td>
+              <td>-1px</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-line-color</td>
+              <td>$color-purple</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-line-height</td>
+              <td>$border-md</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-line-transition</td>
+              <td>$timer-md $function-ease $property-width</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-line-width</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>$form-control-container-line-z-index</td>
+              <td>$zindex-level-1</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.form-control</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$form-control-caret-color</td>
+              <td>$color-purple</td>
+            </tr>
+            <tr>
+              <td>$form-control-color</td>
+              <td>$color-gray-darkest</td>
+            </tr>
+            <tr>
+              <td>$form-control-font-family</td>
+              <td>$font-family-primary</td>
+            </tr>
+            <tr>
+              <td>$form-control-font-size</td>
+              <td>$font-size-sm</td>
+            </tr>
+            <tr>
+              <td>$form-control-font-weight</td>
+              <td>$font-weight-regular</td>
+            </tr>
+            <tr>
+              <td>$form-control-line-height</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>$form-control-letter-spacing</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>$form-control-padding</td>
+              <td>$space-sm</td>
+            </tr>
+            <tr>
+              <td>$form-control-placeholder-color</td>
+              <td>$color-gray</td>
+            </tr>
+            <tr>
+              <td>$form-control-placeholder-font-weight</td>
+              <td>$font-weight-regular</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.form-control with modifications (.with-label, .active, .disabled, .focused)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$form-control-with-label-padding-top</td>
+              <td>$space-xl</td>
+            </tr>
+            <tr>
+              <td>$form-control-active-label-font-size</td>
+              <td>$font-size-xxs</td>
+            </tr>
+            <tr>
+              <td>$form-control-active-label-top</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>$form-control-focused-container-line-width</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>$form-control-focused-label-color</td>
+              <td>$color-purple</td>
+            </tr>
+            <tr>
+              <td>$form-control-disabled-container-border-color</td>
+              <td>$color-gray</td>
+            </tr>
+            <tr>
+              <td>$form-control-disabled-container-backgorund</td>
+              <td>$color-gray-light</td>
+            </tr>
+            <tr>
+              <td>$form-control-disabled-label-color</td>
+              <td>$color-gray</td>
+            </tr>
+            <tr>
+              <td>$form-control-disabled-color</td>
+              <td>$color-gray</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.form-control-label</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$form-control-label-background</td>
+              <td>$color-gray-light</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-color</td>
+              <td>$color-gray-dark</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-font-family</td>
+              <td>$font-family-primary</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-font-size</td>
+              <td>$font-size-sm</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-font-weight</td>
+              <td>$font-weight-regular</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-letter-spacing</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-transition-duration</td>
+              <td>$timer-sm</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-transition-function</td>
+              <td>$function-ease</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-transition-property</td>
+              <td>$property-top $property-font-size</td>
+            </tr>
+            <tr>
+              <td>$form-control-label-padding</td>
+              <td>$space-xs $space-sm $space-xxxs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
       <h2>PLAYGROUND</h2>
-      <p>One example with all variants as checkbox or switch controls</p>
+      
+      <div class="card">
+        <table class="table-guide table-playground">
+          <thead>
+            <tr>
+              <td>Option</td>
+              <td>Result</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <materialize-checkbox (onChange)="onChangeDisabled($event)">disabled</materialize-checkbox>
+                <materialize-checkbox (onChange)="onChangeHasCounter($event)">hasCounter</materialize-checkbox>
+                <materialize-checkbox (onChange)="onChangeHasPrefix($event)">hasPrefix</materialize-checkbox>
+                <materialize-checkbox (onChange)="onChangeHasSuffix($event)">hasSuffix</materialize-checkbox>
+                <materialize-checkbox (onChange)="onChangeType($event)">typePassword</materialize-checkbox>
+                <materialize-label>float label</materialize-label>
+                <materialize-input (onChangeEmitter)="onChangeFloatLabel($event)">floatLabel</materialize-input>
+                <materialize-label>placeholder</materialize-label>
+                <materialize-input (onChangeEmitter)="onChangePlaceholder($event)">placeholder</materialize-input>
+                <materialize-label>value</materialize-label>
+                <materialize-input (onChangeEmitter)="onChangeValue($event)">value</materialize-input>
+              </td>
+              <td>
+                <materialize-input
+                  [disabled]="disabled"
+                  [floatLabel]="floatLabel"
+                  [hasCounter]="hasCounter"
+                  [placeholder]="placeholder"
+                  [type]="type"
+                  [value]="value">
+                  <span materializePrefix *ngIf="hasPrefix">+52</span>
+                  <span materializeSuffix *ngIf="hasSuffix">.00</span>
+                </materialize-input>
+              </td>  
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-
-      <h3>Simple input example</h3>
       
       <div class="card">
-        
-        <h3>Input Password</h3>
-        <materialize-input type="password"></materialize-input>
+        <div class="example-container">
+          <h3>Simple input</h3>
+          <materialize-input></materialize-input>
+        </div>
 
-        <h3>Input with Value</h3>
-        <materialize-input value="My value"></materialize-input>
+        <div class="example-container">
+          <h3>Input type password</h3>
+          <materialize-input type="password"></materialize-input>
+        </div>
 
-        <h3>Input with Counter</h3>
-        <materialize-input [hasCounter]="true"></materialize-input>
+        <div class="example-container">
+          <h3>Input with Value</h3>
+          <materialize-input value="My value"></materialize-input>
+        </div>
 
-        <h3>Input with Placeholder</h3>
-        <materialize-input label="Placeholder" placeholder="Write here"></materialize-input>
+        <div class="example-container">
+          <h3>Input with Counter</h3>
+          <materialize-input [hasCounter]="true"></materialize-input>
+        </div>
 
-        <h3>Input Disabled</h3>
-        <materialize-input [disabled]="true"></materialize-input>
+        <div class="example-container">
+          <h3>Input with Placeholder</h3>
+          <materialize-input label="Placeholder" placeholder="Write here"></materialize-input>
+        </div>
 
-        <h3>Input Disabled and value</h3>
-        <materialize-input [disabled]="true" value="My value"></materialize-input>
+        <div class="example-container">
+          <h3>Input Disabled</h3>
+          <materialize-input [disabled]="true"></materialize-input>
+        </div>
 
-        <h3>Input Float Label with value</h3>
-        <materialize-input [disabled]="true" value="My value" floatLabel="Float label"></materialize-input>
+        <div class="example-container">
+          <h3>Input Disabled and value</h3>
+          <materialize-input [disabled]="true" value="My value"></materialize-input>
+        </div>
 
-        <h3>Input Float Label</h3>
-        <materialize-input floatLabel="Float label"></materialize-input>
+        <div class="example-container">
+          <h3>Input Float Label with value</h3>
+          <materialize-input [disabled]="true" value="My value" floatLabel="Float label"></materialize-input>
+        </div>
 
-        <h3>Input Float Label with Placeholder</h3>
-        <materialize-input floatLabel="Float Label and placeholder" placeholder="Write here"></materialize-input>
+        <div class="example-container">
+          <h3>Input Float Label</h3>
+          <materialize-input floatLabel="Float label"></materialize-input>
+        </div>
 
-        <h3>Input with Prefix</h3>
-        <materialize-input label="With prefix">
-          <span materializePrefix>+1</span>
-        </materialize-input>
+        <div class="example-container">
+          <h3>Input Float Label with Placeholder</h3>
+          <materialize-input floatLabel="Float Label and placeholder" placeholder="Write here"></materialize-input>
+        </div>
 
-        <h3>Input with Prefix Icon</h3>
-        <materialize-input>
-          <materialize-icon materializePrefix>phone</materialize-icon>
-        </materialize-input>
+        <div class="example-container">
+          <h3>Input with Prefix</h3>
+          <materialize-input floatLabel="Float Label">
+              <materialize-icon materializePrefix>phone</materialize-icon>
+            </materialize-input>
+        </div>
 
-        <h3>Input with Prefix and Float Label</h3>
-        <materialize-input floatLabel="Float Label">
-          <span materializePrefix>+1</span>
-        </materialize-input>
-
-        <h3>Input with Prefix Icon and Float Label</h3>
-        <materialize-input floatLabel="Float Label">
-          <materialize-icon materializePrefix>phone</materialize-icon>
-        </materialize-input>
-
-        <h3>Input with Suffix</h3>
-        <materialize-input>
-          <span materializeSuffix>.00</span>
-        </materialize-input>
-
-        <h3>Input with Suffix Icon</h3>
-        <materialize-input>
-          <materialize-icon materializeSuffix>phone</materialize-icon>
-        </materialize-input>
-
-        <h3>Input with Suffix and Float Label</h3>
-        <materialize-input floatLabel="Float Label">
-          <span materializeSuffix>.00</span>
-        </materialize-input>
-
-        <h3>Input with Suffix Icon and FloatLabel</h3>
-        <materialize-input floatLabel="Float Label">
-          <materialize-icon materializeSuffix>phone</materialize-icon>
-        </materialize-input>
+        <div class="example-container">
+          <h3>Input with Suffix</h3>
+          <materialize-input>
+            <span materializeSuffix>.00</span>
+          </materialize-input>
+        </div>
       </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">
-      <h2>NEXT</h2>
-      <p>More components here...</p>
+      <h2>UP NEXT</h2>
+      <div class="up-next-container">
+        <div class="up-next-item">
+          <div class="card">
+            <p>TextArea</p>
+            <materialize-icon>chevron_right</materialize-icon>
+          </div>
+        </div>
+        <div class="up-next-item">
+          <div class="card">
+            <p>Select</p>
+            <materialize-icon>chevron_right</materialize-icon>
+          </div>
+        </div>
+        <div class="up-next-item">
+          <div class="card">
+            <p>Switch</p>
+            <materialize-icon>chevron_right</materialize-icon>
+          </div>
+        </div>
+      </div>
     </materialize-scroll-spy-item>
   </materialize-scroll-spy>
   

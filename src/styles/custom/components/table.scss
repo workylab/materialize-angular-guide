@@ -1,0 +1,34 @@
+.table-guide {
+  width: 100%;
+
+  &.table-sass td {
+    width: 50%;
+  }
+
+  &.table-playground tbody {
+    td:first-child {
+      width: 300px;
+    }
+
+    td:last-child {
+      vertical-align: middle;
+    }
+  }
+
+  td {
+    font-weight: 300;
+    padding: 12px 20px;
+  }
+
+  thead td {
+    border-bottom: 1px solid #E2E2E2;
+    color: #666666;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  tbody td:not(:first-child) {
+    border-left: 1px solid #E2E2E2;
+    font-weight: 200;
+  }
+}
