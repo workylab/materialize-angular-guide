@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DrawerTranslation } from './app.model';
 import { translations } from './../translations/en';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ export class AppComponent {
   public translations: DrawerTranslation = translations.drawer;
   public drawerItems: Array<any>;
 
-  constructor() {
+  constructor(private router: Router) {
     this.drawerItems = [{
       text: translations.drawer.home.title,
       link: '/home'
@@ -124,5 +125,9 @@ export class AppComponent {
       text: translations.drawer.themes.title,
       link: '/themes'
     }];
+  }
+
+  isActive(route: string): boolean {
+    return this.router.isActive(route, false);
   }
 }

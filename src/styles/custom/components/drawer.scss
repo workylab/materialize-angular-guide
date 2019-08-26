@@ -6,7 +6,7 @@
   >.materialize-drawer-content {
     background: #313545;
     overflow: auto;
-    padding-top: 100px;
+    padding-top: 90px;
     width: 270px;
   }
   
@@ -15,6 +15,32 @@
     cursor: pointer;
     font-weight: $font-weight-light;
     outline: none;
-    padding: 15px 20px;
+    padding: 18px 25px;
+
+    &.active {
+      background: #008FFF;
+      color: #FFFFFF;
+      font-weight: 500;
+      position: relative;
+
+      &::after,
+      &::before {
+        content: '';
+        background: #313545;
+        position: absolute;
+        height: 100%;
+        left: 3px;
+        top: 0;
+        width: 3px;
+      }
+
+      &::after {
+        left: 9px;
+      }
+    }
+
+    .ripple {
+      background-color: rgba(#FFFFFF, 0.2) !important;
+    }
   }  
 }
