@@ -78,7 +78,52 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Simple collapsible</h3>
+        <materialize-collapsible>
+          <materialize-collapsible-title>Title</materialize-collapsible-title>
+          <materialize-collapsible-content>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Aliquam minima soluta enim porro atque placeat quis commodi
+            deserunt veniam libero molestiae doloremque eveniet incidunt,
+            odit expedita cupiditate est tenetur reprehenderit.
+          </materialize-collapsible-content>
+        </materialize-collapsible>
+        
+        <h3>Collapsible open</h3>
+        <materialize-collapsible [isOpen]="true">
+          <materialize-collapsible-title>Title</materialize-collapsible-title>
+          <materialize-collapsible-content>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Aliquam minima soluta enim porro atque placeat quis commodi
+            deserunt veniam libero molestiae doloremque eveniet incidunt,
+            odit expedita cupiditate est tenetur reprehenderit.
+          </materialize-collapsible-content>
+        </materialize-collapsible>
+        
+        <h3>Collapsible disabled</h3>
+        <materialize-collapsible [disabled]="true">
+          <materialize-collapsible-title>Title</materialize-collapsible-title>
+          <materialize-collapsible-content>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Aliquam minima soluta enim porro atque placeat quis commodi
+            deserunt veniam libero molestiae doloremque eveniet incidunt,
+            odit expedita cupiditate est tenetur reprehenderit.
+          </materialize-collapsible-content>
+        </materialize-collapsible>
+
+        <h3>Collapsible open disabled</h3>
+        <materialize-collapsible [isOpen]="true" [disabled]="true">
+          <materialize-collapsible-title>Title</materialize-collapsible-title>
+          <materialize-collapsible-content>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Aliquam minima soluta enim porro atque placeat quis commodi
+            deserunt veniam libero molestiae doloremque eveniet incidunt,
+            odit expedita cupiditate est tenetur reprehenderit.
+          </materialize-collapsible-content>
+        </materialize-collapsible>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

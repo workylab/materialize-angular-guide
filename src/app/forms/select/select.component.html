@@ -73,7 +73,80 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Native Select</h3>
+        <materialize-select [isNativeControl]="true">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+        
+        <h3>Native Select with value</h3>
+        <materialize-select [isNativeControl]="true" value="2">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Native Select disabled</h3>
+        <materialize-select [isNativeControl]="true" [disabled]="true">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Native Select with float label</h3>
+        <materialize-select [isNativeControl]="true" floatLabel="Select">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Native Select disabled with value</h3>
+        <materialize-select [isNativeControl]="true" [disabled]="true" value="2">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Native Select disabled with value and float label</h3>
+        <materialize-select [isNativeControl]="true" [disabled]="true" value="2" floatLabel="Select">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Simple select</h3>
+        <materialize-select>
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Select with value</h3>
+        <materialize-select value="2">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Select disabled</h3>
+        <materialize-select [disabled]="true">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Select with float label</h3>
+        <materialize-select floatLabel="Select">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Select disabled with value</h3>
+        <materialize-select [disabled]="true" value="2">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+
+        <h3>Select disabled with value and float label</h3>
+        <materialize-select [disabled]="true" value="2" floatLabel="Select">
+          <materialize-select-option value="1">Option 1</materialize-select-option>
+          <materialize-select-option value="2">Option 2</materialize-select-option>
+        </materialize-select>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

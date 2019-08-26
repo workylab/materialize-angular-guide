@@ -73,7 +73,47 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Simple radio</h3>
+        <materialize-radio>Radio</materialize-radio>
+
+        <h3>Radio with value</h3>
+        <materialize-radio value="2">With Value</materialize-radio>
+
+        <h3>Radio disabled</h3>
+        <materialize-radio [disabled]="true">Disabled</materialize-radio>
+
+        <h3>Simple radio group</h3>
+        <materialize-radio-group>
+          <materialize-radio value="a">Value A</materialize-radio>
+          <materialize-radio value="b">Value B</materialize-radio>
+        </materialize-radio-group>
+
+        <h3>Radio group with value</h3>
+        <materialize-radio-group value="b">
+          <materialize-radio value="a">Value A</materialize-radio>
+          <materialize-radio value="b">Value B</materialize-radio>
+        </materialize-radio-group>
+
+        <h3>Radio group can be unchecked</h3>
+        <materialize-radio-group [canUncheck]="true">
+          <materialize-radio value="a">Value A</materialize-radio>
+          <materialize-radio value="b">Value B</materialize-radio>
+        </materialize-radio-group>
+
+        <h3>Radio group disabled</h3>
+        <materialize-radio-group [disabled]="true">
+          <materialize-radio value="a">Value A</materialize-radio>
+          <materialize-radio value="b">Value B</materialize-radio>
+        </materialize-radio-group>
+
+        <h3>Radio group disabled with value</h3>
+        <materialize-radio-group [disabled]="true" value="b">
+          <materialize-radio value="a">Value A</materialize-radio>
+          <materialize-radio value="b">Value B</materialize-radio>
+        </materialize-radio-group>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

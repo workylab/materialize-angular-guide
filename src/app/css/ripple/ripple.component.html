@@ -64,6 +64,20 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
+
+      <div class="card">
+        <h3>Simple ripple</h3>
+        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;"></div>
+        
+        <h3>Ripple center</h3>
+        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [isRippleCenter]="true"></div>
+
+        <h3>Ripple with 2 seconds</h3>
+        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [rippleDuration]="2000"></div>
+        
+        <h3>Ripple disabled</h3>
+        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [isRippleActive]="false"></div>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

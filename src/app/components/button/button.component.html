@@ -67,7 +67,20 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Button Accent</h3>
+        <materialize-button>Button</materialize-button>
+        <materialize-button [disabled]="true">Disabled</materialize-button>
+
+        <h3>Button Outline</h3>
+        <materialize-button level="outline">Button</materialize-button>
+        <materialize-button level="outline" [disabled]="true">Disabled</materialize-button>
+
+        <h3>Button Text</h3>
+        <materialize-button level="text">Button</materialize-button>
+        <materialize-button level="text" [disabled]="true">Disabled</materialize-button>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

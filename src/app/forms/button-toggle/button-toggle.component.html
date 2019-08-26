@@ -76,7 +76,32 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Simple button toggle</h3>
+        <materialize-button-toggle-group>
+          <materialize-button-toggle value="1">Text1</materialize-button-toggle>
+          <materialize-button-toggle value="2">Text2</materialize-button-toggle>
+        </materialize-button-toggle-group>
+
+        <h3>Button toggle with value</h3>
+        <materialize-button-toggle-group value="2">
+          <materialize-button-toggle value="1">Text1</materialize-button-toggle>
+          <materialize-button-toggle value="2">Text2</materialize-button-toggle>
+        </materialize-button-toggle-group>
+
+        <h3>Button toggle can be unchecked</h3>
+        <materialize-button-toggle-group [canUncheck]="true">
+          <materialize-button-toggle value="1">Text1</materialize-button-toggle>
+          <materialize-button-toggle value="2">Text2</materialize-button-toggle>
+        </materialize-button-toggle-group>
+
+        <h3>Button toggle disabled</h3>
+        <materialize-button-toggle-group [disabled]="true">
+          <materialize-button-toggle value="1">Text1</materialize-button-toggle>
+          <materialize-button-toggle value="2">Text2</materialize-button-toggle>
+        </materialize-button-toggle-group>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

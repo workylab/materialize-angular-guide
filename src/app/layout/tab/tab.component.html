@@ -74,7 +74,20 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Simple tab</h3>
+        <materialize-tab-group>
+          <materialize-tab title="Header A">Content A</materialize-tab>
+          <materialize-tab title="Header B">Content B</materialize-tab>
+        </materialize-tab-group>
+
+        <h3>Simple tab with disabled tab</h3>
+        <materialize-tab-group>
+          <materialize-tab title="Header A">Content A</materialize-tab>
+          <materialize-tab title="Header B" [disabled]="true">Content B disabled</materialize-tab>
+        </materialize-tab-group>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

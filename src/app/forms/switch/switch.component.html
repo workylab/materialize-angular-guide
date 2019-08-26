@@ -64,7 +64,20 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+
+      <div class="card">
+        <h3>Simple switch</h3>
+        <materialize-switch>Switch</materialize-switch>
+
+        <h3>Switch with value</h3>
+        <materialize-switch [value]="true">With Value</materialize-switch>
+
+        <h3>Switch disabled</h3>
+        <materialize-switch [disabled]="true">Disabled</materialize-switch>
+
+        <h3>Switch disabled with value</h3>
+        <materialize-switch [disabled]="true" [value]="true">Disabled with value</materialize-switch>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

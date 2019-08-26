@@ -64,7 +64,41 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <h3>Simple textarea</h3>
+        <materialize-textarea></materialize-textarea>
+
+        <h3>Textarea with value</h3>
+        <materialize-textarea value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."></materialize-textarea>
+
+        <h3>Textarea with 3 rows</h3>
+        <materialize-textarea [rows]="3"></materialize-textarea>
+
+        <h3>Textarea with counter</h3>
+        <materialize-textarea [hasCounter]="true"></materialize-textarea>
+
+        <h3>Textarea with placeholder</h3>
+        <materialize-textarea placeholder="Write here"></materialize-textarea>
+        
+        <h3>Textarea with float label</h3>
+        <materialize-textarea floatLabel="Float Label"></materialize-textarea>
+
+        <h3>Textarea with float label and value</h3>
+        <materialize-textarea floatLabel="Float Label" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."></materialize-textarea>
+
+        <h3>Textarea with float label, value and placeholder</h3>
+        <materialize-textarea floatLabel="Float Label and placeholder" placeholder="Placeholder"></materialize-textarea>
+
+        <h3>Textarea disabled</h3>
+        <materialize-textarea [disabled]="true"></materialize-textarea>
+
+        <h3>Textarea disabled with value</h3>
+        <materialize-textarea [disabled]="true" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."></materialize-textarea>
+
+        <h3>Textarea disabled with value and float label</h3>
+        <materialize-textarea [disabled]="true" floatLabel="Float Label" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."></materialize-textarea>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">
