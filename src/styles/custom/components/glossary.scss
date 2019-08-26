@@ -1,0 +1,29 @@
+.glossary-container {
+  position: fixed;
+  right: 16px;
+  top: 100px;
+  width: 174px;
+}
+
+.glossary-guide {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+  padding: 15px 0;
+
+  .materialize-glossary-item {
+    color: #000000;
+    margin: 4px 0;
+    padding: 6px 20px;
+  }
+
+  .materialize-glossary-item.active,
+  .materialize-glossary-item:hover {
+    color: #008FFF;
+    font-weight: 500;
+
+    &::before {
+      background: #008FFF;
+      width: 3px;
+    }
+  }
+}

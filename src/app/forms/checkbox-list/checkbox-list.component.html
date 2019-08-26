@@ -1,5 +1,5 @@
-<div class="row">
-  <materialize-scroll-spy class="col-10" #scrollSpy>
+<div class="">
+  <materialize-scroll-spy class="main-container" #scrollSpy>
     <materialize-scroll-spy-item id="title">
       <h1>CHECKBOX LIST</h1>
   
@@ -54,15 +54,17 @@
     </materialize-scroll-spy-item>
   </materialize-scroll-spy>
   
-  <materialize-glossary class="col-2"[scrollSpy]="scrollSpy">
+  <div class="glossary-container">
     <h2>Contents</h2>
-    <materialize-glossary-item referenceId="title">Checkbox List</materialize-glossary-item>
-    <materialize-glossary-item referenceId="usage">Usage</materialize-glossary-item>
-    <materialize-glossary-item referenceId="api">API</materialize-glossary-item>
-    <materialize-glossary-item referenceId="theming">Theming</materialize-glossary-item>
-    <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
-    <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
-    <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
-  </materialize-glossary>      
+    <materialize-glossary [scrollSpy]="scrollSpy" className="glossary-guide">
+      <materialize-glossary-item referenceId="title">Checkbox List</materialize-glossary-item>
+      <materialize-glossary-item referenceId="usage">Usage</materialize-glossary-item>
+      <materialize-glossary-item referenceId="api">API</materialize-glossary-item>
+      <materialize-glossary-item referenceId="theming">Theming</materialize-glossary-item>
+      <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
+      <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
+      <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
+    </materialize-glossary>      
+  </div>
 </div>
   

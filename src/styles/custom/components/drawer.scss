@@ -1,6 +1,9 @@
 .materialize-drawer.collapsible-guide {
+  display: block;
+
   >.materialize-drawer-container {
-    padding: 100px 24px 24px;
+    padding: 100px 32px 24px 8px;
+    margin-right: 176px;
   }
   
   >.materialize-drawer-content {
