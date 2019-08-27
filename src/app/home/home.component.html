@@ -1,14 +1,12 @@
-<div class="materialize-header">
+<div class="header-banner full-container">
   <div class="container">
     <div class="row row-gap">
       <div class="col-12 col-sm-3">
         <img src="assets/images/logo.svg" />
       </div>
       <div class="col-12 col-sm-9">
-        <div class="component-billboard">
-          <h1>materialize angular</h1>
-          <h2>component framework</h2>
-        </div>
+        <h1 class="title-text">materialize angular</h1>
+        <h2 class="title-text">component framework</h2>
         <section class="row row-gap button-section">
           <div class="col-12 col-sm-2">
             <materialize-button level="outline">GET STARTED</materialize-button>
@@ -50,6 +48,9 @@
         </p>
       </div>
     </div>
+    <div class="col-12 col-sm-8 main-image-container">
+      <img src="assets/images/main-slide-img2.png" />
+    </div>
   </div>
   <div class="row row-gap">
     <h1 class="col-12 text-align-center">Project Sponsors</h1>
@@ -67,19 +68,68 @@
     </div>
   </div>
 </div>
-<div class="contact-wrapper">
+<div class="contact-wrapper full-container">
   <div class="container">
     <div class="row row-gap">
-      <h1 class="col-12 text-align-center">Contacto</h1>
+      <h1 class="col-12 text-align-center title-text">Contact</h1>
       <div class="col-6">
-        <materialize-input label="Placeholder" placeholder="Nombre*"></materialize-input>
+        <materialize-input label="Placeholder" placeholder="Name*"></materialize-input>
         <materialize-input label="Placeholder" placeholder="Email*"></materialize-input>
-        <materialize-input label="Placeholder" placeholder="Teléfono*"></materialize-input>
+        <materialize-input label="Placeholder" placeholder="Phone*"></materialize-input>
       </div>
       <div class="col-6">
-        <materialize-textarea placeholder="Mensaje*"></materialize-textarea>
+        <materialize-textarea placeholder="Message*"></materialize-textarea>
+      </div>
+      <div class="col-12">
+        <materialize-button>send</materialize-button>
       </div>
     </div>
   </div>
 </div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright © Worky Lab 2019</span>
+      </div>
+
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href="https://twitter.com/workylab" target="_blank">
+              <materialize-icon>twitter</materialize-icon>
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Workylab-1749192281891874/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/workylab" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <materialize-icon>location_on</materialize-icon>
+            <a href="https://www.linkedin.com/company/workylab" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="/privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="/use-terms.html">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</footer>
 <router-outlet></router-outlet>
