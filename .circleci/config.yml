@@ -29,6 +29,7 @@ jobs:
             npm install -g --silent gh-pages@2.0.1
             git config user.email "ci-build@workylab.com"
             git config user.name "ci-build"
+            git config core.sshCommand 'ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
       - add_ssh_keys:
           fingerprints:
             - "37:73:c1:24:b5:74:04:0e:03:c3:b0:14:b4:75:da:bd"
