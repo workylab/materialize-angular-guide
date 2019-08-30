@@ -8,6 +8,7 @@
         }
     ],
     "routes": [
+            {"src": "^/favicon.ico", "dest": "/materialize-angular-guide/favicon.ico"},
             {"src": "^/main(.*)", "dest": "/materialize-angular-guide/main$1"},
             {"src": "^/polyfills(.*)", "dest": "/materialize-angular-guide/polyfills$1"},
             {"src": "^/styles(.*)", "dest": "/materialize-angular-guide/styles$1"},
