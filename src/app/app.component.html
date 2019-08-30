@@ -9,7 +9,7 @@
 <materialize-drawer type="over" className="collapsible-guide" #drawer>
   <materialize-drawer-content>
     <ng-container *ngFor="let item of drawerItems">
-      <div *ngIf="!item.children" class="drawer-link" [routerLink]="item.link" routerLinkActive="active" materializeRipple>
+      <div *ngIf="!item.children" class="drawer-link" [routerLink]="item.link" routerLinkActive="active" materializeRipple (click)="drawer.close()">
         {{ item.text }}
       </div>
 
@@ -17,7 +17,7 @@
         <materialize-collapsible-title>{{ item.text }}</materialize-collapsible-title>
   
         <materialize-collapsible-content>
-          <div class="drawer-link" [routerLink]="item.link + child.link" routerLinkActive="active" *ngFor="let child of item.children" materializeRipple>
+          <div class="drawer-link" [routerLink]="item.link + child.link" routerLinkActive="active" *ngFor="let child of item.children" materializeRipple (click)="drawer.close()">
             {{ child.text }}
           </div>
         </materialize-collapsible-content>
