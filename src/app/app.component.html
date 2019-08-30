@@ -1,11 +1,12 @@
 <materialize-navbar className="navbar-guide">
+  <materialize-icon className="navbar-icon-menu" (onClick)="drawer.open()">menu</materialize-icon>
   <div class="navbar-logo-container">
     <img src="assets/images/logo.svg" />
     <p>Materialize Angular</p>
   </div>
 </materialize-navbar>
 
-<materialize-drawer type="static" className="collapsible-guide">
+<materialize-drawer type="over" className="collapsible-guide" #drawer>
   <materialize-drawer-content>
     <ng-container *ngFor="let item of drawerItems">
       <div *ngIf="!item.children" class="drawer-link" [routerLink]="item.link" routerLinkActive="active" materializeRipple>
