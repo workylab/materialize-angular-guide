@@ -3,6 +3,10 @@
   right: 16px;
   top: 100px;
   width: 174px;
+
+  @media only screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .glossary-guide {
