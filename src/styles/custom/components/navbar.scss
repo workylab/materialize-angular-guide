@@ -2,19 +2,41 @@
   background: #171B2C;
   box-shadow: -5px 0 5px 0 rgba(32, 30, 41, 0.73);
   height: 70px;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10000;
+
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
+
+  .navbar-icon-menu {
+    color: #FFFFFF;
+    font-size: 26px;
+    display: none;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+    }
+  }
 
   .navbar-logo-container {
     align-items: center;
     display: flex;
     flex-direction: row;
     height: 70px;
-    padding: 12px 0;
+    padding: 12px 16px;
     width: max-content;
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 36px;
+    }
   
     img {
       max-height: 100%;
@@ -23,7 +45,7 @@
     p {
       color: #FFFFFF;
       margin: 0;
-      padding: 0 12px;
+      padding-left: 12px;
     }
   }  
 }
