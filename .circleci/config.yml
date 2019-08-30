@@ -1,0 +1,50 @@
+version: 2
+defaults: &defaults
+  working_directory: ~/repo
+  docker:
+    - image: node:12
+jobs:
+  docs-build:
+    <<: *defaults 
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Build docs
+          command: npm run build
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
+
+  docs-deploy:
+    <<: *defaults 
+    steps:
+      - attach_workspace:
+          at: ~/repo
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            mkdir ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
+            git config user.email "ci-build@workylab.com"
+            git config user.name "ci-build"
+      - add_ssh_keys:
+          fingerprints:
+            - "37:73:c1:24:b5:74:04:0e:03:c3:b0:14:b4:75:da:bd"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --message "[skip ci] Update documentation" --dist dist -r "git@github.com:workylab/materialize-angular.git" 
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - docs-build
+      - docs-deploy:
+          requires:
+            - docs-build
+          filters:
+            branches:
+              only: test-docs
