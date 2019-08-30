@@ -13,7 +13,7 @@ jobs:
           command: npm install
       - run:
           name: Build docs
-          command: npm run build --base-href "materialize-angular"
+          command: npm run build:gh-doc
       - persist_to_workspace:
           root: ~/repo
           paths: .
