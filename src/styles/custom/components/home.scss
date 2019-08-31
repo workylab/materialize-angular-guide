@@ -1,12 +1,12 @@
-.full-container {
-  margin-left: -36px !important;
-  margin-right: -24px !important;
-}
-
-.header-banner {
+.header-container {
   background: linear-gradient(to bottom, #033D80, #62C9FF);
   margin-top: -30px;
   padding: 128px 0 40px;
+}
+
+.full-container {
+  margin-left: -16px;
+  margin-right: -208px;
 }
 
 .title-text {
@@ -27,6 +27,10 @@
     border: #eee solid thin;
     border-radius: 4px;
   }
+
+  p {
+    font-size: 14px;
+  }
 }
 
 .sponsor-request {
@@ -35,7 +39,7 @@
   color: inherit;
   display: block;
   line-height: 1.5;
-  padding: 120px 20px;
+  padding: 45px 20px;
   text-decoration: none;
 
   &:hover {
@@ -76,10 +80,13 @@
 }
 
 .footer {
-  font-size: 14px;
-  padding: 25px 0;
-  text-align: center;
+  font-size: 12px;
+  margin-bottom: -24px;
   text-transform: uppercase;
+
+  .copyright {
+    line-height: 40px;
+  }
 
   .quicklinks {
     line-height: 40px;
