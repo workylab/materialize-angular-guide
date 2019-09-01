@@ -1,0 +1,116 @@
+.header-container {
+  background: linear-gradient(to bottom, #033D80, #62C9FF);
+  margin-top: -30px;
+  padding: 128px 0 40px;
+}
+
+.full-container {
+  margin-left: -16px;
+  margin-right: -208px;
+}
+
+.title-text {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-section {
+  padding-top: 60px;
+}
+
+.info-text {
+  margin-top: 24px;
+  padding: 24px 24px 0;
+
+  &.rounded {
+    border: #eee solid thin;
+    border-radius: 4px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.sponsor-request {
+  border: #eee solid thin;
+  border-radius: 4px;
+  color: inherit;
+  display: block;
+  line-height: 1.5;
+  padding: 45px 20px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #eee;
+    text-decoration: underline;
+  }
+}
+
+.contact-wrapper {
+  background-color: #222;
+  background-image: url(/../../../assets/images/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 24px;
+
+  materialize-input:not(:last-of-type) {
+    .materialize-form-control-container {
+      margin-bottom: 20px;
+    }
+  }
+
+  materialize-textarea {
+    .materialize-form-control-container {
+      height: 100%;
+    }
+  }
+}
+
+.main-image-container {
+  position: relative;
+
+  img {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.footer {
+  font-size: 12px;
+  margin-bottom: -24px;
+  text-transform: uppercase;
+
+  .copyright {
+    line-height: 40px;
+  }
+
+  .quicklinks {
+    line-height: 40px;
+  }
+
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+
+    .list-inline-item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      a {
+        color: #fed136;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
