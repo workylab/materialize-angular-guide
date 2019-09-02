@@ -35,6 +35,7 @@ import { CardPageComponent } from './css/card/card.component';
 import { DividerPageComponent } from './css/divider/divider.component';
 import { AboutPageComponent } from './about/about.component';
 import { GettingStartedPageComponent } from './getting-started/getting-started.component';
+import { BaseLayoutComponent } from './base-layout/base-layout.component';
 
 const appRoutes: Routes = [
 {
@@ -47,148 +48,154 @@ const appRoutes: Routes = [
   component: HomePageComponent
 },
 {
-  path: 'about',
-  component: AboutPageComponent
-},
-{
-  path: 'getting-started',
-  component: GettingStartedPageComponent
-},
-{
-  path: 'components',
-  component: ComponentsPageComponent,
+  path: 'guide',
+  component: BaseLayoutComponent,
   children: [
     {
-      component: AccordionPageComponent,
-      path: 'accordion'
+      path: 'about',
+      component: AboutPageComponent
     },
     {
-      component: ButtonPageComponent,
-      path: 'button'
+      path: 'get-started',
+      component: GettingStartedPageComponent
     },
     {
-      component: CalendarPageComponent,
-      path: 'calendar'
+      path: 'components',
+      component: ComponentsPageComponent,
+      children: [
+        {
+          component: AccordionPageComponent,
+          path: 'accordion'
+        },
+        {
+          component: ButtonPageComponent,
+          path: 'button'
+        },
+        {
+          component: CalendarPageComponent,
+          path: 'calendar'
+        },
+        {
+          component: CollapsiblePageComponent,
+          path: 'collapsible'
+        },
+        {
+          component: DropdownPageComponent,
+          path: 'dropdown'
+        },
+        {
+          component: ListPageComponent,
+          path: 'list'
+        },
+        {
+          component: ModalPageComponent,
+          path: 'modal'
+        },
+        {
+          component: TablePageComponent,
+          path: 'table'
+        },
+        {
+          component: TooltipPageComponent,
+          path: 'tooltip'
+        }
+      ]
     },
     {
-      component: CollapsiblePageComponent,
-      path: 'collapsible'
+      path: 'forms',
+      component: FormsPageComponent,
+      children: [
+        {
+          component: ButtonTogglePageComponent,
+          path: 'button-toggle'
+        },
+        {
+          component: CheckboxListPageComponent,
+          path: 'checkbox-list'
+        },
+        {
+          component: CheckboxPageComponent,
+          path: 'checkbox'
+        },
+        {
+          component: DatePickerPageComponent,
+          path: 'date-picker'
+        },
+        {
+          component: InputPageComponent,
+          path: 'input'
+        },
+        {
+          component: LabelPageComponent,
+          path: 'label'
+        },
+        {
+          component: RadioPageComponent,
+          path: 'radio'
+        },
+        {
+          component: SelectPageComponent,
+          path: 'select'
+        },
+        {
+          component: SliderPageComponent,
+          path: 'slider'
+        },
+        {
+          component: SwitchPageComponent,
+          path: 'switch'
+        },
+        {
+          component: TextAreaPageComponent,
+          path: 'textarea'
+        }
+      ]
     },
     {
-      component: DropdownPageComponent,
-      path: 'dropdown'
+      path: 'layout',
+      component: LayoutPageComponent,
+      children: [
+        {
+          component: DrawerPageComponent,
+          path: 'drawer'
+        },
+        {
+          component: NavbarPageComponent,
+          path: 'navbar'
+        },
+        {
+          component: TabPageComponent,
+          path: 'tab'
+        }
+      ]
     },
     {
-      component: ListPageComponent,
-      path: 'list'
+      path: 'css',
+      component: CSSPageComponent,
+      children: [
+        {
+          component: CardPageComponent,
+          path: 'card'
+        },
+        {
+          component: DividerPageComponent,
+          path: 'divider'
+        },
+        {
+          component: IconPageComponent,
+          path: 'icon'
+        },
+        {
+          component: RipplePageComponent,
+          path: 'ripple'
+        }
+      ]
     },
     {
-      component: ModalPageComponent,
-      path: 'modal'
-    },
-    {
-      component: TablePageComponent,
-      path: 'table'
-    },
-    {
-      component: TooltipPageComponent,
-      path: 'tooltip'
+      path: 'theme',
+      component: ThemePageComponent
     }
   ]
-},
-{
-  path: 'forms',
-  component: FormsPageComponent,
-  children: [
-    {
-      component: ButtonTogglePageComponent,
-      path: 'button-toggle'
-    },
-    {
-      component: CheckboxListPageComponent,
-      path: 'checkbox-list'
-    },
-    {
-      component: CheckboxPageComponent,
-      path: 'checkbox'
-    },
-    {
-      component: DatePickerPageComponent,
-      path: 'date-picker'
-    },
-    {
-      component: InputPageComponent,
-      path: 'input'
-    },
-    {
-      component: LabelPageComponent,
-      path: 'label'
-    },
-    {
-      component: RadioPageComponent,
-      path: 'radio'
-    },
-    {
-      component: SelectPageComponent,
-      path: 'select'
-    },
-    {
-      component: SliderPageComponent,
-      path: 'slider'
-    },
-    {
-      component: SwitchPageComponent,
-      path: 'switch'
-    },
-    {
-      component: TextAreaPageComponent,
-      path: 'textarea'
-    }
-  ]
-},
-{
-  path: 'layout',
-  component: LayoutPageComponent,
-  children: [
-    {
-      component: DrawerPageComponent,
-      path: 'drawer'
-    },
-    {
-      component: NavbarPageComponent,
-      path: 'navbar'
-    },
-    {
-      component: TabPageComponent,
-      path: 'tab'
-    }
-  ]
-},
-{
-  path: 'css',
-  component: CSSPageComponent,
-  children: [
-    {
-      component: CardPageComponent,
-      path: 'card'
-    },
-    {
-      component: DividerPageComponent,
-      path: 'divider'
-    },
-    {
-      component: IconPageComponent,
-      path: 'icon'
-    },
-    {
-      component: RipplePageComponent,
-      path: 'ripple'
-    }
-  ]
-},
-{
-  path: 'theme',
-  component: ThemePageComponent
 }];
 
 @NgModule({

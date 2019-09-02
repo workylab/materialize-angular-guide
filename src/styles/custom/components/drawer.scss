@@ -3,7 +3,7 @@
 
   >.materialize-drawer-container {
     padding: 100px 32px 24px 16px;
-    margin-left: 270px;
+    margin-left: 250px;
     margin-right: 176px;
 
     @media only screen and (max-width: 1024px) {
@@ -23,7 +23,7 @@
     overflow: auto;
     padding-top: 90px;
     position: fixed;
-    width: 270px;
+    width: 250px;
 
     @media only screen and (min-width: 768px) {
       transform: translate(0) !important;
@@ -33,6 +33,7 @@
   .drawer-link {
     color: #D3D3D3;
     cursor: pointer;
+    font-family: 'Comfortaa';
     font-weight: $font-weight-light;
     outline: none;
     padding: 18px 25px;
