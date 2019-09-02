@@ -51,6 +51,7 @@ import { TabPageComponent } from './layout/tab/tab.component';
 import { TablePageComponent } from './components/table/table.component';
 import { TextAreaPageComponent } from './forms/textarea/textarea.component';
 import { TooltipPageComponent } from './components/tooltip/tooltip.component';
+import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { ComponentsPageComponent } from './components/components.component';
 import { CSSPageComponent } from './css/css.component';
 import { FormsPageComponent } from './forms/forms.component';
@@ -68,6 +69,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     AboutPageComponent,
     AccordionPageComponent,
     AppComponent,
+    BaseLayoutComponent,
     ButtonPageComponent,
     ButtonTogglePageComponent,
     CalendarPageComponent,
