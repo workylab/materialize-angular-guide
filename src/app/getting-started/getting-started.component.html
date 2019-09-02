@@ -1,1 +1,62 @@
-Getting Started
+<div class="materialize-container">
+  <div class="materialize-row">
+    <div class="materialize-col-12">
+      <h1>Getting started</h1>
+    </div>
+  </div>
+  <div class="materialize-row">
+    <div class="materialize-col-12">
+      <h3>Install npm package</h3>
+      <materialize-html-visualizer html='npm install --save materialize-angular'>
+      </materialize-html-visualizer>
+    </div>
+  </div>
+  <div class="materialize-row">
+    <div class="materialize-col-12">
+      <h3>Add styles</h3>
+      <p>Import materialize angular styles by writing the following lines in your styles.scssfile (it is located in my-project/src/styles.scss)</p>
+      <materialize-html-visualizer html="
+        $materialize-fonts-path: '~materialize-angular/fonts';
+
+        @import '~materialize-angular/styles/materialize-angular.scss';
+      "></materialize-html-visualizer>
+    </div>
+  </div>
+  <div class="materialize-row">
+    <div class="materialize-col-12">
+      <h3>Import component modules in your app module</h3>
+      <p>Import just specific components by importing each one like MaterializeButtonModule, MaterializeCardModule, etc.</p>
+      <materialize-html-visualizer html="
+      import { Component, NgModule } from '@angular/core';
+      import { MaterializeButtonModule, MaterializeCardModule } from 'materialize-angular';
+      
+      @NgModule({
+        imports: [
+          MaterializeButtonModule,
+          MaterializeCardModule
+        ]
+      })
+      export class MyModule {}
+      "></materialize-html-visualizer>
+    </div>
+  </div>
+  <div class="materialize-row">
+    <div class="materialize-col-12">
+      <h3>Use imported components</h3>
+      <p>Finally use the imported components into your apps components:</p>
+      <materialize-html-visualizer html="
+      import { Component } from '@angular/core';
+
+      @Component({
+        selector: 'app-demo',
+        template: `
+          <materialize-card>
+            <materialize-button>Hello From Materialize Angular!</materialize-button>
+          </materialize-card>
+        `
+      })
+      export class MyDemoComponent {}
+      "></materialize-html-visualizer>
+    </div>
+  </div>
+</div>
