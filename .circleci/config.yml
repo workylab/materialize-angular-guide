@@ -30,6 +30,7 @@ jobs:
             mkdir ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
             git config user.email "ci-build@workylab.com"
             git config user.name "ci-build"
+            mv dist/materialize-angular-guide/index.html dist/materialize-angular-guide/404.html
       - add_ssh_keys:
           fingerprints:
             - "37:73:c1:24:b5:74:04:0e:03:c3:b0:14:b4:75:da:bd"
