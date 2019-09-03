@@ -35,7 +35,7 @@ jobs:
             - "37:73:c1:24:b5:74:04:0e:03:c3:b0:14:b4:75:da:bd"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --message "[skip ci] Update documentation" --dist dist -r "git@github.com:workylab/materialize-angular.git" 
+          command: gh-pages --message "[skip ci] Update documentation" --dist dist -r "git@github.com:workylab/materialize-angular.git" -e materialize-angular-guide
 
 workflows:
   version: 2
