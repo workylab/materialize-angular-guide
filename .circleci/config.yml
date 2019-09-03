@@ -13,7 +13,7 @@ jobs:
           command: npm install
       - run:
           name: Build docs
-          command: npm run build
+          command: npm run ghbuild
       - persist_to_workspace:
           root: ~/repo
           paths: .
