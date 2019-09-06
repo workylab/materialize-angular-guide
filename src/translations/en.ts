@@ -16,6 +16,7 @@ export const translations: Translations = {
         dropdown: 'Dropdown',
         glossary: 'Glossary',
         list: 'List',
+        listItem: 'List Item',
         modal: 'Modal',
         table: 'Table',
         tooltip: 'Tooltip'

@@ -12,6 +12,7 @@ import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
 import { ListPageComponent } from './components/list/list.component';
+import { ListItemPageComponent } from './components/list-item/list-item.component';
 import { MessagePageComponent } from './forms/message/message.component';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
@@ -92,6 +93,10 @@ const appRoutes: Routes = [
         {
           component: ListPageComponent,
           path: 'list'
+        },
+        {
+          component: ListItemPageComponent,
+          path: 'list-item'
         },
         {
           component: ModalPageComponent,

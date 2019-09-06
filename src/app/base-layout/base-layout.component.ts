@@ -45,6 +45,9 @@ export class BaseLayoutComponent {
         text: translations.drawer.components.children.list,
         link: '/list'
       }, {
+        text: translations.drawer.components.children.listItem,
+        link: '/list-item'
+      }, {
         text: translations.drawer.components.children.modal,
         link: '/modal'
       // }, {

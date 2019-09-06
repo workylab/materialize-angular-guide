@@ -11,11 +11,12 @@ import { CollapsiblePageComponent } from './components/collapsible/collapsible.c
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
 import { GlossaryPageComponent } from './components/glossary/glossary.component';
+import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
-import { MessagePageComponent } from './forms/message/message.component';
 import { ListPageComponent } from './components/list/list.component';
-import { IconPageComponent } from './css/icon/icon.component';
+import { ListItemPageComponent } from './components/list-item/list-item.component';
+import { MessagePageComponent } from './forms/message/message.component';
 import {
   MaterializeAccordionModule,
   MaterializeButtonModule,
@@ -96,6 +97,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     MessagePageComponent,
     LayoutPageComponent,
     ListPageComponent,
+    ListItemPageComponent,
     ModalPageComponent,
     NavbarPageComponent,
     RadioPageComponent,
