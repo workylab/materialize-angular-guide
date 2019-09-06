@@ -1,0 +1,136 @@
+<div class="">
+  <materialize-scroll-spy class="main-container" #scrollSpy>
+    <materialize-scroll-spy-item id="title">
+      <h1>GLOSSARY</h1>
+  
+      <p>
+        The <b>materialize-accordion</b> component is useful for reducing vertical space with
+        large amounts of information. The default functionality of the component is to only
+        display one expansion-panel body at a time.
+      </p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="usage">
+      <h2>USAGE</h2>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeAccordionModule</span> in your module.
+        </p>
+        <p class="text-indent margin-bottom-sm">
+          - Use the <span class="text-accent secondary">materialize-accordion</span> tag in your template.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-accordion-collapsible</span> tag into your <span class="text-accent secondary">materialize-accordion</span>
+          to control all the collapsibles.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-accordion>
+              <materialize-collapsible>
+                <materialize-collapsible-title>Title A</materialize-collapsible-title>
+                <materialize-collapsible-content>Content A</materialize-collapsible-content>
+              </materialize-collapsible>
+              <materialize-collapsible>
+                <materialize-collapsible-title>Title B</materialize-collapsible-title>
+                <materialize-collapsible-content>Content B</materialize-collapsible-content>
+              </materialize-collapsible>
+            </materialize-accordion>
+          '></materialize-html-visualizer>        
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-accordion>
+            <materialize-collapsible>
+              <materialize-collapsible-title>Title A</materialize-collapsible-title>
+              <materialize-collapsible-content>Content A</materialize-collapsible-content>
+            </materialize-collapsible>
+            <materialize-collapsible>
+              <materialize-collapsible-title>Title B</materialize-collapsible-title>
+              <materialize-collapsible-content>Content B</materialize-collapsible-content>
+            </materialize-collapsible>
+          </materialize-accordion>
+        </p>
+      </div>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="theming">
+      <h2>THEMING</h2>
+      <p>CSS variables here...</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="playground">
+      <h2>PLAYGROUND</h2>
+      <p>One example with all variants as checkbox or switch controls</p>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="examples">
+      <h2>EXAMPLES</h2>
+      
+      <div class="card">
+        <h3>Accordion like stepper</h3>
+        <materialize-accordion #accordionExample>
+          <materialize-collapsible>
+            <materialize-collapsible-title>Title 1</materialize-collapsible-title>
+            <materialize-collapsible-content>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aliquam minima soluta enim porro atque placeat quis commodi
+              deserunt veniam libero molestiae doloremque eveniet incidunt,
+              odit expedita cupiditate est tenetur reprehenderit.
+        
+              <materialize-button (onClick)="accordionExample.showPrev()">Show Prev</materialize-button>
+              <materialize-button (onClick)="accordionExample.showNext()">Show Next</materialize-button>
+            </materialize-collapsible-content>
+          </materialize-collapsible>
+          <materialize-collapsible>
+            <materialize-collapsible-title>Title 2</materialize-collapsible-title>
+            <materialize-collapsible-content>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aliquam minima soluta enim porro atque placeat quis commodi
+              deserunt veniam libero molestiae doloremque eveniet incidunt,
+              odit expedita cupiditate est tenetur reprehenderit.
+        
+              <materialize-button (onClick)="accordionExample.showPrev()">Show Prev</materialize-button>
+              <materialize-button (onClick)="accordionExample.showNext()">Show Next</materialize-button>
+            </materialize-collapsible-content>
+          </materialize-collapsible>
+          <materialize-collapsible>
+            <materialize-collapsible-title>Title 3</materialize-collapsible-title>
+            <materialize-collapsible-content>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aliquam minima soluta enim porro atque placeat quis commodi
+              deserunt veniam libero molestiae doloremque eveniet incidunt,
+              odit expedita cupiditate est tenetur reprehenderit.
+        
+              <materialize-button (onClick)="accordionExample.showPrev()">Show Prev</materialize-button>
+              <materialize-button (onClick)="accordionExample.showNext()">Show Next</materialize-button>
+            </materialize-collapsible-content>
+          </materialize-collapsible>
+        </materialize-accordion>
+      </div>
+    </materialize-scroll-spy-item>
+  
+    <materialize-scroll-spy-item id="up_next">
+      <h2>NEXT</h2>
+      <p>More components here...</p>
+    </materialize-scroll-spy-item>
+  </materialize-scroll-spy>
+  
+  <div class="glossary-container">
+    <h2>Contents</h2>
+    <materialize-glossary [scrollSpy]="scrollSpy" className="glossary-guide">
+      <materialize-glossary-item referenceId="title">Accordion</materialize-glossary-item>
+      <materialize-glossary-item referenceId="usage">Usage</materialize-glossary-item>
+      <materialize-glossary-item referenceId="api">API</materialize-glossary-item>
+      <materialize-glossary-item referenceId="theming">Theming</materialize-glossary-item>
+      <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
+      <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
+      <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
+    </materialize-glossary>      
+  </div>
+</div>

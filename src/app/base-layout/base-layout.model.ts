@@ -19,6 +19,7 @@ export interface DrawerTranslation {
       button: string;
       calendar: string;
       dropdown: string;
+      glossary: string;
       list: string;
       modal: string;
       table: string;
