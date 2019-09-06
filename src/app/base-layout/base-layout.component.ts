@@ -38,13 +38,13 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.components.children.collapsible,
         link: '/collapsible'
-      }, {
+      // }, {
       //   text: translations.drawer.components.children.dropdown,
       //   link: '/dropdown'
-      // }, {
-      //   text: translations.drawer.components.children.list,
-      //   link: '/list'
-      // }, {
+      }, {
+        text: translations.drawer.components.children.list,
+        link: '/list'
+      }, {
         text: translations.drawer.components.children.modal,
         link: '/modal'
       // }, {
