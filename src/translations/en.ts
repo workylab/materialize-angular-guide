@@ -30,6 +30,7 @@ export const translations: Translations = {
         datePicker: 'Date Picker',
         input: 'Input',
         label: 'Label',
+        message: 'Message',
         radio: 'Radio',
         select: 'Select',
         slider: 'Slider',

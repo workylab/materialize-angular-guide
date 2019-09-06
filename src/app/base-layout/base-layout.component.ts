@@ -76,6 +76,9 @@ export class BaseLayoutComponent {
         text: translations.drawer.forms.children.label,
         link: '/label'
       }, {
+        text: translations.drawer.forms.children.message,
+        link: '/message'
+      },{
         text: translations.drawer.forms.children.radio,
         link: '/radio'
       }, {

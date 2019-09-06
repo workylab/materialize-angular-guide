@@ -35,6 +35,7 @@ export interface DrawerTranslation {
       datePicker: string;
       input: string;
       label: string;
+      message: string;
       radio: string;
       select: string;
       slider: string;

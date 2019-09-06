@@ -12,6 +12,7 @@ import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
 import { ListPageComponent } from './components/list/list.component';
+import { MessagePageComponent } from './forms/message/message.component';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
 import { NgModule } from '@angular/core';
@@ -133,6 +134,10 @@ const appRoutes: Routes = [
         {
           component: LabelPageComponent,
           path: 'label'
+        },
+        {
+          component: MessagePageComponent,
+          path: 'message'
         },
         {
           component: RadioPageComponent,

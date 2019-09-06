@@ -13,6 +13,7 @@ import { DropdownPageComponent } from './components/dropdown/dropdown.component'
 import { GlossaryPageComponent } from './components/glossary/glossary.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
+import { MessagePageComponent } from './forms/message/message.component';
 import { ListPageComponent } from './components/list/list.component';
 import { IconPageComponent } from './css/icon/icon.component';
 import {
@@ -32,6 +33,7 @@ import {
   MaterializeTabGroupModule,
   MaterializeIconModule,
   MaterializeLabelModule,
+  MaterializeFormMessageModule,
   MaterializeModalModule,
   MaterializeRadioGroupModule,
   MaterializeSelectModule,
@@ -91,6 +93,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     IconPageComponent,
     InputPageComponent,
     LabelPageComponent,
+    MessagePageComponent,
     LayoutPageComponent,
     ListPageComponent,
     ModalPageComponent,
@@ -125,6 +128,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     MaterializeIconModule,
     MaterializeInputModule,
     MaterializeLabelModule,
+    MaterializeFormMessageModule,
     MaterializeModalModule,
     MaterializeNavbarModule,
     MaterializeRadioGroupModule,
