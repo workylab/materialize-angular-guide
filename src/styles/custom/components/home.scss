@@ -27,6 +27,7 @@
         width: 280px;
 
         @media only screen and (max-width: 768px) {
+          max-height: 220px;
           width: 100%;
         }
       }
@@ -70,6 +71,10 @@
       @media only screen and (max-width: 768px) {
         flex-direction: column;
         margin-bottom: 12px;
+      }
+
+      a {
+        text-decoration: none;
       }
 
       .materialize-button {
@@ -132,28 +137,10 @@
     }
   }
   
-  .contact-wrapper {
-    background-color: #222;
-    background-image: url(/../../../assets/images/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 150px 24px;
-  
-    materialize-input:not(:last-of-type) {
-      .materialize-form-control-container {
-        margin-bottom: 20px;
-      }
-    }
-  
-    materialize-textarea {
-      .materialize-form-control-container {
-        height: 100%;
-      }
-    }
-  }
-  
   .main-image-container {
+    min-height: 200px;
     position: relative;
+    overflow: hidden;
   
     img {
       max-width: 100%;
@@ -165,37 +152,7 @@
   
   .footer {
     font-size: 12px;
-    margin-bottom: -24px;
-    text-transform: uppercase;
-  
-    .copyright {
-      line-height: 40px;
-    }
-  
-    .quicklinks {
-      line-height: 40px;
-    }
-  
-    .list-inline {
-      padding-left: 0;
-      list-style: none;
-  
-      .list-inline-item {
-        display: inline-block;
-  
-        &:not(:last-child) {
-          margin-right: 5px;
-        }
-  
-        a {
-          color: #fed136;
-          text-decoration: none;
-  
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
+    padding: 40px;
+    text-align: center;
   }  
 }
