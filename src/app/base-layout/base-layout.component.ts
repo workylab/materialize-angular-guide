@@ -56,6 +56,9 @@ export class BaseLayoutComponent {
       // }, {
       //   text: translations.drawer.components.children.tooltip,
       //   link: '/tooltip'
+      }, {
+        text: translations.drawer.components.children.scrollSpy,
+        link: '/scroll-spy'
       }]
     }, {
       text: translations.drawer.forms.title,

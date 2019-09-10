@@ -23,6 +23,7 @@ export interface DrawerTranslation {
       list: string;
       listItem: string;
       modal: string;
+      scrollSpy: string;
       table: string;
       tooltip: string;
     };

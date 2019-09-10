@@ -20,6 +20,7 @@ import { NgModule } from '@angular/core';
 import { RadioPageComponent } from './forms/radio/radio.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RipplePageComponent } from './css/ripple/ripple.component';
+import { ScrollSpyPageComponent } from './components/scroll-spy/scroll-spy.component';
 import { SelectPageComponent } from './forms/select/select.component';
 import { SliderPageComponent } from './forms/slider/slider.component';
 import { SwitchPageComponent } from './forms/switch/switch.component';
@@ -101,6 +102,10 @@ const appRoutes: Routes = [
         {
           component: ModalPageComponent,
           path: 'modal'
+        },
+        {
+          component: ScrollSpyPageComponent,
+          path: 'scroll-spy'
         },
         {
           component: TablePageComponent,

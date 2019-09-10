@@ -18,6 +18,7 @@ export const translations: Translations = {
         list: 'List',
         listItem: 'List Item',
         modal: 'Modal',
+        scrollSpy: 'Scroll Spy',
         table: 'Table',
         tooltip: 'Tooltip'
       }
