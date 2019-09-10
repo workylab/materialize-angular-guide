@@ -7,7 +7,8 @@ import { CheckboxListPageComponent } from './forms/checkbox-list/checkbox-list.c
 import { CollapsiblePageComponent } from './components/collapsible/collapsible.component';
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
-import { GlossaryPageComponent } from './components/glossary/glossary.component'; 
+import { GlossaryPageComponent } from './components/glossary/glossary.component';
+import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
 import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
@@ -90,6 +91,10 @@ const appRoutes: Routes = [
         {
           component: GlossaryPageComponent,
           path: 'glossary'
+        },
+        {
+          component: HTMLVisualizerPageComponent,
+          path: 'html-visualizer'
         },
         {
           component: ListPageComponent,

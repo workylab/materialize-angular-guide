@@ -11,6 +11,7 @@ import { CollapsiblePageComponent } from './components/collapsible/collapsible.c
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
 import { GlossaryPageComponent } from './components/glossary/glossary.component';
+import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
 import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
@@ -92,6 +93,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     GettingStartedPageComponent,
     GlossaryPageComponent,
     HomePageComponent,
+    HTMLVisualizerPageComponent,
     IconPageComponent,
     InputPageComponent,
     LabelPageComponent,

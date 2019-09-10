@@ -32,6 +32,9 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.components.children.glossary,
         link: '/glossary'
+      }, {
+        text: translations.drawer.components.children.htmlVisualizer,
+        link: '/html-visualizer'
       // }, {
       //   text: translations.drawer.components.children.calendar,
       //   link: '/calendar'

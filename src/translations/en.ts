@@ -15,6 +15,7 @@ export const translations: Translations = {
         calendar: 'Calendar',
         dropdown: 'Dropdown',
         glossary: 'Glossary',
+        htmlVisualizer: 'HTML Visualizer',
         list: 'List',
         listItem: 'List Item',
         modal: 'Modal',
