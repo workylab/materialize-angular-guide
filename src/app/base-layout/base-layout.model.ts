@@ -19,8 +19,12 @@ export interface DrawerTranslation {
       button: string;
       calendar: string;
       dropdown: string;
+      glossary: string;
+      htmlVisualizer: string;
       list: string;
+      listItem: string;
       modal: string;
+      scrollSpy: string;
       table: string;
       tooltip: string;
     };
@@ -32,8 +36,11 @@ export interface DrawerTranslation {
       checkbox: string;
       checkboxList: string;
       datePicker: string;
+      formPrefix: string;
+      formSuffix: string;
       input: string;
       label: string;
+      message: string;
       radio: string;
       select: string;
       slider: string;

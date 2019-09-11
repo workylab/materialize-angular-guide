@@ -7,16 +7,23 @@ import { CheckboxListPageComponent } from './forms/checkbox-list/checkbox-list.c
 import { CollapsiblePageComponent } from './components/collapsible/collapsible.component';
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
+import { FormPrefixPageComponent } from './forms/form-prefix/form-prefix.component';
+import { FormSuffixPageComponent } from './forms/form-suffix/form-suffix.component';
+import { GlossaryPageComponent } from './components/glossary/glossary.component';
+import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
 import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
 import { ListPageComponent } from './components/list/list.component';
+import { ListItemPageComponent } from './components/list-item/list-item.component';
+import { MessagePageComponent } from './forms/message/message.component';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { RadioPageComponent } from './forms/radio/radio.component';
 import { RouterModule, Routes } from '@angular/router';
 import { RipplePageComponent } from './css/ripple/ripple.component';
+import { ScrollSpyPageComponent } from './components/scroll-spy/scroll-spy.component';
 import { SelectPageComponent } from './forms/select/select.component';
 import { SliderPageComponent } from './forms/slider/slider.component';
 import { SwitchPageComponent } from './forms/switch/switch.component';
@@ -84,12 +91,28 @@ const appRoutes: Routes = [
           path: 'dropdown'
         },
         {
+          component: GlossaryPageComponent,
+          path: 'glossary'
+        },
+        {
+          component: HTMLVisualizerPageComponent,
+          path: 'html-visualizer'
+        },
+        {
           component: ListPageComponent,
           path: 'list'
         },
         {
+          component: ListItemPageComponent,
+          path: 'list-item'
+        },
+        {
           component: ModalPageComponent,
           path: 'modal'
+        },
+        {
+          component: ScrollSpyPageComponent,
+          path: 'scroll-spy'
         },
         {
           component: TablePageComponent,
@@ -122,12 +145,24 @@ const appRoutes: Routes = [
           path: 'date-picker'
         },
         {
+          component: FormPrefixPageComponent,
+          path: 'form-prefix'
+        },
+        {
+          component: FormSuffixPageComponent,
+          path: 'form-suffix'
+        },
+        {
           component: InputPageComponent,
           path: 'input'
         },
         {
           component: LabelPageComponent,
           path: 'label'
+        },
+        {
+          component: MessagePageComponent,
+          path: 'message'
         },
         {
           component: RadioPageComponent,

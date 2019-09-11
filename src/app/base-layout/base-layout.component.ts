@@ -29,19 +29,28 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.components.children.button,
         link: '/button'
+      }, {
+        text: translations.drawer.components.children.glossary,
+        link: '/glossary'
+      }, {
+        text: translations.drawer.components.children.htmlVisualizer,
+        link: '/html-visualizer'
       // }, {
       //   text: translations.drawer.components.children.calendar,
       //   link: '/calendar'
       }, {
         text: translations.drawer.components.children.collapsible,
         link: '/collapsible'
-      }, {
+      // }, {
       //   text: translations.drawer.components.children.dropdown,
       //   link: '/dropdown'
-      // }, {
-      //   text: translations.drawer.components.children.list,
-      //   link: '/list'
-      // }, {
+      }, {
+        text: translations.drawer.components.children.list,
+        link: '/list'
+      }, {
+        text: translations.drawer.components.children.listItem,
+        link: '/list-item'
+      }, {
         text: translations.drawer.components.children.modal,
         link: '/modal'
       // }, {
@@ -50,6 +59,9 @@ export class BaseLayoutComponent {
       // }, {
       //   text: translations.drawer.components.children.tooltip,
       //   link: '/tooltip'
+      }, {
+        text: translations.drawer.components.children.scrollSpy,
+        link: '/scroll-spy'
       }]
     }, {
       text: translations.drawer.forms.title,
@@ -67,12 +79,21 @@ export class BaseLayoutComponent {
       //   text: translations.drawer.forms.children.datePicker,
       //   link: '/date-picker'
       }, {
+        text: translations.drawer.forms.children.formPrefix,
+        link: '/form-prefix'
+      }, {
+        text: translations.drawer.forms.children.formSuffix,
+        link: '/form-suffix'
+      }, {
         text: translations.drawer.forms.children.input,
         link: '/input'
       }, {
         text: translations.drawer.forms.children.label,
         link: '/label'
       }, {
+        text: translations.drawer.forms.children.message,
+        link: '/message'
+      },{
         text: translations.drawer.forms.children.radio,
         link: '/radio'
       }, {

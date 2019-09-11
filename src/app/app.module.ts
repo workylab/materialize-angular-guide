@@ -10,10 +10,16 @@ import { CheckboxListPageComponent } from './forms/checkbox-list/checkbox-list.c
 import { CollapsiblePageComponent } from './components/collapsible/collapsible.component';
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
+import { FormPrefixPageComponent } from './forms/form-prefix/form-prefix.component';
+import { FormSuffixPageComponent } from './forms/form-suffix/form-suffix.component';
+import { GlossaryPageComponent } from './components/glossary/glossary.component';
+import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
+import { IconPageComponent } from './css/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
 import { ListPageComponent } from './components/list/list.component';
-import { IconPageComponent } from './css/icon/icon.component';
+import { ListItemPageComponent } from './components/list-item/list-item.component';
+import { MessagePageComponent } from './forms/message/message.component';
 import {
   MaterializeAccordionModule,
   MaterializeButtonModule,
@@ -31,6 +37,7 @@ import {
   MaterializeTabGroupModule,
   MaterializeIconModule,
   MaterializeLabelModule,
+  MaterializeFormMessageModule,
   MaterializeModalModule,
   MaterializeRadioGroupModule,
   MaterializeSelectModule,
@@ -44,6 +51,7 @@ import { NgModule } from '@angular/core';
 import { RadioPageComponent } from './forms/radio/radio.component';
 import { RipplePageComponent } from './css/ripple/ripple.component';
 import { RouterModule } from '@angular/router';
+import { ScrollSpyPageComponent } from './components/scroll-spy/scroll-spy.component';
 import { SelectPageComponent } from './forms/select/select.component';
 import { SliderPageComponent } from './forms/slider/slider.component';
 import { SwitchPageComponent } from './forms/switch/switch.component';
@@ -83,18 +91,25 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     DividerPageComponent,
     DropdownPageComponent,
     DrawerPageComponent,
+    FormPrefixPageComponent,
+    FormSuffixPageComponent,
     FormsPageComponent,
     GettingStartedPageComponent,
+    GlossaryPageComponent,
     HomePageComponent,
+    HTMLVisualizerPageComponent,
     IconPageComponent,
     InputPageComponent,
     LabelPageComponent,
+    MessagePageComponent,
     LayoutPageComponent,
     ListPageComponent,
+    ListItemPageComponent,
     ModalPageComponent,
     NavbarPageComponent,
     RadioPageComponent,
     RipplePageComponent,
+    ScrollSpyPageComponent,
     SelectPageComponent,
     SliderPageComponent,
     SwitchPageComponent,
@@ -123,6 +138,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     MaterializeIconModule,
     MaterializeInputModule,
     MaterializeLabelModule,
+    MaterializeFormMessageModule,
     MaterializeModalModule,
     MaterializeNavbarModule,
     MaterializeRadioGroupModule,
