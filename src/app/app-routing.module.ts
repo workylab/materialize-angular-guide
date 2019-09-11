@@ -8,6 +8,7 @@ import { CollapsiblePageComponent } from './components/collapsible/collapsible.c
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
 import { FormPrefixPageComponent } from './forms/form-prefix/form-prefix.component';
+import { FormSuffixPageComponent } from './forms/form-suffix/form-suffix.component';
 import { GlossaryPageComponent } from './components/glossary/glossary.component';
 import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
 import { IconPageComponent } from './css/icon/icon.component';
@@ -146,6 +147,10 @@ const appRoutes: Routes = [
         {
           component: FormPrefixPageComponent,
           path: 'form-prefix'
+        },
+        {
+          component: FormSuffixPageComponent,
+          path: 'form-suffix'
         },
         {
           component: InputPageComponent,

@@ -37,6 +37,7 @@ export interface DrawerTranslation {
       checkboxList: string;
       datePicker: string;
       formPrefix: string;
+      formSuffix: string;
       input: string;
       label: string;
       message: string;

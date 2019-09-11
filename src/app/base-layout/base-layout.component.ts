@@ -82,6 +82,9 @@ export class BaseLayoutComponent {
         text: translations.drawer.forms.children.formPrefix,
         link: '/form-prefix'
       }, {
+        text: translations.drawer.forms.children.formSuffix,
+        link: '/form-suffix'
+      }, {
         text: translations.drawer.forms.children.input,
         link: '/input'
       }, {

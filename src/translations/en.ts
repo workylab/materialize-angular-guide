@@ -32,6 +32,7 @@ export const translations: Translations = {
         checkboxList: 'Checkbox List',
         datePicker: 'Date Picker',
         formPrefix: 'Form Prefix',
+        formSuffix: 'Form Suffix',
         input: 'Input',
         label: 'Label',
         message: 'Message',
