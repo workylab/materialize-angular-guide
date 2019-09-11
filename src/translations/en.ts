@@ -31,6 +31,7 @@ export const translations: Translations = {
         checkbox: 'Checkbox',
         checkboxList: 'Checkbox List',
         datePicker: 'Date Picker',
+        formPrefix: 'Form Prefix',
         input: 'Input',
         label: 'Label',
         message: 'Message',

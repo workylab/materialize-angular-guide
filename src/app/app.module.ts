@@ -10,6 +10,7 @@ import { CheckboxListPageComponent } from './forms/checkbox-list/checkbox-list.c
 import { CollapsiblePageComponent } from './components/collapsible/collapsible.component';
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
 import { DropdownPageComponent } from './components/dropdown/dropdown.component';
+import { FormPrefixPageComponent } from './forms/form-prefix/form-prefix.component';
 import { GlossaryPageComponent } from './components/glossary/glossary.component';
 import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
 import { IconPageComponent } from './css/icon/icon.component';
@@ -89,6 +90,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     DividerPageComponent,
     DropdownPageComponent,
     DrawerPageComponent,
+    FormPrefixPageComponent,
     FormsPageComponent,
     GettingStartedPageComponent,
     GlossaryPageComponent,
