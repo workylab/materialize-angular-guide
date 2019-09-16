@@ -38,23 +38,141 @@
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
   
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>level</td>
+              <td>error | info | success | warning</td>
+              <td>"info"</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
-      <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      <div class="card">
+        <h4 class="terciary">form-message general variables</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-form-message-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-form-message-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-form-message-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-form-message-letter-spacing</td><td>0</td></tr>
+            <tr><td>$materialize-form-message-line-height</td><td>100%</td></tr>
+            <tr><td>$materialize-form-message-margin</td><td>0</td></tr>
+            <tr><td>$materialize-form-message-padding</td><td>$theme-space-sm</td></tr>
+            <tr><td>$materialize-form-message-text-align</td><td>left</td></tr>
+          </tbody>
+        </table>
+     
+        <h4 class="terciary">.form-message-info</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-form-message-info-color</td><td>map-get($theme-colors, 'gray-20')</td></tr>
+            <tr><td>$materialize-form-message-info-font-family</td><td>$materialize-form-message-font-family</td></tr>
+            <tr><td>$materialize-form-message-info-font-size</td><td>$materialize-form-message-font-size</td></tr>
+            <tr><td>$materialize-form-message-info-font-weight</td><td>$materialize-form-message-font-weight</td></tr>
+            <tr><td>$materialize-form-message-info-letter-spacing</td><td>$materialize-form-message-letter-spacing</td></tr>
+            <tr><td>$materialize-form-message-info-line-height</td><td>$materialize-form-message-line-height</td></tr>
+            <tr><td>$materialize-form-message-info-margin</td><td>$materialize-form-message-margin</td></tr>
+            <tr><td>$materialize-form-message-info-padding</td><td>$materialize-form-message-padding</td></tr>
+            <tr><td>$materialize-form-message-info-text-align</td><td>$materialize-form-message-text-align</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.form-message-error</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-form-message-error-color</td><td>map-get($theme-colors, 'danger')</td></tr>
+            <tr><td>$materialize-form-message-error-font-family</td><td>$materialize-form-message-font-family</td></tr>
+            <tr><td>$materialize-form-message-error-font-size</td><td>$materialize-form-message-font-size</td></tr>
+            <tr><td>$materialize-form-message-error-font-weight</td><td>$materialize-form-message-font-weight</td></tr>
+            <tr><td>$materialize-form-message-error-letter-spacing</td><td>$materialize-form-message-letter-spacing</td></tr>
+            <tr><td>$materialize-form-message-error-line-height</td><td>$materialize-form-message-line-height</td></tr>
+            <tr><td>$materialize-form-message-error-margin</td><td>$materialize-form-message-margin</td></tr>
+            <tr><td>$materialize-form-message-error-padding</td><td>$materialize-form-message-padding</td></tr>
+            <tr><td>$materialize-form-message-error-text-align</td><td>$materialize-form-message-text-align</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.form-message-success</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-form-message-success-color</td><td>map-get($theme-colors, 'info')</td></tr>
+            <tr><td>$materialize-form-message-success-font-family</td><td>$materialize-form-message-font-family</td></tr>
+            <tr><td>$materialize-form-message-success-font-size</td><td>$materialize-form-message-font-size</td></tr>
+            <tr><td>$materialize-form-message-success-font-weight</td><td>$materialize-form-message-font-weight</td></tr>
+            <tr><td>$materialize-form-message-success-letter-spacing</td><td>$materialize-form-message-letter-spacing</td></tr>
+            <tr><td>$materialize-form-message-success-line-height</td><td>$materialize-form-message-line-height</td></tr>
+            <tr><td>$materialize-form-message-success-margin</td><td>$materialize-form-message-margin</td></tr>
+            <tr><td>$materialize-form-message-success-padding</td><td>$materialize-form-message-padding</td></tr>
+            <tr><td>$materialize-form-message-success-text-align</td><td>$materialize-form-message-text-align</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.form-message-warning</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-form-message-warning-color</td><td>map-get($theme-colors, 'warning')</td></tr>
+            <tr><td>$materialize-form-message-warning-font-family</td><td>$materialize-form-message-font-family</td></tr>
+            <tr><td>$materialize-form-message-warning-font-size</td><td>$materialize-form-message-font-size</td></tr>
+            <tr><td>$materialize-form-message-warning-font-weight</td><td>$materialize-form-message-font-weight</td></tr>
+            <tr><td>$materialize-form-message-warning-letter-spacing</td><td>$materialize-form-message-letter-spacing</td></tr>
+            <tr><td>$materialize-form-message-warning-line-height</td><td>$materialize-form-message-line-height</td></tr>
+            <tr><td>$materialize-form-message-warning-margin</td><td>$materialize-form-message-margin</td></tr>
+            <tr><td>$materialize-form-message-warning-padding</td><td>$materialize-form-message-padding</td></tr>
+            <tr><td>$materialize-form-message-warning-text-align</td><td>$materialize-form-message-text-align</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
