@@ -40,24 +40,207 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>level</td>
+              <td>text | accent | outline</td>
+              <td>"accent"</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>rippleDuration</td>
+              <td>number</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>button | submit</td>
+              <td>"button"</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onClick</td>
+              <td>onClickEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+            <tr>
+              <td>onBlur</td>
+              <td>onBlurEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      
+      <div class="card">
+        <h4 class="terciary">.button-accent</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-accent-background</td><td>map-get($theme-colors, 'primary')</td><tr>
+            <tr><td>$materialize-button-accent-border</td><td>0</td><tr>
+            <tr><td>$materialize-button-accent-border-radius</td><td>$theme-radius-sm</td><tr>
+            <tr><td>$materialize-button-accent-box-shadow</td><td>$theme-shadow-sm</td><tr>
+            <tr><td>$materialize-button-accent-color</td><td>map-get($theme-colors, 'white')</td><tr>
+            <tr><td>$materialize-button-accent-cursor</td><td>pointer</td><tr>
+            <tr><td>$materialize-button-accent-display</td><td>block</td><tr>
+            <tr><td>$materialize-button-accent-font-family</td><td>$theme-font-family-primary</td><tr>
+            <tr><td>$materialize-button-accent-font-size</td><td>$theme-font-size-md</td><tr>
+            <tr><td>$materialize-button-accent-font-weight</td><td>$theme-font-weight-regular</td><tr>
+            <tr><td>$materialize-button-accent-height</td><td>auto</td><tr>
+            <tr><td>$materialize-button-accent-margin</td><td>$theme-space-sm auto</td><tr>
+            <tr><td>$materialize-button-accent-outline</td><td>none</td><tr>
+            <tr><td>$materialize-button-accent-padding</td><td>$theme-space-sm $theme-space-md</td><tr>
+            <tr><td>$materialize-button-accent-tap-highlight-color</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-accent-text-align</td><td>center</td><tr>
+            <tr><td>$materialize-button-accent-text-transform</td><td>uppercase</td><tr>
+            <tr><td>$materialize-button-accent-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td><tr>
+            <tr><td>$materialize-button-accent-white-space</td><td>nowrap</td><tr>
+            <tr><td>$materialize-button-accent-width</td><td>auto</td><tr>
+
+            <tr><td>$materialize-button-accent-hover-background</td><td>lighten(map-get($theme-colors, 'primary'), 5%)</td><tr>
+            <tr><td>$materialize-button-accent-focused-background</td><td>lighten(map-get($theme-colors, 'primary'), 10%)</td><tr>
+
+            <tr><td>$materialize-button-accent-disabled-background</td><td>map-get($theme-colors, 'gray-60')</td><tr>
+            <tr><td>$materialize-button-accent-disabled-box-shadow</td><td>none</td><tr>
+            <tr><td>$materialize-button-accent-disabled-color</td><td>map-get($theme-colors, 'gray-40')</td><tr>
+
+            <tr><td>$materialize-button-accent-ripple-background</td><td>rgba(lighten(map-get($theme-colors, 'primary'), 50%), 0.2)</td><tr>
+          </tbody>
+        </table>
+     
+        <h4 class="terciary">.button-info</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-outline-background</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-outline-border</td><td>$theme-border-sm solid map-get($theme-colors, 'gray-60')</td><tr>
+            <tr><td>$materialize-button-outline-border-radius</td><td>$theme-radius-sm</td><tr>
+            <tr><td>$materialize-button-outline-color</td><td>map-get($theme-colors, 'primary')</td><tr>
+            <tr><td>$materialize-button-outline-cursor</td><td>pointer</td><tr>
+            <tr><td>$materialize-button-outline-display</td><td>block</td><tr>
+            <tr><td>$materialize-button-outline-font-family</td><td>$theme-font-family-primary</td><tr>
+            <tr><td>$materialize-button-outline-font-size</td><td>$theme-font-size-md</td><tr>
+            <tr><td>$materialize-button-outline-font-weight</td><td>$theme-font-weight-regular</td><tr>
+            <tr><td>$materialize-button-outline-height</td><td>auto</td><tr>
+            <tr><td>$materialize-button-outline-margin</td><td>$theme-space-sm auto</td><tr>
+            <tr><td>$materialize-button-outline-outline</td><td>none</td><tr>
+            <tr><td>$materialize-button-outline-padding</td><td>$theme-space-sm $theme-space-md</td><tr>
+            <tr><td>$materialize-button-outline-tap-highlight-color</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-outline-text-align</td><td>center</td><tr>
+            <tr><td>$materialize-button-outline-text-transform</td><td>uppercase</td><tr>
+            <tr><td>$materialize-button-outline-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td><tr>
+            <tr><td>$materialize-button-outline-white-space</td><td>nowrap</td><tr>
+            <tr><td>$materialize-button-outline-width</td><td>auto</td><tr>
+
+            <tr><td>$materialize-button-outline-hover-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.05)</td><tr>
+            <tr><td>$materialize-button-outline-focused-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.1)</td><tr>
+
+            <tr><td>$materialize-button-outline-disabled-background</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-outline-disabled-border</td><td>$theme-border-sm solid map-get($theme-colors, 'gray-60')</td><tr>
+            <tr><td>$materialize-button-outline-disabled-color</td><td>map-get($theme-colors, 'gray-60')</td><tr>
+
+            <tr><td>$materialize-button-outline-ripple-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.2)</td><tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.button-text</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-text-background</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-text-border</td><td>0</td><tr>
+            <tr><td>$materialize-button-text-border-radius</td><td>$theme-radius-sm</td><tr>
+            <tr><td>$materialize-button-text-color</td><td>map-get($theme-colors, 'primary')</td><tr>
+            <tr><td>$materialize-button-text-cursor</td><td>pointer</td><tr>
+            <tr><td>$materialize-button-text-display</td><td>block</td><tr>
+            <tr><td>$materialize-button-text-font-family</td><td>$theme-font-family-primary</td><tr>
+            <tr><td>$materialize-button-text-font-size</td><td>$theme-font-size-md</td><tr>
+            <tr><td>$materialize-button-text-font-weight</td><td>$theme-font-weight-regular</td><tr>
+            <tr><td>$materialize-button-text-height</td><td>auto</td><tr>
+            <tr><td>$materialize-button-text-margin</td><td>$theme-space-sm auto</td><tr>
+            <tr><td>$materialize-button-text-outline</td><td>none</td><tr>
+            <tr><td>$materialize-button-text-padding</td><td>$theme-space-sm $theme-space-md</td><tr>
+            <tr><td>$materialize-button-text-tap-highlight-color</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-text-text-align</td><td>center</td><tr>
+            <tr><td>$materialize-button-text-text-transform</td><td>uppercase</td><tr>
+            <tr><td>$materialize-button-text-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td><tr>
+            <tr><td>$materialize-button-text-white-space</td><td>nowrap</td><tr>
+            <tr><td>$materialize-button-text-width</td><td>auto</td><tr>
+
+            <tr><td>$materialize-button-text-hover-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.05)</td><tr>
+            <tr><td>$materialize-button-text-focused-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.1)</td><tr>
+
+            <tr><td>$materialize-button-text-disabled-background</td><td>transparent</td><tr>
+            <tr><td>$materialize-button-text-disabled-color</td><td>map-get($theme-colors, 'gray-60')</td><tr>
+
+            <tr><td>$materialize-button-text-ripple-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.2)</td><tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
