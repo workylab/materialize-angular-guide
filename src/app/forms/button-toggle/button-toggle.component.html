@@ -49,24 +49,216 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties: Button Toggle Group</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>canUncheck</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>button | submit</td>
+              <td>"button"</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="primary">@Input Properties: Button Toggle</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events: Button Toggle Group</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onChange</td>
+              <td>@Output() onChangeEmitter: EventEmitter&lt;string&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="secondary">@Output Events: Button Toggle</h4>
+        <table class="table-guide ">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onClick</td>
+              <td>@Output() onClickEmitter: EventEmitter&lt;string&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+
+      <div class="card">
+        <h4 class="terciary">.button-toggle-group</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-toggle-group-border-color</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-button-toggle-group-border-radius</td><td>$theme-radius-sm</td></tr>
+            <tr><td>$materialize-button-toggle-group-border-style</td><td>solid</td></tr>
+            <tr><td>$materialize-button-toggle-group-border-width</td><td>$theme-border-sm</td></tr>
+            <tr><td>$materialize-button-toggle-group-margin</td><td>0</td></tr>
+            <tr><td>$materialize-button-toggle-group-padding</td><td>0</td></tr>
+            <tr><td>$materialize-button-toggle-group-width</td><td>max-content</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.button-toggle-group with modifications (.disabled)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-toggle-group-disabled-border-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.button-toggle</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-toggle-background</td><td>map-get($theme-colors, 'white')</td></tr>
+            <tr><td>$materialize-button-toggle-color</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-button-toggle-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-button-toggle-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-button-toggle-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-button-toggle-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-button-toggle-outline</td><td>none</td></tr>
+            <tr><td>$materialize-button-toggle-padding</td><td>$theme-space-sm $theme-space-md</td></tr>
+            <tr><td>$materialize-button-toggle-tap-highlight-color</td><td>transparent</td></tr>
+            <tr><td>$materialize-button-toggle-text-align</td><td>center</td></tr>
+            <tr><td>$materialize-button-toggle-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td></tr>
+            <tr><td>$materialize-button-toggle-width</td><td>auto</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.button-toggle (.hover, .focused, .active, .disabled)</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-button-toggle-hover-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.1)</td></tr>
+            <tr><td>$materialize-button-toggle-focused-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.2)</td></tr>
+
+            <tr><td>$materialize-button-toggle-active-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-button-toggle-active-color</td><td>map-get($theme-colors, 'white')</td></tr>
+
+            <tr><td>$materialize-button-toggle-disabled-background</td><td>map-get($theme-colors, 'gray-80')</td></tr>
+            <tr><td>$materialize-button-toggle-disabled-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+
+            <tr><td>$materialize-button-toggle-ripple-background</td><td>rgba(lighten(map-get($theme-colors, 'primary'), 50%), 0.2);</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
