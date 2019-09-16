@@ -37,24 +37,58 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      
+      <div class="card">
+        <h4 class="terciary">.label</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-label-color</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-label-display</td><td>block</td></tr>
+            <tr><td>$materialize-label-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-label-font-size</td><td>$theme-font-size-xs</td></tr>
+            <tr><td>$materialize-label-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-label-margin</td><td>0</td></tr>
+            <tr><td>$materialize-label-outline</td><td>none</td></tr>
+            <tr><td>$materialize-label-padding</td><td>$theme-space-xs $theme-space-sm</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
