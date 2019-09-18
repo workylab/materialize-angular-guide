@@ -37,24 +37,108 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
+
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
   
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <div class="card">
+          <h4 class="primary">@Input Properties</h4>
+          <table class="table-guide">
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Type</td>
+                <td>Default</td>
+                <td>Description</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>className</td>
+                <td>string</td>
+                <td>" "</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>size</td>
+                <td>object</td>
+                <td>ICON_SIZES.SM</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onClick</td>
+              <td>onClickEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+            <tr>
+              <td>onBlur</td>
+              <td>onBlurEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+  
+      <div class="card">
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$materialize-icon-color</td>
+              <td>$materialize-color-gray-light</td>
+            </tr>
+            <tr>
+              <td>$materialize-icon-cursor</td>
+              <td>pointer</td>
+            </tr>
+            <tr>
+              <td>$materialize-icon-display</td>
+              <td>inline-block</td>
+            </tr>
+            <tr>
+              <td>$materialize-icon-outline</td>
+              <td>none</td>
+            </tr>
+            <tr>
+              <td>$materialize-icon-text-transform</td>
+              <td>lowercase</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">

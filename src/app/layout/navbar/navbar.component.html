@@ -38,23 +38,92 @@
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
   
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+  
+      <div class="card">
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$materialize-navbar-background</td>
+              <td>map-get($theme-colors, 'primary')</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-color</td>
+              <td>map-get($theme-colors, 'white')</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-box-shadow</td>
+              <td>$theme-shadow-sm</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-font-family</td>
+              <td>$theme-font-family-primary</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-font-size</td>
+              <td>$theme-font-size-lg</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-font-weight</td>
+              <td>$theme-font-weight-regular</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-height</td>
+              <td>72px</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-margin</td>
+              <td>0 0 $theme-space-sm</td>
+            </tr>
+            <tr>
+              <td>$materialize-navbar-padding</td>
+              <td>0 $theme-space-xs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
