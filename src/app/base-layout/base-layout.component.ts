@@ -30,38 +30,26 @@ export class BaseLayoutComponent {
         text: translations.drawer.components.children.button,
         link: '/button'
       }, {
-        text: translations.drawer.components.children.glossary,
-        link: '/glossary'
+        text: translations.drawer.components.children.card,
+        link: '/card'
       }, {
-        text: translations.drawer.components.children.htmlVisualizer,
-        link: '/html-visualizer'
-      // }, {
-      //   text: translations.drawer.components.children.calendar,
-      //   link: '/calendar'
+        text: translations.drawer.components.children.calendar,
+        link: '/calendar'
       }, {
         text: translations.drawer.components.children.collapsible,
         link: '/collapsible'
-      // }, {
-      //   text: translations.drawer.components.children.dropdown,
-      //   link: '/dropdown'
       }, {
-        text: translations.drawer.components.children.list,
-        link: '/list'
-      }, {
-        text: translations.drawer.components.children.listItem,
-        link: '/list-item'
+        text: translations.drawer.components.children.icon,
+        link: '/icon'
       }, {
         text: translations.drawer.components.children.modal,
         link: '/modal'
-      // }, {
-      //   text: translations.drawer.components.children.table,
-      //   link: '/table'
-      // }, {
-      //   text: translations.drawer.components.children.tooltip,
-      //   link: '/tooltip'
       }, {
-        text: translations.drawer.components.children.scrollSpy,
-        link: '/scroll-spy'
+        text: translations.drawer.components.children.ripple,
+        link: '/ripple'
+      }, {
+        text: translations.drawer.components.children.table,
+        link: '/table'
       }]
     }, {
       text: translations.drawer.forms.title,
@@ -72,12 +60,6 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.forms.children.checkbox,
         link: '/checkbox'
-      // }, {
-      //   text: translations.drawer.forms.children.checkboxList,
-      //   link: '/checkbox-list'
-      // }, {
-      //   text: translations.drawer.forms.children.datePicker,
-      //   link: '/date-picker'
       }, {
         text: translations.drawer.forms.children.formPrefix,
         link: '/form-prefix'
@@ -108,22 +90,6 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.forms.children.textarea,
         link: '/textarea'
-      }]
-    }, {
-      text: translations.drawer.css.title,
-      link: '/guide/css',
-      children: [{
-        text: translations.drawer.css.children.card,
-        link: '/card'
-      }, {
-      //   text: translations.drawer.css.children.divider,
-      //   link: '/divider'
-      // }, {
-        text: translations.drawer.css.children.icon,
-        link: '/icon'
-      }, {
-        text: translations.drawer.css.children.ripple,
-        link: '/ripple'
       }]
     }, {
       text: translations.drawer.layout.title,

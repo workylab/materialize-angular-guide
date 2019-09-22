@@ -6,40 +6,31 @@ import { CheckboxPageComponent } from './forms/checkbox/checkbox.component';
 import { CheckboxListPageComponent } from './forms/checkbox-list/checkbox-list.component';
 import { CollapsiblePageComponent } from './components/collapsible/collapsible.component';
 import { DrawerPageComponent } from './layout/drawer/drawer.component';
-import { DropdownPageComponent } from './components/dropdown/dropdown.component';
 import { FormPrefixPageComponent } from './forms/form-prefix/form-prefix.component';
 import { FormSuffixPageComponent } from './forms/form-suffix/form-suffix.component';
-import { GlossaryPageComponent } from './components/glossary/glossary.component';
-import { HTMLVisualizerPageComponent } from './components/html-visualizer/html-visualizer.component';
-import { IconPageComponent } from './css/icon/icon.component';
+import { IconPageComponent } from './components/icon/icon.component';
 import { InputPageComponent } from './forms/input/input.component';
 import { LabelPageComponent } from './forms/label/label.component';
-import { ListPageComponent } from './components/list/list.component';
-import { ListItemPageComponent } from './components/list-item/list-item.component';
 import { MessagePageComponent } from './forms/message/message.component';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { RadioPageComponent } from './forms/radio/radio.component';
 import { RouterModule, Routes } from '@angular/router';
-import { RipplePageComponent } from './css/ripple/ripple.component';
-import { ScrollSpyPageComponent } from './components/scroll-spy/scroll-spy.component';
+import { RipplePageComponent } from './components/ripple/ripple.component';
 import { SelectPageComponent } from './forms/select/select.component';
 import { SliderPageComponent } from './forms/slider/slider.component';
 import { SwitchPageComponent } from './forms/switch/switch.component';
 import { TabPageComponent } from './layout/tab/tab.component';
 import { TablePageComponent } from './components/table/table.component';
 import { TextAreaPageComponent } from './forms/textarea/textarea.component';
-import { TooltipPageComponent } from './components/tooltip/tooltip.component';
 import { ComponentsPageComponent } from './components/components.component';
 import { FormsPageComponent } from './forms/forms.component';
 import { LayoutPageComponent } from './layout/layout.component';
-import { CSSPageComponent } from './css/css.component';
 import { HomePageComponent } from './home/home.component';
 import { ThemePageComponent } from './themes/theme.component';
 import { DatePickerPageComponent } from './forms/date-picker/date-picker.component';
-import { CardPageComponent } from './css/card/card.component';
-import { DividerPageComponent } from './css/divider/divider.component';
+import { CardPageComponent } from './components/card/card.component';
 import { AboutPageComponent } from './about/about.component';
 import { GettingStartedPageComponent } from './getting-started/getting-started.component';
 import { BaseLayoutComponent } from './base-layout/base-layout.component';
@@ -83,44 +74,28 @@ const appRoutes: Routes = [
           path: 'calendar'
         },
         {
+          component: CardPageComponent,
+          path: 'card'
+        },
+        {
           component: CollapsiblePageComponent,
           path: 'collapsible'
         },
         {
-          component: DropdownPageComponent,
-          path: 'dropdown'
-        },
-        {
-          component: GlossaryPageComponent,
-          path: 'glossary'
-        },
-        {
-          component: HTMLVisualizerPageComponent,
-          path: 'html-visualizer'
-        },
-        {
-          component: ListPageComponent,
-          path: 'list'
-        },
-        {
-          component: ListItemPageComponent,
-          path: 'list-item'
+          component: IconPageComponent,
+          path: 'icon'
         },
         {
           component: ModalPageComponent,
           path: 'modal'
         },
         {
-          component: ScrollSpyPageComponent,
-          path: 'scroll-spy'
+          component: RipplePageComponent,
+          path: 'ripple'
         },
         {
           component: TablePageComponent,
           path: 'table'
-        },
-        {
-          component: TooltipPageComponent,
-          path: 'tooltip'
         }
       ]
     },
@@ -201,28 +176,6 @@ const appRoutes: Routes = [
         {
           component: TabPageComponent,
           path: 'tab'
-        }
-      ]
-    },
-    {
-      path: 'css',
-      component: CSSPageComponent,
-      children: [
-        {
-          component: CardPageComponent,
-          path: 'card'
-        },
-        {
-          component: DividerPageComponent,
-          path: 'divider'
-        },
-        {
-          component: IconPageComponent,
-          path: 'icon'
-        },
-        {
-          component: RipplePageComponent,
-          path: 'ripple'
         }
       ]
     },

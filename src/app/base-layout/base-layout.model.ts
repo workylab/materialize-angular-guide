@@ -15,18 +15,15 @@ export interface DrawerTranslation {
     title: string;
     children: {
       accordion: string;
-      collapsible: string;
       button: string;
+      collapsible: string;
       calendar: string;
-      dropdown: string;
-      glossary: string;
-      htmlVisualizer: string;
-      list: string;
-      listItem: string;
+      card: string;
+      divider: string;
+      icon: string;
       modal: string;
-      scrollSpy: string;
+      ripple: string;
       table: string;
-      tooltip: string;
     };
   };
   forms: {
@@ -46,15 +43,6 @@ export interface DrawerTranslation {
       slider: string;
       switch: string;
       textarea: string;
-    };
-  };
-  css: {
-    title: string;
-    children: {
-      card: string;
-      divider: string;
-      icon: string;
-      ripple: string;
     };
   };
   layout: {

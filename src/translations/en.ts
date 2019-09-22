@@ -10,18 +10,15 @@ export const translations: Translations = {
       title: 'Components',
       children: {
         accordion: 'Accordion',
-        collapsible: 'Collapsible',
         button: 'Button',
         calendar: 'Calendar',
-        dropdown: 'Dropdown',
-        glossary: 'Glossary',
-        htmlVisualizer: 'HTML Visualizer',
-        list: 'List',
-        listItem: 'List Item',
+        card: 'Card',
+        collapsible: 'Collapsible',
+        divider: 'Divider',
+        icon: 'Icon',
         modal: 'Modal',
-        scrollSpy: 'Scroll Spy',
-        table: 'Table',
-        tooltip: 'Tooltip'
+        ripple: 'Ripple',
+        table: 'Table'
       }
     },
     forms: {
@@ -41,15 +38,6 @@ export const translations: Translations = {
         slider: 'Slider',
         switch: 'Switch',
         textarea: 'Textarea'
-      }
-    },
-    css: {
-      title: 'CSS',
-      children: {
-        card: 'Card',
-        divider: 'Divider',
-        icon: 'Icon',
-        ripple: 'Ripple'
       }
     },
     layout: {
