@@ -10,32 +10,336 @@
   
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
-      <p>Calendars...</p>
-  
-      <p>Example</p>
-      <p>Visualizer</p>
+
+      <div class="card">  
+        <h3>How to use</h3>
+
+        <p class="text-indent margin-bottom-sm">
+          - Import the <span class="text-accent">MaterializeCalendarModule</span> in your module.
+        </p>
+        <p class="text-indent">
+          - Use the <span class="text-accent secondary">materialize-calendar</span> tag in your template.
+        </p>
+
+        <h3>Code</h3>
+        <p class="text-indent">
+          <materialize-html-visualizer html='
+            <materialize-calendar></materialize-calendar>
+          '></materialize-html-visualizer>
+        </p>
+
+        <h3>Result</h3>
+        <p class="text-indent no-margin">
+          <materialize-calendar></materialize-calendar>
+        </p>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>date</td>
+              <td>Date</td>
+              <td>new Date()</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>displayOtherMonthDays</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onSelectDay</td>
+              <td>onSelectDayEmitter()</td><td>EventEmitter&lt;DateModel&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      
+      <div class="card">
+        <h4 class="terciary">.calendar</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-background</td><td>$theme-color-white</td></tr>
+            <tr><td>$materialize-calendar-border-radius</td><td>$theme-radius-sm</td></tr>
+            <tr><td>$materialize-calendar-box-shadow</td><td>$theme-shadow-md</td></tr>
+            <tr><td>$materialize-calendar-margin</td><td>0 auto</td></tr>
+            <tr><td>$materialize-calendar-outline</td><td>none</td></tr>
+            <tr><td>$materialize-calendar-overflow</td><td>hidden</td></tr>
+            <tr><td>$materialize-calendar-width</td><td>300px</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-header</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-header-background</td><td>$theme-color-primary</td></tr>
+            <tr><td>$materialize-calendar-header-color</td><td>$theme-color-white</td></tr>
+            <tr><td>$materialize-calendar-header-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-calendar-header-margin</td><td>0</td></tr>
+            <tr><td>$materialize-calendar-header-padding</td><td>$theme-space-sm</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-year</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-year-background</td><td>transparent</td></tr>
+            <tr><td>$materialize-calendar-year-box-shadow</td><td>unset</td></tr>
+            <tr><td>$materialize-calendar-year-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-calendar-year-margin</td><td>0 0 $theme-space-xxxs 0</td></tr>
+            <tr><td>$materialize-calendar-year-padding</td><td>$theme-space-xs $theme-space-lg</td></tr>
+            <tr><td>$materialize-calendar-year-text-transform</td><td>unset</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-date</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-date-background</td><td>transparent</td></tr>
+            <tr><td>$materialize-calendar-date-box-shadow</td><td>unset</td></tr>
+            <tr><td>$materialize-calendar-date-font-size</td><td>$theme-font-size-xl</td></tr>
+            <tr><td>$materialize-calendar-date-margin</td><td>0</td></tr>
+            <tr><td>$materialize-calendar-date-padding</td><td>$theme-space-xs $theme-space-lg</td></tr>
+            <tr><td>$materialize-calendar-date-text-transform</td><td>unset</td></tr>
+          </tbody>
+        </table>
+  
+        <h4 class="terciary">.calendar-body</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-body-height</td><td>330px</td></tr>
+            <tr><td>$materialize-calendar-body-margin</td><td>0</td></tr>
+            <tr><td>$materialize-calendar-body-padding</td><td>$theme-space-sm $theme-space-xs</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-controls</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-controls-margin</td><td>0 0 $theme-space-xs 0</td></tr>
+            <tr><td>$materialize-calendar-controls-padding</td><td>0</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-month</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-month-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-calendar-month-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-calendar-month-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-calendar-month-text-align</td><td>center</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-control</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-control-background</td><td>$theme-color-white</td></tr>
+            <tr><td>$materialize-calendar-control-border-radius</td><td>$theme-radius-full</td></tr>
+            <tr><td>$materialize-calendar-control-box-shadow</td><td>unset</td></tr>
+            <tr><td>$materialize-calendar-control-color</td><td>$theme-color-black</td></tr>
+            <tr><td>$materialize-calendar-control-font-size</td><td>20px</td></tr>
+            <tr><td>$materialize-calendar-control-size</td><td>30px</td></tr>
+            <tr><td>$materialize-calendar-control-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td></tr>
+              
+            <tr><td>$materialize-calendar-control-ripple-background</td><td>rgba($theme-color-black, 0.05)</td></tr>
+            <tr><td>$materialize-calendar-control-hover-background</td><td>rgba($theme-color-black, 0.1)</td></tr>
+          </tbody>
+        </table>
+  
+        <h4 class="terciary">.calendar-day-name</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-day-name-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+            <tr><td>$materialize-calendar-day-name-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-calendar-day-name-font-size</td><td>$theme-font-size-xs</td></tr>
+            <tr><td>$materialize-calendar-day-name-font-weight</td><td>$theme-font-weight-light</td></tr>
+            <tr><td>$materialize-calendar-day-name-padding</td><td>$theme-space-xxxs $theme-space-xxxs $theme-space-sm</td></tr>
+            <tr><td>$materialize-calendar-day-name-text-align</td><td>center</td></tr>
+          </tbody>
+        </table>
+  
+        <h4 class="terciary">.calendar-day</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-day-border-radius</td><td>$theme-radius-full</td></tr>
+            <tr><td>$materialize-calendar-day-border</td><td>$theme-border-sm solid transparent</td></tr>
+            <tr><td>$materialize-calendar-day-color</td><td>$theme-color-black</td></tr>
+            <tr><td>$materialize-calendar-day-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-calendar-day-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-calendar-day-font-size</td><td>$theme-font-size-sm</td></tr>
+            <tr><td>$materialize-calendar-day-margin</td><td>2px</td></tr>
+            <tr><td>$materialize-calendar-day-size</td><td>36px</td></tr>
+            <tr><td>$materialize-calendar-day-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-day with modifications (.current, .selected, .disabled, >.ripple, :hover)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-day-current-background</td><td>transparent</td></tr>
+            <tr><td>$materialize-calendar-day-current-border-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+            <tr><td>$materialize-calendar-day-current-color</td><td>$theme-color-black</td></tr>
+
+            <tr><td>$materialize-calendar-day-selected-background</td><td>$theme-color-primary</td></tr>
+            <tr><td>$materialize-calendar-day-selected-border-color</td><td>transparent</td></tr>
+            <tr><td>$materialize-calendar-day-selected-color</td><td>$theme-color-white</td></tr>
+
+            <tr><td>$materialize-calendar-day-disabled-background</td><td>map-get($theme-colors, 'gray-80')</td></tr>
+            <tr><td>$materialize-calendar-day-disabled-border-color</td><td>transparent</td></tr>
+            <tr><td>$materialize-calendar-day-disabled-color</td><td>map-get($theme-colors, 'gray-40')</td></tr>
+
+            <tr><td>$materialize-calendar-day-ripple</td><td>rgba(lighten($theme-color-primary, 50%), 0.3)</td></tr>
+            
+            <tr><td>$materialize-calendar-day-hover-background</td><td>map-get($theme-colors, 'gray-80')</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-year-option</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-year-option-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-calendar-year-option-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-calendar-year-option-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-calendar-year-option-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-calendar-year-option-margin</td><td>$theme-space-xxxs 0</td></tr>
+            <tr><td>$materialize-calendar-year-option-padding</td><td>$theme-space-sm</td></tr>
+            <tr><td>$materialize-calendar-year-option-text-align</td><td>center</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.calendar-year-option with modifications (.selected)</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-calendar-year-option-selected-color</td><td>$theme-color-primary</td></tr>
+            <tr><td>$materialize-calendar-year-option-selected-font-size</td><td>$theme-font-size-xl</td></tr>
+            <tr><td>$materialize-calendar-year-option-selected-font-weight</td><td>$theme-font-weight-medium</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
@@ -45,7 +349,28 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <div class="example-container">
+          <h3>Simple Calendar</h3>
+          <materialize-calendar></materialize-calendar>
+        </div>
+
+        <div class="example-container">
+          <h3>Calendar with value</h3>
+          <materialize-calendar [date]="date"></materialize-calendar>
+        </div>
+
+        <div class="example-container">
+          <h3>Calendar without other month days</h3>
+          <materialize-calendar [displayOtherMonthDays]="false"></materialize-calendar>
+        </div>
+
+        <div class="example-container">
+          <h3>Calendar without a selected value</h3>
+          <materialize-calendar [date]="null"></materialize-calendar>
+        </div>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">

@@ -38,7 +38,8 @@ import {
   MaterializeSelectModule,
   MaterializeTextAreaModule,
   MaterializeSwitchModule,
-  MaterializeSliderModule
+  MaterializeSliderModule,
+  MaterializeCalendarModule
 } from 'materialize-angular';
 import { ModalPageComponent } from './components/modal/modal.component';
 import { NavbarPageComponent } from './layout/navbar/navbar.component';
@@ -110,6 +111,7 @@ import { GettingStartedPageComponent } from './getting-started/getting-started.c
     MaterializeAccordionModule,
     MaterializeButtonModule,
     MaterializeButtonToggleGroupModule,
+    MaterializeCalendarModule,
     MaterializeCardModule,
     MaterializeCheckboxModule,
     MaterializeCollapsibleModule,
