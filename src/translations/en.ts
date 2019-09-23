@@ -14,11 +14,9 @@ export const translations: Translations = {
         calendar: 'Calendar',
         card: 'Card',
         collapsible: 'Collapsible',
-        divider: 'Divider',
         icon: 'Icon',
         modal: 'Modal',
-        ripple: 'Ripple',
-        table: 'Table'
+        ripple: 'Ripple'
       }
     },
     forms: {
@@ -26,10 +24,7 @@ export const translations: Translations = {
       children: {
         buttonToggle: 'Button Toggle',
         checkbox: 'Checkbox',
-        checkboxList: 'Checkbox List',
         datePicker: 'Date Picker',
-        formPrefix: 'Form Prefix',
-        formSuffix: 'Form Suffix',
         input: 'Input',
         label: 'Label',
         message: 'Message',

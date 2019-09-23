@@ -19,11 +19,9 @@ export interface DrawerTranslation {
       collapsible: string;
       calendar: string;
       card: string;
-      divider: string;
       icon: string;
       modal: string;
       ripple: string;
-      table: string;
     };
   };
   forms: {
@@ -31,10 +29,7 @@ export interface DrawerTranslation {
     children: {
       buttonToggle: string;
       checkbox: string;
-      checkboxList: string;
       datePicker: string;
-      formPrefix: string;
-      formSuffix: string;
       input: string;
       label: string;
       message: string;

@@ -37,24 +37,71 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>rippleDuration</td>
+              <td>number</td>
+              <td>500</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>isRippleActive</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>isRippleCenter</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+      <div class="card">
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-ripple-backgorund</td><td>rgba(map-get($theme-colors, 'black'), 0.1)</td></tr>
+            <tr><td>$materialize-ripple-border-radius</td><td>$theme-radius-full</td></tr>
+            <tr><td>$materialize-ripple-transition-property</td><td>$theme-property-opacity</td></tr>
+            <tr><td>$materialize-ripple-transition-function</td><td>$theme-transition-function-in-out</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
@@ -66,17 +113,25 @@
       <h2>EXAMPLES</h2>
 
       <div class="card">
-        <h3>Simple ripple</h3>
-        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;"></div>
+        <div class="example-container">
+          <h3>Simple ripple</h3>
+          <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;"></div>
+        </div>
         
-        <h3>Ripple center</h3>
-        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [isRippleCenter]="true"></div>
+        <div class="example-container">
+          <h3>Ripple center</h3>
+          <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [isRippleCenter]="true"></div>
+        </div>
 
-        <h3>Ripple with 2 seconds</h3>
-        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [rippleDuration]="2000"></div>
+        <div class="example-container">
+          <h3>Ripple with 2 seconds</h3>
+          <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [rippleDuration]="2000"></div>
+        </div>
         
-        <h3>Ripple disabled</h3>
-        <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [isRippleActive]="false"></div>
+        <div class="example-container">
+          <h3>Ripple disabled</h3>
+          <div materializeRipple style="width: 300px; height: 300px; border: 1px solid #CCC;" [isRippleActive]="false"></div>
+        </div>
       </div>
     </materialize-scroll-spy-item>
   

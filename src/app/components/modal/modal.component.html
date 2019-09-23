@@ -230,7 +230,7 @@
         </table>
   
         <h4 class="terciary">.materialize-modal-icon-close</h4>
-        <table class="table-guide table-sass">
+        <table class="table-guide table-sass margin-bottom-lg">
           <thead>
             <tr>
               <td>Name</td>
@@ -284,21 +284,29 @@
       <h2>EXAMPLES</h2>
       
       <div class="card">
-        <h3>Simple modal</h3>
-        <materialize-modal #modalExample1>This is a modal</materialize-modal>
-        <materialize-button (onClick)="modalExample1.open()">Open modal</materialize-button>
+        <div class="example-container">
+          <h3>Simple modal</h3>
+          <materialize-modal #modalExample1>This is a modal</materialize-modal>
+          <materialize-button (onClick)="modalExample1.open()">Open modal</materialize-button>
+        </div>
        
-        <h3>Modal without close button</h3>
-        <materialize-modal #modalExample2 [hasCloseButton]="false">This is a modal</materialize-modal>
-        <materialize-button (onClick)="modalExample2.open()">Open modal</materialize-button>
+        <div class="example-container">
+          <h3>Modal without close button</h3>
+          <materialize-modal #modalExample2 [hasCloseButton]="false">This is a modal</materialize-modal>
+          <materialize-button (onClick)="modalExample2.open()">Open modal</materialize-button>
+        </div>
 
-        <h3>Modal not close on backdrop</h3>
-        <materialize-modal #modalExample3 [dismissOnBackdrop]="false">This is a modal</materialize-modal>
-        <materialize-button (onClick)="modalExample3.open()">Open modal</materialize-button>
+        <div class="example-container">
+          <h3>Modal not close on backdrop</h3>
+          <materialize-modal #modalExample3 [dismissOnBackdrop]="false">This is a modal</materialize-modal>
+          <materialize-button (onClick)="modalExample3.open()">Open modal</materialize-button>
+        </div>
 
-        <h3>Modal without backdrop</h3>
-        <materialize-modal #modalExample4 [hasBackdrop]="false">This is a modal</materialize-modal>
-        <materialize-button (onClick)="modalExample4.open()">Open modal</materialize-button>
+        <div class="example-container">
+          <h3>Modal without backdrop</h3>
+          <materialize-modal #modalExample4 [hasBackdrop]="false">This is a modal</materialize-modal>
+          <materialize-button (onClick)="modalExample4.open()">Open modal</materialize-button>
+        </div>
       </div>
     </materialize-scroll-spy-item>
   

@@ -47,9 +47,6 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.components.children.ripple,
         link: '/ripple'
-      }, {
-        text: translations.drawer.components.children.table,
-        link: '/table'
       }]
     }, {
       text: translations.drawer.forms.title,
@@ -60,12 +57,6 @@ export class BaseLayoutComponent {
       }, {
         text: translations.drawer.forms.children.checkbox,
         link: '/checkbox'
-      }, {
-        text: translations.drawer.forms.children.formPrefix,
-        link: '/form-prefix'
-      }, {
-        text: translations.drawer.forms.children.formSuffix,
-        link: '/form-suffix'
       }, {
         text: translations.drawer.forms.children.input,
         link: '/input'

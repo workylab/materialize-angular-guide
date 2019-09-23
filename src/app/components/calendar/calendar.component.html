@@ -88,8 +88,8 @@
           </thead>
           <tbody>
             <tr>
-              <td>onSelectDay</td>
-              <td>onSelectDayEmitter()</td><td>EventEmitter&lt;DateModel&gt;</td>
+              <td>onClick</td>
+              <td>onClickEmitter(): EventEmitter&lt;DateModel&gt;</td>
               <td>"none"</td>
             </tr>
           </tbody>
@@ -100,6 +100,14 @@
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
       
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+
       <div class="card">
         <h4 class="terciary">.calendar</h4>
         <table class="table-guide table-sass margin-bottom-lg">
