@@ -47,24 +47,204 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties: Tab Group</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>selectedIndex</td>
+              <td>number</td>
+              <td>0</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>transitionDuration</td>
+              <td>number</td>
+              <td>450</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="primary">@Input Properties: Tab</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>link</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>title</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events: Slider</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onSelectTab</td>
+              <td>@Output() onTabSelectEmitter</td><td>EventEmitter&lt;number&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+  
+      <div class="card">
+        <h4 class="terciary">.tab-group</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-tab-group-align-items</td><td>flex-start</td></tr>
+            <tr><td>$materialize-tab-group-border-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+            <tr><td>$materialize-tab-group-border-style</td><td>solid</td></tr>
+            <tr><td>$materialize-tab-group-border-width</td><td>0 0 $theme-border-sm 0</td></tr>
+            <tr><td>$materialize-tab-group-justify-content</td><td>flex-start</td></tr>
+            <tr><td>$materialize-tab-group-margin</td><td>0 0 $theme-space-lg</td></tr>
+            <tr><td>$materialize-tab-group-padding</td><td>0</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.tab-group with modifications (:hover, .active)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-tab-group-hover-item-background</td><td>map-get($theme-colors, 'gray-80')</td></tr>
+            <tr><td>$materialize-tab-group-active-item-color</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-tab-group-active-item-font-weight</td><td>$theme-font-weight-medium</td></tr>
+            <tr><td>$materialize-tab-group-disabled-item-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.tab-group-item</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-tab-group-item-border-radius</td><td>0</td></tr>
+            <tr><td>$materialize-tab-group-item-color</td><td>map-get($theme-colors, 'gray-20')</td></tr>
+            <tr><td>$materialize-tab-group-item-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-tab-group-item-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-tab-group-item-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-tab-group-item-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-tab-group-item-letter-spacing</td><td>0</td></tr>
+            <tr><td>$materialize-tab-group-item-line-height</td><td>100%</td></tr>
+            <tr><td>$materialize-tab-group-item-padding</td><td>$theme-space-md $theme-space-lg</td></tr>
+            <tr><td>$materialize-tab-group-item-text-align</td><td>center</td></tr>
+            <tr><td>$materialize-tab-group-item-transition</td><td>$theme-property-background $theme-timer-md $theme-transition-function-ease</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.tab-group-indicator-container</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-tab-group-indicator-container-bottom</td><td>0</td></tr>
+            <tr><td>$materialize-tab-group-indicator-container-transition-function</td><td>cubic-bezier(0.35, 0, 0.25, 1)</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.tab-group-indicator</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-tab-group-indicator-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-tab-group-indicator-border-radius</td><td>$theme-border-md</td></tr>
+            <tr><td>$materialize-tab-group-indicator-height</td><td>$theme-border-md</td></tr>
+            <tr><td>$materialize-tab-group-indicator-width</td><td>100%</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
