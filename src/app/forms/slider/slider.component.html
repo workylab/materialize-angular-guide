@@ -61,24 +61,268 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties: Slider</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>showLabels</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>showTicks</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>number | string | boolean | null</td>
+              <td>null</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="primary">@Input Properties: Slider Option</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>number | string | boolean | null</td>
+              <td>null</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events: Slider</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onChange</td>
+              <td>@Output() onChangeEmitter</td><td>EventEmitter&lt;string&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      
+      <div class="card">
+        <h4 class="terciary">.slider</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-margin</td><td>0</td></tr>
+            <tr><td>$materialize-slider-padding</td><td>$theme-space-xxxl $theme-space-xl $theme-space-xxl</td></tr>
+            <tr><td>$materialize-slider-tap-highlight-color</td><td>transparent</td></tr>
+            <tr><td>$materialize-slider-width</td><td>$theme-space-full</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider with modifications (.disabled)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-disabled-track-background</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+            <tr><td>$materialize-slider-disabled-step-background</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-track-container</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-track-container-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-slider-track-container-outline</td><td>none</td></tr>
+            <tr><td>$materialize-slider-track-container-padding</td><td>$theme-space-sm 0</td></tr>
+            <tr><td>$materialize-slider-track-container-position</td><td>relative</td></tr>
+            <tr><td>$materialize-slider-track-container-width</td><td>$theme-space-full</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-step</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-step-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-slider-step-height</td><td>$theme-space-sm</td></tr>
+            <tr><td>$materialize-slider-step-position</td><td>absolute</td></tr>
+            <tr><td>$materialize-slider-step-top</td><td>50%</td></tr>
+            <tr><td>$materialize-slider-step-width</td><td>$theme-border-md</td></tr>
+            <tr><td>$materialize-slider-step-transform</td><td>translate(-50%, -50%);</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-track</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-track-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-slider-track-border-radius</td><td>$theme-radius-sm</td></tr>
+            <tr><td>$materialize-slider-track-height</td><td>$theme-border-lg</td></tr>
+            <tr><td>$materialize-slider-track-overflow</td><td>hidden</td></tr>
+            <tr><td>$materialize-slider-track-position</td><td>relative</td></tr>
+            <tr><td>$materialize-slider-track-width</td><td>$theme-space-full</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-indicator-container</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-indicator-container-left</td><td>0</td></tr>
+            <tr><td>$materialize-slider-indicator-container-position</td><td>absolute</td></tr>
+            <tr><td>$materialize-slider-indicator-container-top</td><td>$theme-space-half</td></tr>
+            <tr><td>$materialize-slider-indicator-container-transform</td><td>translate(-50%, -50%)</td></tr>
+            <tr><td>$materialize-slider-indicator-container-transition</td><td>$theme-property-left $theme-timer-md $theme-transition-function-out</td></tr>
+            <tr><td>$materialize-slider-indicator-container-z-index</td><td>$theme-zindex-1</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-labels-container</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-labels-container-position</td><td>relative</td></tr>
+            <tr><td>$materialize-slider-labels-container-width</td><td>$theme-space-full</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-option</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-option-color</td><td>map-get($theme-colors, 'gray-20')</td></tr>
+            <tr><td>$materialize-slider-option-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-slider-option-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-slider-option-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-slider-option-height</td><td>auto</td></tr>
+            <tr><td>$materialize-slider-option-left</td><td>0</td></tr>
+            <tr><td>$materialize-slider-option-position</td><td>absolute</td></tr>
+            <tr><td>$materialize-slider-option-text-align</td><td>center</td></tr>
+            <tr><td>$materialize-slider-option-text-transform</td><td>none</td></tr>
+            <tr><td>$materialize-slider-option-top</td><td>0</td></tr>
+            <tr><td>$materialize-slider-option-transform</td><td>translateX(-50%)</td></tr>
+            <tr><td>$materialize-slider-option-transition</td><td>$theme-property-font-size $theme-timer-sm $theme-transition-function-ease</td></tr>
+            <tr><td>$materialize-slider-option-width</td><td>auto</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.slider-option with modifications (.active)</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-slider-option-active-font-weight</td><td>$theme-font-weight-bold</td></tr>
+            <tr><td>$materialize-slider-option-active-font-size</td><td>$theme-font-size-lg</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
