@@ -46,24 +46,241 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties: Radio Group</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>canUncheck</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="primary">@Input Properties: Button Toggle</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>string | null</td>
+              <td>null</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events: Radio Group</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onChange</td>
+              <td>@Output() onChangeEmitter: EventEmitter&lt;string&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="secondary">@Output Events: Radio</h4>
+        <table class="table-guide ">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onClick</td>
+              <td>@Output() onClickEmitter: EventEmitter&lt;string&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      
+      <div class="card">
+        <h4 class="terciary">.radio</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-radio-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-radio-outline</td><td>unset</td></tr>
+            <tr><td>$materialize-radio-padding</td><td>$theme-space-xxxs 0</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.radio-label</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-radio-label-color</td><td>map-get($theme-colors, 'gray-20')</td></tr>
+            <tr><td>$materialize-radio-label-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-radio-label-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-radio-label-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-radio-label-padding</td><td>0</td></tr>
+            <tr><td>$materialize-radio-label-text-align</td><td>right</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.radio-indicator</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-radio-indicator-border</td><td>$theme-border-md solid map-get($theme-colors, 'gray-40')</td></tr>
+            <tr><td>$materialize-radio-indicator-border-radius</td><td>$theme-radius-full</td></tr>
+            <tr><td>$materialize-radio-indicator-display</td><td>inline-block</td></tr>
+            <tr><td>$materialize-radio-indicator-margin</td><td>0 $theme-space-sm</td></tr>
+            <tr><td>$materialize-radio-indicator-outline</td><td>none</td></tr>
+            <tr><td>$materialize-radio-indicator-padding</td><td>0 $theme-space-sm</td></tr>
+            <tr><td>$materialize-radio-indicator-position</td><td>relative</td></tr>
+            <tr><td>$materialize-radio-indicator-tap-highlight-color</td><td>transparent</td></tr>
+            <tr><td>$materialize-radio-indicator-size</td><td>20px</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.radio-indicator with modifications (.active, .disabled)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-radio-indicator-active-border-color</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-radio-indicator-active-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-radio-indicator-active-size</td><td>10px</td></tr>
+            <tr><td>$materialize-radio-indicator-disabled-color</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.radio-indicator-ripple</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-radio-indicator-ripple-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-radio-indicator-ripple-size</td><td>40px</td></tr>
+            <tr><td>$materialize-radio-indicator-ripple-transition</td><td>$theme-property-background $theme-timer-sm $theme-transition-function-ease</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
