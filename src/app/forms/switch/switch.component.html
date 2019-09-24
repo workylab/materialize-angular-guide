@@ -37,24 +37,241 @@
   
     <materialize-scroll-spy-item id="api">    
       <h2>API</h2>
-  
-      <table>
-        <tr>
-          <td>Prop</td>
-          <td>Type</td>
-          <td>Default</td>
-        </tr>
-        <tr>
-          <td>className</td>
-          <td>string</td>
-          <td>''</td>
-        </tr>
-      </table>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>disabled</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>id</td>
+              <td>string | null</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>required</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>value</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onChange</td>
+              <td>onChangeEmitter(): EventEmitter&lt;boolean&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+
+      <div class="card">
+        <h4 class="terciary">.switch</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-cursor</td><td>pointer</td></tr>
+            <tr><td>$materialize-switch-padding</td><td>$theme-space-xs 0</td></tr>
+            <tr><td>$materialize-switch-outline</td><td>none</td></tr>
+            <tr><td>$materialize-switch-tap-highlight-color</td><td>transparent</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch with modifications (.active)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-active-indicator-left</td><td>$materialize-switch-track-width - $materialize-switch-indicator-size</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-label</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-label-color</td><td>map-get($theme-colors, 'gray-20')</td></tr>
+            <tr><td>$materialize-switch-label-font-family</td><td>$theme-font-family-primary</td></tr>
+            <tr><td>$materialize-switch-label-font-size</td><td>$theme-font-size-md</td></tr>
+            <tr><td>$materialize-switch-label-font-weight</td><td>$theme-font-weight-regular</td></tr>
+            <tr><td>$materialize-switch-label-padding</td><td>0</td></tr>
+            <tr><td>$materialize-switch-label-text-align</td><td>left</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-track</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-track-background</td><td>lighten(map-get($theme-colors, 'gray-40'), 30%)</td></tr>
+            <tr><td>$materialize-switch-track-height</td><td>14px</td></tr>
+            <tr><td>$materialize-switch-track-margin</td><td>0 $theme-space-sm</td></tr>
+            <tr><td>$materialize-switch-track-width</td><td>36px</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-track with modifications (.active, .disabled)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-track-active-background</td><td>lighten(map-get($theme-colors, 'primary'), 30%)</td></tr>
+            <tr><td>$materialize-switch-track-disabled-background</td><td>map-get($theme-colors, 'gray-60')</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-indicator</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-indicator-background</td><td>map-get($theme-colors, 'white')</td></tr>
+            <tr><td>$materialize-switch-indicator-border-radius</td><td>$theme-radius-full</td></tr>
+            <tr><td>$materialize-switch-indicator-box-shadow</td><td>$theme-shadow-sm</td></tr>
+            <tr><td>$materialize-switch-indicator-left</td><td>0</td></tr>
+            <tr><td>$materialize-switch-indicator-transition</td><td>$theme-property-left $theme-timer-sm $theme-transition-function-ease</td></tr>
+            <tr><td>$materialize-switch-indicator-size</td><td>20px</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-indicator with modifications (.active, .disabled)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-indicator-active-background</td><td>map-get($theme-colors, 'primary')</td></tr>
+            <tr><td>$materialize-switch-indicator-disabled-background</td><td>lighten(map-get($theme-colors, 'gray-60'), 10%)</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-indicator-ripple</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-indicator-ripple-size</td><td>40px</td></tr>
+            <tr><td>$materialize-switch-indicator-ripple-transition</td><td>$theme-property-background $theme-timer-sm $theme-transition-function-ease</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch-indicator-ripple with modifications (:hover, .active, .inactive)</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-indicator-ripple-hover-inactive-background</td><td>rgba(map-get($theme-colors, 'gray-20'), 0.1)</td></tr>
+            <tr><td>$materialize-switch-indicator-ripple-hover-active-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.2)</td></tr>
+            <tr><td>$materialize-switch-indicator-ripple-focused-inactive-background</td><td>rgba(map-get($theme-colors, 'gray-20'), 0.05)</td></tr>
+            <tr><td>$materialize-switch-indicator-ripple-focused-active-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.1)</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.switch .ripple</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-switch-ripple-active-background</td><td>rgba(map-get($theme-colors, 'primary'), 0.2)</td></tr>
+            <tr><td>$materialize-switch-ripple-background</td><td>rgba(map-get($theme-colors, 'gray-20'), 0.2)</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
@@ -66,17 +283,25 @@
       <h2>EXAMPLES</h2>
 
       <div class="card">
-        <h3>Simple switch</h3>
-        <materialize-switch>Switch</materialize-switch>
+        <div class="example-container">
+          <h3>Simple switch</h3>
+          <materialize-switch>Label</materialize-switch>
+        </div>
 
-        <h3>Switch with value</h3>
-        <materialize-switch [value]="true">With Value</materialize-switch>
+        <div class="example-container">
+          <h3>Switch with value</h3>
+          <materialize-switch [value]="true">Label</materialize-switch>
+        </div>
 
-        <h3>Switch disabled</h3>
-        <materialize-switch [disabled]="true">Disabled</materialize-switch>
+        <div class="example-container">
+          <h3>Switch disabled</h3>
+          <materialize-switch [disabled]="true">Label</materialize-switch>
+        </div>
 
-        <h3>Switch disabled with value</h3>
-        <materialize-switch [disabled]="true" [value]="true">Disabled with value</materialize-switch>
+        <div class="example-container">
+          <h3>Switch disabled with value</h3>
+          <materialize-switch [disabled]="true" [value]="true">Label</materialize-switch>
+        </div>
       </div>
     </materialize-scroll-spy-item>
   
