@@ -1,71 +1,73 @@
-<div class="materialize-container">
-  <div class="materialize-row">
-    <div class="materialize-col-12">
-      <h1>Getting started</h1>
-    </div>
-  </div>
-  <div class="materialize-row">
-    <div class="materialize-col-12">
-      <div class="card">
-        <h3>Install npm package</h3>
-        <materialize-html-visualizer html='npm install --save materialize-angular'></materialize-html-visualizer>
-      </div>
-    </div>
-  </div>
-  <div class="materialize-row">
-    <div class="materialize-col-12">
-      <div class="card">
-        <h3>Add styles</h3>
-        <p>Import materialize angular styles by writing the following lines in your styles.scssfile (it is located in my-project/src/styles.scss)</p>
-        <materialize-html-visualizer html="
-          $materialize-fonts-path: '~materialize-angular/fonts';
+<h1>Getting started</h1>
 
-          // You can change styles by overwriting SASS variables here (see the available variable list in each component)
+<h2>Why Materialize Angular?</h2>
+<div class="card">
+  <p class="no-margin">Materialize Angular is a library to help you easily doing beautiful websites. The goal of the project is to help
+  the user in the creation of websites based on Angular and using the Material Design specification. Also, we are
+  trying to do awesome and best quality components for different website types.<br><br>
+  It's a very early version but it is ready for production environments. We're working on LTS versions and try to do
+  the library compatible with different Angular versions.</p>
+</div>
 
-          @import '~materialize-angular/styles/materialize-angular.scss';
-        "></materialize-html-visualizer>
-      </div>
-    </div>
+<h2>Quickstart</h2>
+<div class="card">
+  <h4>Step 1: Install npm package:</h4>
+  <div class="highlight highlight-source-shell">
+    <pre> npm install --save materialize-angular</pre>
   </div>
-  <div class="materialize-row">
-    <div class="materialize-col-12">
-      <div class="card">
-        <h3>Import component modules in your app module</h3>
-        <p>Import just specific components by importing each one like MaterializeButtonModule, MaterializeCardModule, etc.</p>
-        <materialize-html-visualizer html="
-          import { Component, NgModule } from '@angular/core';
-          import { MaterializeButtonModule, MaterializeCardModule } from 'materialize-angular';
-          
-          @NgModule({
-            imports: [
-              MaterializeButtonModule,
-              MaterializeCardModule
-            ]
-          })
-          export class MyModule {}
-        "></materialize-html-visualizer>
-      </div>
-    </div>
+</div>
+
+<div class="card">
+  <h4>Step 2: Add styles</h4>
+  <p>
+    Import materialize angular styles by writing the following lines in your <code>styles.scss</code>file (it is
+    located in <code>my-project/src/styles.scss</code>)
+  </p>
+
+  <div class="highlight highlight-source-sass">
+    <pre>
+  $<span class="pl-smi">materialize-fonts-path</span>: <span class="pl-s"><span class="pl-pds">'</span>~materialize-angular/fonts<span class="pl-pds">'</span></span><span class="pl-ii">;</span>
+
+  <span class="pl-k">@import</span><span class="pl-v"> </span>'<span class="pl-v">~materialize-angular/styles/materialize-angular.scss</span>'<span class="pl-ii">;</span></pre>
   </div>
-  <div class="materialize-row">
-    <div class="materialize-col-12">
-      <div class="card">
-        <h3>Use imported components</h3>
-        <p>Finally use the imported components into your apps components:</p>
-        <materialize-html-visualizer html="
-          import { Component } from '@angular/core';
-    
-          @Component({
-            selector: 'app-demo',
-            template: `
-              <materialize-card>
-                <materialize-button>Hello From Materialize Angular!</materialize-button>
-              </materialize-card>
-            `
-          })
-          export class MyDemoComponent {}
-        "></materialize-html-visualizer>
-      </div>
-    </div>
+</div>
+
+<div class="card">
+  <h4>Step 3: Import component modules in your app module:</h4>
+  <p>Import just specific components by importing each one like <code>MaterializeButtonModule</code>,
+  <code>MaterializeCardModule</code>, etc.</p>
+
+  <div class="highlight highlight-source-ts">
+    <pre>
+  <span class="pl-k">import</span> {{ '{' }} <span class="pl-smi">Component</span>, <span class="pl-smi">NgModule</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;
+  <span class="pl-k">import</span> {{ '{' }} <span class="pl-smi">MaterializeButtonModule</span>, <span class="pl-smi">MaterializeCardModule</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>materialize-angular<span class="pl-pds">'</span></span>;
+
+  @<span class="pl-en">NgModule</span>({{ '{' }}
+    imports: [
+      <span class="pl-smi">MaterializeButtonModule</span>,
+      <span class="pl-smi">MaterializeCardModule</span>
+    ]
+  })
+  <span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">MyModule</span> {{ '{' }}}</pre>
+  </div>
+</div>
+
+
+<div class="card">
+  <h4>Step 4: Use imported components:</h4>
+  <p>Finally use the imported components into your apps components:</p>
+  <div class="highlight highlight-source-ts">
+    <pre>
+  <span class="pl-k">import</span> {{ '{' }} <span class="pl-smi">Component</span> } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>@angular/core<span class="pl-pds">'</span></span>;
+
+  @<span class="pl-en">Component</span>({{ '{' }}
+    selector: <span class="pl-s"><span class="pl-pds">'</span>app-demo<span class="pl-pds">'</span></span>,
+    template: <span class="pl-s"><span class="pl-pds">`</span></span>
+  <span class="pl-s">    &lt;materialize-card&gt;</span>
+  <span class="pl-s">      &lt;materialize-button&gt;Hello From Materialize Angular!&lt;/materialize-button&gt;</span>
+  <span class="pl-s">    &lt;/materialize-card&gt;</span>
+  <span class="pl-s">  <span class="pl-pds">`</span></span>
+  })
+  <span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">MyDemoComponent</span> {{ '{' }}}</pre>
   </div>
 </div>
