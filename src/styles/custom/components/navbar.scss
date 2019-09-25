@@ -35,7 +35,7 @@
     width: max-content;
 
     @media only screen and (max-width: 768px) {
-      padding-left: 36px;
+      padding-left: 52px;
     }
   
     img {
@@ -48,5 +48,31 @@
       margin: 0;
       padding-left: 12px;
     }
-  }  
+  } 
+
+  .navbar-patron {
+    color: #FFFFFF;
+    text-align: right;
+    flex: 1;
+
+    .materialize-button.outline {
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+      display: inline-block;
+      font-family: 'Comfortaa';
+      font-size: 13px;
+      margin: 0 4px 0 0;
+      padding: 12px 10px;
+      text-transform: none;
+
+      .ripple {
+        background: rgba(#FFFFFF, 0.3);
+      }
+    }
+
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  };
 }
