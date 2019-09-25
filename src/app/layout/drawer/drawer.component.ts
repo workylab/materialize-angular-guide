@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './drawer.component.html'
+  templateUrl: './drawer.component.html',
+  styleUrls: ['./drawer.component.scss']
 })
 export class DrawerPageComponent {
 }

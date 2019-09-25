@@ -1,4 +1,4 @@
-<div class="">
+<div class="drawe-guide">
   <materialize-scroll-spy class="main-container" #scrollSpy>
     <materialize-scroll-spy-item id="title">
       <h1>DRAWER</h1>
@@ -32,43 +32,165 @@
         <h3>Code</h3>
         <p class="text-indent">
           <materialize-html-visualizer html='
-            <materialize-drawer>
-              <materialize-drawer-content>This is the drawer content</materialize-drawer-content>
-              <materialize-drawer-container>This is the container for your main content</materialize-drawer-container>
+            <materialize-drawer #drawer>
+              <materialize-drawer-content>
+                <materialize-button (onClick)="drawer.close()">Close</materialize-button>
+              </materialize-drawer-content>
+              <materialize-drawer-container>
+                <materialize-button (onClick)="drawer.open()">Open</materialize-button>
+              </materialize-drawer-container>
             </materialize-drawer>
           '></materialize-html-visualizer>        
         </p>
 
         <h3>Result</h3>
         <div class="text-indent">
-          <materialize-drawer>
-            <materialize-drawer-content>This is the drawer content</materialize-drawer-content>
-            <materialize-drawer-container>This is the container for your main content</materialize-drawer-container>
+          <materialize-drawer #drawer>
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer.open()">Open</materialize-button>
+            </materialize-drawer-container>
           </materialize-drawer>
         </div>
       </div>
     </materialize-scroll-spy-item>
   
-    <materialize-scroll-spy-item id="api">    
-        <h2>API</h2>
-    
-        <table>
-          <tr>
-            <td>Prop</td>
-            <td>Type</td>
-            <td>Default</td>
-          </tr>
-          <tr>
-            <td>className</td>
-            <td>string</td>
-            <td>''</td>
-          </tr>
+    <materialize-scroll-spy-item id="api">
+      <h2>API</h2>
+      <p>
+        Materialize Angular provides custom functions to add functionallity its components in different ways,
+        the most common is using attributes in the component tag.
+      </p>
+
+      <div class="card">
+        <h4 class="primary">@Input Properties</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Type</td>
+              <td>Default</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>className</td>
+              <td>string</td>
+              <td>" "</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>closeOnBackdrop</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>hasBackdrop</td>
+              <td>boolean</td>
+              <td>true</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>isOpen</td>
+              <td>boolean</td>
+              <td>false</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>position</td>
+              <td>boolean</td>
+              <td>left | right</td>
+              <td>left</td>
+            </tr>
+            <tr>
+              <td>transitionDuration</td>
+              <td>number</td>
+              <td>250</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>type</td>
+              <td>over | push | static</td>
+              <td>over</td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
-      </materialize-scroll-spy-item>
+      </div>
+
+      <div class="card">
+        <h4 class="secondary">@Output Events: Slider</h4>
+        <table class="table-guide margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onOpen</td>
+              <td>@Output() onOpenEmitter</td><td>EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+            <tr>
+              <td>onClose</td>
+              <td>@Output() onCloseEmitter</td><td>EventEmitter&lt;void&gt;</td>
+              <td>"none"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </materialize-scroll-spy-item>
 
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
-      <p>CSS variables here...</p>
+      <p>
+        Materialize Angular supports a lot of SASS variables to change all the component
+        style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
+
+        The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+      </p>
+  
+      <div class="card">
+        <h4 class="terciary">.drawer-content</h4>
+        <table class="table-guide table-sass margin-bottom-lg">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-drawer-content-background</td><td>map-get($theme-colors, 'white')</td></tr>
+            <tr><td>$materialize-drawer-content-width</td><td>280px</td></tr>
+            <tr><td>$materialize-drawer-content-z-index</td><td>$theme-zindex-2</td></tr>
+            <tr><td>$materialize-drawer-content-transition-function</td><td>$theme-transition-function-in</td></tr>
+          </tbody>
+        </table>
+
+        <h4 class="terciary">.drawer-backdrop</h4>
+        <table class="table-guide table-sass">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Default</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$materialize-drawer-backdrop-background</td><td>rgba(0, 0, 0, 0.5)</td></tr>
+            <tr><td>$materialize-drawer-backdrop-transition-function</td><td>$theme-transition-function-out</td></tr>
+            <tr><td>$materialize-drawer-backdrop-transition-property</td><td>$theme-property-opacity</td></tr>
+            <tr><td>$materialize-drawer-backdrop-z-index</td><td>$theme-zindex-1</td></tr>
+          </tbody>
+        </table>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="playground">
@@ -78,7 +200,96 @@
   
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
-      <p>Many examples of them with title</p>
+      
+      <div class="card">
+        <div class="example-container">
+          <h3>Over drawer in left side</h3>
+          <materialize-drawer #drawer1>
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer1.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer1.open()">Open</materialize-button>
+            </materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Over drawer in right side</h3>
+          <materialize-drawer #drawer2 position="right">
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer2.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer2.open()">Open</materialize-button>
+            </materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Over drawer without backdrop</h3>
+          <materialize-drawer #drawer3 [hasBackdrop]="false">
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer3.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer3.open()">Open</materialize-button>
+            </materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Push drawer in left side</h3>
+          <materialize-drawer #drawer4 type="push">
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer4.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer4.open()">Open</materialize-button>
+            </materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Push drawer in right side</h3>
+          <materialize-drawer #drawer5 type="push" position="right">
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer5.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer5.open()">Open</materialize-button>
+            </materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Push drawer without backdrop</h3>
+          <materialize-drawer #drawer6 type="push" [hasBackdrop]="false">
+            <materialize-drawer-content>
+              <materialize-button (onClick)="drawer6.close()">Close</materialize-button>
+            </materialize-drawer-content>
+            <materialize-drawer-container>
+              <materialize-button (onClick)="drawer6.open()">Open</materialize-button>
+            </materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Static drawer in left side</h3>
+          <materialize-drawer type="static">
+            <materialize-drawer-content>Drawer content</materialize-drawer-content>
+            <materialize-drawer-container>Body content</materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+
+        <div class="example-container">
+          <h3>Static drawer in right side</h3>
+          <materialize-drawer type="static" position="right">
+            <materialize-drawer-content>Drawer content</materialize-drawer-content>
+            <materialize-drawer-container>Body content</materialize-drawer-container>
+          </materialize-drawer>
+        </div>
+      </div>
     </materialize-scroll-spy-item>
   
     <materialize-scroll-spy-item id="up_next">
