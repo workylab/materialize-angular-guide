@@ -2,16 +2,16 @@
   <materialize-scroll-spy class="main-container" #scrollSpy>
     <materialize-scroll-spy-item id="title">
       <h1>ICON</h1>
-  
+
       <p>
         The <b>materialize-icon</b> component provides context to your application with the different <i>images</i> that you can use. Here is the official <a href="https://materialdesignicons.com/">Material Design Icons site</a>.
       </p>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
 
-      <div class="card">  
+      <div class="card">
         <h3>How to use</h3>
 
         <p class="text-indent margin-bottom-sm">
@@ -25,7 +25,7 @@
         <p class="text-indent">
           <materialize-html-visualizer html='
             <materialize-icon>favorite</materialize-icon>
-          '></materialize-html-visualizer>        
+          '></materialize-html-visualizer>
         </p>
 
         <h3>Result</h3>
@@ -34,15 +34,15 @@
         </p>
       </div>
     </materialize-scroll-spy-item>
-  
-    <materialize-scroll-spy-item id="api">    
+
+    <materialize-scroll-spy-item id="api">
       <h2>API</h2>
 
       <p>
         Materialize Angular provides custom functions to add functionallity its components in different ways,
         the most common is using attributes in the component tag.
       </p>
-  
+
       <div class="card">
           <h4 class="primary">@Input Properties</h4>
           <table class="table-guide">
@@ -96,7 +96,7 @@
         </table>
       </div>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
       <p>
@@ -104,9 +104,9 @@
         style so that feel to modify component look and feel by changing the following SASS variables.<br><br>
 
         The Materialize Angular SASS variable names are created base on the following pattern:<br><br>
-        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>        
+        <span class="text-accent terciary">"tagClassName" + (optional "-" + "modifierTagClassName" ) + "-" + "cssProperty"</span>
       </p>
-  
+
       <div class="card">
         <table class="table-guide table-sass">
           <thead>
@@ -140,12 +140,12 @@
         </table>
       </div>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="playground">
       <h2>PLAYGROUND</h2>
       <p>One example with all variants as checkbox or switch controls</p>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
 
@@ -176,24 +176,24 @@
         </div>
       </div>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="up_next">
       <h2>NEXT</h2>
       <div class="up-next-container">
         <div class="up-next-item">
-          <div class="card" routerLink="/guide/components/button" routerLinkActive="active" materializeRipple>
+          <div class="card" routerLink="/guide/components/button" materializeRipple>
             <p>Button</p>
             <materialize-icon>chevron_right</materialize-icon>
           </div>
         </div>
         <div class="up-next-item">
-          <div class="card" routerLink="/guide/components/calendar" routerLinkActive="active" materializeRipple>
+          <div class="card" routerLink="/guide/components/calendar" materializeRipple>
             <p>Calendar</p>
             <materialize-icon>chevron_right</materialize-icon>
           </div>
         </div>
         <div class="up-next-item">
-          <div class="card" routerLink="/guide/components/collapsible" routerLinkActive="active" materializeRipple>
+          <div class="card" routerLink="/guide/components/collapsible" materializeRipple>
             <p>Collapsible</p>
             <materialize-icon>chevron_right</materialize-icon>
           </div>
@@ -201,7 +201,7 @@
       </div>
     </materialize-scroll-spy-item>
   </materialize-scroll-spy>
-  
+
   <div class="glossary-container">
     <h2>Contents</h2>
     <materialize-glossary [scrollSpy]="scrollSpy" [topSpace]="90" className="glossary-guide">
@@ -212,7 +212,6 @@
       <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
       <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
       <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
-    </materialize-glossary>      
+    </materialize-glossary>
   </div>
 </div>
-  
