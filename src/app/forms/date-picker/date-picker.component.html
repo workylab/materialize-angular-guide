@@ -2,23 +2,23 @@
   <materialize-scroll-spy class="main-container" #scrollSpy>
     <materialize-scroll-spy-item id="title">
       <h1>DATE PICKER</h1>
-  
+
       <p>
         The <b>materialize-date-picker</b> component is can be utilized with other components. The component is for the user can see in a visual way the date selection like day or month.
       </p>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="usage">
       <h2>USAGE</h2>
       <p>Date Picker...</p>
-  
+
       <p>Example</p>
       <p>Visualizer</p>
     </materialize-scroll-spy-item>
-  
-    <materialize-scroll-spy-item id="api">    
+
+    <materialize-scroll-spy-item id="api">
       <h2>API</h2>
-  
+
       <table>
         <tr>
           <td>Prop</td>
@@ -32,28 +32,47 @@
         </tr>
       </table>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="theming">
       <h2>THEMING</h2>
       <p>CSS variables here...</p>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="playground">
       <h2>PLAYGROUND</h2>
       <p>One example with all variants as checkbox or switch controls</p>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="examples">
       <h2>EXAMPLES</h2>
       <p>Many examples of them with title</p>
     </materialize-scroll-spy-item>
-  
+
     <materialize-scroll-spy-item id="up_next">
       <h2>NEXT</h2>
-      <p>More components here...</p>
+      <div class="up-next-container">
+        <div class="up-next-item">
+          <div class="card" routerLink="/guide/forms/button-toggle" materializeRipple>
+            <p>Button Toggle</p>
+            <materialize-icon>chevron_right</materialize-icon>
+          </div>
+        </div>
+        <div class="up-next-item">
+          <div class="card" routerLink="/guide/forms/radio" materializeRipple>
+            <p>Radio</p>
+            <materialize-icon>chevron_right</materialize-icon>
+          </div>
+        </div>
+        <div class="up-next-item">
+          <div class="card" routerLink="/guide/forms/switch" materializeRipple>
+            <p>Switch</p>
+            <materialize-icon>chevron_right</materialize-icon>
+          </div>
+        </div>
+      </div>
     </materialize-scroll-spy-item>
   </materialize-scroll-spy>
-  
+
   <div class="glossary-container">
     <h2>Contents</h2>
     <materialize-glossary [scrollSpy]="scrollSpy" [topSpace]="90" className="glossary-guide">
@@ -64,7 +83,6 @@
       <materialize-glossary-item referenceId="playground">Playground</materialize-glossary-item>
       <materialize-glossary-item referenceId="examples">Examples</materialize-glossary-item>
       <materialize-glossary-item referenceId="up_next">Up Next</materialize-glossary-item>
-    </materialize-glossary>      
+    </materialize-glossary>
   </div>
 </div>
-    
