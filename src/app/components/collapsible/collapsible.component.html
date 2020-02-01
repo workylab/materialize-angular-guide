@@ -89,13 +89,17 @@
               <td>isOpen</td>
               <td>boolean</td>
               <td>false</td>
-              <td></td>
+              <td>
+                If true, the collapsible's content should be displayed.
+              </td>
             </tr>
             <tr>
               <td>showIndicator</td>
               <td>boolean</td>
               <td>true</td>
-              <td></td>
+              <td>
+                If true, the collapsible's status indicator should be displayed.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -114,13 +118,17 @@
           <tbody>
             <tr>
               <td>onClose</td>
-              <td>onCloseEmitter()</td><td>EventEmitter&lt;boolean&gt;</td>
-              <td>"none"</td>
+              <td>onCloseEmitter(): EventEmitter&lt;boolean&gt;</td>
+              <td>
+                Event fired when collapsible's content is being hided.
+              </td>
             </tr>
             <tr>
               <td>onOpen</td>
-              <td>onOpenEmitter()</td><td>EventEmitter&lt;boolean&gt;</td>
-              <td>"none"</td>
+              <td>onOpenEmitter(): EventEmitter&lt;boolean&gt;</td>
+              <td>
+                Event fired when collapsible's content is being shown.
+              </td>
             </tr>
           </tbody>
         </table>
