@@ -66,9 +66,12 @@
               </tr>
               <tr>
                 <td>size</td>
-                <td>object</td>
-                <td>ICON_SIZES.SM</td>
+                <td>"" | "xs" | "sm" | "md" | "lg" | "xl"</td>
                 <td></td>
+                <td>
+                  The icon can have six different sizes.
+                  These sizes add a secondary CSS class.
+                </td>
               </tr>
             </tbody>
           </table>
@@ -88,12 +91,16 @@
             <tr>
               <td>onClick</td>
               <td>onClickEmitter(): EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>
+                Event fired when the icon is clicked.
+              </td>
             </tr>
             <tr>
               <td>onBlur</td>
               <td>onBlurEmitter(): EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>
+                Event fired when the icon loses the focus (native onblur event).
+              </td>
             </tr>
           </tbody>
         </table>
