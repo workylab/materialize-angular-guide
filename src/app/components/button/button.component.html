@@ -76,21 +76,28 @@
             </tr>
             <tr>
               <td>level</td>
-              <td>text | accent | outline</td>
+              <td>"text" | "accent" | "outline"</td>
               <td>"accent"</td>
-              <td></td>
+              <td>
+                The button has three different level colors to be displayed.
+                These levels add a secondary CSS class.
+              </td>
             </tr>
             <tr>
               <td>rippleDuration</td>
               <td>number</td>
               <td>250</td>
-              <td></td>
+              <td>
+                The amount of miliseconds that ripple effect will be displayed.
+              </td>
             </tr>
             <tr>
               <td>type</td>
-              <td>button | submit</td>
+              <td>"button" | "submit" | "reset"</td>
               <td>"button"</td>
-              <td></td>
+              <td>
+                The "type" attribute specifies the type of the &lt;button&gt; element. 
+              </td>
             </tr>
           </tbody>
         </table>
@@ -110,12 +117,16 @@
             <tr>
               <td>onClick</td>
               <td>onClickEmitter(): EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>
+                Callback fired when the button is clicked.
+              </td>
             </tr>
             <tr>
               <td>onBlur</td>
               <td>onBlurEmitter(): EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>
+                Callback fired when the button loses the focus (native onblur event).
+              </td>
             </tr>
           </tbody>
         </table>
