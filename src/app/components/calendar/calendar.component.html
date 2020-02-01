@@ -67,13 +67,17 @@
               <td>date</td>
               <td>Date</td>
               <td>new Date()</td>
-              <td></td>
+              <td>
+                The date that calendar should display.
+              </td>
             </tr>
             <tr>
               <td>displayOtherMonthDays</td>
               <td>boolean</td>
               <td>true</td>
-              <td></td>
+              <td>
+                if true, other month's days should be displayed.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -91,9 +95,11 @@
           </thead>
           <tbody>
             <tr>
-              <td>onClick</td>
-              <td>onClickEmitter(): EventEmitter&lt;DateModel&gt;</td>
-              <td>"none"</td>
+              <td>onSelectDay</td>
+              <td>onSelectDayEmitter(): EventEmitter&lt;DateModel&gt;</td>
+              <td>
+                Event is fired when a new day of the current month is selected.
+              </td>
             </tr>
           </tbody>
         </table>
