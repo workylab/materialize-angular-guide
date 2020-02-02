@@ -99,25 +99,33 @@
               <td>required</td>
               <td>boolean</td>
               <td>false</td>
-              <td></td>
+              <td>
+                If true, the slider element will be required.
+              </td>
             </tr>
             <tr>
               <td>showLabels</td>
               <td>boolean</td>
               <td>true</td>
-              <td></td>
+              <td>
+                If true, option labels will be displayed.
+              </td>
             </tr>
             <tr>
               <td>showTicks</td>
               <td>boolean</td>
               <td>false</td>
-              <td></td>
+              <td>
+                If true, ticks on slider track will be displayed.
+              </td>
             </tr>
             <tr>
               <td>value</td>
               <td>number | string | boolean | null</td>
               <td>null</td>
-              <td></td>
+              <td>
+                The value of the slider element.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -146,7 +154,9 @@
               <td>value</td>
               <td>number | string | boolean | null</td>
               <td>null</td>
-              <td></td>
+              <td>
+                The value of the slider option element.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -165,8 +175,10 @@
           <tbody>
             <tr>
               <td>onChange</td>
-              <td>@Output() onChangeEmitter</td><td>EventEmitter&lt;string&gt;</td>
-              <td>"none"</td>
+              <td>onChangeEmitter(): EventEmitter&lt;boolean&gt;</td>
+              <td>
+                Event fired when the value is changed.
+              </td>
             </tr>
           </tbody>
         </table>

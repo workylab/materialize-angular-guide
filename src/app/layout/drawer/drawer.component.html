@@ -89,37 +89,49 @@
               <td>closeOnBackdrop</td>
               <td>boolean</td>
               <td>true</td>
-              <td></td>
+              <td>
+                If true, the drawer should close when click on backrop.
+              </td>
             </tr>
             <tr>
               <td>hasBackdrop</td>
               <td>boolean</td>
               <td>true</td>
-              <td></td>
+              <td>
+                If true, a backdrop should be displayed.
+              </td>
             </tr>
             <tr>
               <td>isOpen</td>
               <td>boolean</td>
               <td>false</td>
-              <td></td>
+              <td>
+                If true, the drawer should be open.
+              </td>
             </tr>
             <tr>
               <td>position</td>
-              <td>boolean</td>
-              <td>left | right</td>
-              <td>left</td>
+              <td>"left" | "right"</td>
+              <td>"left"</td>
+              <td>
+                The position that drawer will be on the window.
+              </td>
             </tr>
             <tr>
               <td>transitionDuration</td>
               <td>number</td>
               <td>250</td>
-              <td></td>
+              <td>
+                The amount of miliseconds that drawer animation will be displayed.
+              </td>
             </tr>
             <tr>
               <td>type</td>
-              <td>over | push | static</td>
-              <td>over</td>
-              <td></td>
+              <td>"over" | "push" | "static"</td>
+              <td>"over"</td>
+              <td>
+                The animation type that drawer will have while open.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -138,13 +150,17 @@
           <tbody>
             <tr>
               <td>onOpen</td>
-              <td>@Output() onOpenEmitter</td><td>EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>onOpenEmitter(): EventEmitter&lt;void&gt;</td>
+              <td>
+                Event fired when modal is being shown.
+              </td>
             </tr>
             <tr>
               <td>onClose</td>
-              <td>@Output() onCloseEmitter</td><td>EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>onCloseEmitter(): EventEmitter&lt;string&gt;</td>
+              <td>
+                Event fired when modal is being hided.
+              </td>
             </tr>
           </tbody>
         </table>

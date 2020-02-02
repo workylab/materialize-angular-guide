@@ -69,18 +69,21 @@
           </thead>
           <tbody>
             <tr>
-              <td>autocomplete</td>
-              <td>string</td>
-              <td>"none"</td>
-              <td></td>
-            </tr>
-            <tr>
               <td>className</td>
               <td>string</td>
               <td></td>
               <td>
                 To specify an additional CSS class, use the "className" property.
                 This applies to the component's first node.
+              </td>
+            </tr>
+            <tr>
+              <td>autocomplete</td>
+              <td>string</td>
+              <td></td>
+              <td>
+                The autocomplete attribute specifies whether or not the input should have autocomplete enabled.
+                Autocomplete allows the browser to predict the value when a user starts typing in a field.
               </td>
             </tr>
             <tr>
@@ -94,56 +97,74 @@
             <tr>
               <td>floatLabel</td>
               <td>string</td>
-              <td>" "</td>
               <td></td>
+              <td>
+                Text will be displayed as float label.
+              </td>
             </tr>
             <tr>
               <td>hasCounter</td>
               <td>boolean</td>
               <td>false</td>
-              <td></td>
+              <td>
+                If true, the amount of typed characters should be displayed.
+              </td>
             </tr>
             <tr>
               <td>id</td>
               <td>string | null</td>
               <td>null</td>
-              <td></td>
+              <td>
+                The id of the input element.
+              </td>
             </tr>
             <tr>
               <td>maxLength</td>
               <td>number</td>
               <td>500</td>
-              <td></td>
+              <td>
+                Specifies the maximum number of characters allowed in the input element.
+              </td>
             </tr>
             <tr>
               <td>name</td>
               <td>string</td>
-              <td>" "</td>
               <td></td>
+              <td>
+                The name of the input element.
+              </td>
             </tr>
             <tr>
               <td>placeholder</td>
               <td>string</td>
-              <td>" "</td>
               <td></td>
+              <td>
+                Text will be displayed as a placeholder of the input element.
+              </td>
             </tr>
             <tr>
               <td>required</td>
               <td>boolean</td>
               <td>false</td>
-              <td></td>
+              <td>
+                If true, the input element will be required.
+              </td>
             </tr>
             <tr>
               <td>type</td>
               <td>"password" | "text"</td>
               <td>"text"</td>
-              <td></td>
+              <td>
+                Type attribute of the input element, it supports password and text types.
+              </td>
             </tr>
             <tr>
               <td>value</td>
               <td>string</td>
-              <td>" "</td>
               <td></td>
+              <td>
+                The value of the input element.
+              </td>
             </tr>
           </tbody>
         </table>
@@ -163,17 +184,23 @@
             <tr>
               <td>onFocus</td>
               <td>onFocusEmitter(): EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>
+                Event fired when the input gest the focus (native onfocus event).
+              </td>
             </tr>
             <tr>
               <td>onChange</td>
               <td>onChangeEmitter(): EventEmitter&lt;string&gt;</td>
-              <td>"none"</td>
+              <td>
+                Event fired when the value is changed.
+              </td>
             </tr>
             <tr>
               <td>onBlur</td>
               <td>onBlurEmitter(): EventEmitter&lt;void&gt;</td>
-              <td>"none"</td>
+              <td>
+                Event fired when the input loses the focus (native onblur event).
+              </td>
             </tr>
           </tbody>
         </table>
