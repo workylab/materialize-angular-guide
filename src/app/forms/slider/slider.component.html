@@ -175,9 +175,29 @@
           <tbody>
             <tr>
               <td>onChange</td>
-              <td>onChangeEmitter(): EventEmitter&lt;boolean&gt;</td>
+              <td>onChangeEmitter(): EventEmitter&lt;number | string | boolean | null&gt;</td>
               <td>
                 Event fired when the value is changed.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 class="secondary">@Output Events: Slider Option</h4>
+        <table class="table-guide">
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Signature</td>
+              <td>Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>onClick</td>
+              <td>onClickEmitter(): EventEmitter&lt;number | string | boolean | null&gt;</td>
+              <td>
+                Event fired when the option is clicked.
               </td>
             </tr>
           </tbody>
@@ -322,6 +342,7 @@
           </thead>
           <tbody>
             <tr><td>$materialize-slider-option-color</td><td>map-get($theme-colors, 'gray-20')</td></tr>
+            <tr><td>$materialize-slider-option-cursor</td><td>pointer</td></tr>
             <tr><td>$materialize-slider-option-font-family</td><td>$theme-font-family-primary</td></tr>
             <tr><td>$materialize-slider-option-font-size</td><td>$theme-font-size-md</td></tr>
             <tr><td>$materialize-slider-option-font-weight</td><td>$theme-font-weight-regular</td></tr>
